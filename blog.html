@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog &amp; News | Tianyi Machinery — Conveyor Industry Insights</title>
+<meta name="description" content="Read the latest industry insights, maintenance guides, company news, and bulk material handling tips from Tianyi Machinery's engineering team.">
+<meta name="keywords" content="conveyor maintenance guide, bulk material handling blog, conveyor industry news, Tianyi Machinery blog, belt conveyor tips">
+<link rel="canonical" href="https://www.tianyi-machinery.com/blog.html">
+
+<meta property="og:title" content="Blog &amp; News — Tianyi Machinery">
+<meta property="og:description" content="Industry insights, maintenance guides, and company updates from China's leading conveyor manufacturer.">
+<meta name="twitter:card" content="summary_large_image">
+
+<style>
+:root { --primary:#1a365d; --primary-light:#2c5282; --primary-dark:#0f2341; --accent:#dd6b20; --accent-hover:#c05621; --text:#1a202c; --text-muted:#4a5568; --text-light:#a0aec0; --bg:#ffffff; --bg-alt:#f7fafc; --border:#e2e8f0; --radius:8px; --shadow:0 4px 24px rgba(0,0,0,0.06); --transition:0.25s ease; }
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif; color:var(--text); background:var(--bg); line-height:1.7; font-size:15px; -webkit-font-smoothing:antialiased; }
+.container { max-width:1200px; margin:0 auto; padding:0 24px; }
+h1 { font-size:38px; font-weight:700; letter-spacing:-0.5px; }
+h2 { font-size:24px; font-weight:700; margin-bottom:8px; }
+h3 { font-size:18px; font-weight:600; }
+p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
+
+/* Header */
+.site-header { position:fixed; top:0; left:0; right:0; z-index:1000; background:rgba(255,255,255,0.96); backdrop-filter:blur(10px); border-bottom:1px solid var(--border); }
+.header-inner { display:flex; align-items:center; justify-content:space-between; max-width:1200px; margin:0 auto; padding:14px 24px; }
+.logo { font-size:22px; font-weight:800; color:var(--primary); text-decoration:none; display:flex; align-items:center; gap:10px; }
+.logo span { font-size:11px; color:var(--text-light); display:block; font-weight:400; }
+/* Logo */
+.logo-img { height: 64px; width: auto; display: none; object-fit: contain; }
+.logo-img.loaded { display: block; }
+.logo-svg { display: block; }
+.logo-img.loaded ~ .logo-svg { display: none; }
+.logo-img.loaded ~ .logo-text { display: none; }
+.logo-text { display: flex; flex-direction: column; justify-content: center; line-height: 1.2; }
+.nav { display:flex; gap:0; list-style:none; }
+.nav>li { position:relative; }
+.nav>li>a { display:block; text-decoration:none; color:var(--text-muted); font-size:14px; font-weight:500; padding:20px 14px; border-bottom:2px solid transparent; transition:all var(--transition); white-space:nowrap; }
+.nav>li>a::after { content:''; display:inline-block; width:0; height:0; border-left:4px solid transparent; border-right:4px solid transparent; border-top:5px solid var(--text-muted); margin-left:6px; vertical-align:middle; transition:transform 0.2s ease; }
+.nav>li.no-sub>a::after { display:none; }
+.nav>li>a:hover { color:var(--primary); border-bottom-color:var(--accent); }
+.dropdown-menu { position:absolute; top:100%; left:50%; transform:translateX(-50%) translateY(6px); min-width:200px; background:#fff; border:1px solid var(--border); border-radius:10px; box-shadow:0 10px 40px rgba(0,0,0,0.1); padding:8px 0; opacity:0; visibility:hidden; transition:all 0.2s ease; list-style:none; z-index:1001; }
+.nav>li:hover .dropdown-menu { opacity:1; visibility:visible; transform:translateX(-50%) translateY(0); }
+.dropdown-menu li a { display:block; padding:10px 20px; font-size:13px; color:var(--text-muted); text-decoration:none; transition:all 0.15s ease; }
+.dropdown-menu li a:hover { background:var(--bg-alt); color:var(--primary); }
+.dropdown-menu li+li { border-top:1px solid var(--bg-alt); }
+.nav-toggle { display:none; background:none; border:none; font-size:24px; color:var(--primary); cursor:pointer; padding:4px; }
+
+.subpage-header { background:linear-gradient(135deg,var(--primary-dark),var(--primary)); color:#fff; padding:140px 0 60px; text-align:center; }
+.subpage-header h1 { margin-bottom:12px; }
+.subpage-header p { font-size:16px; color:rgba(255,255,255,0.8); max-width:600px; margin:0 auto; }
+
+.breadcrumb { padding:100px 0 20px; font-size:13px; color:var(--text-light); }
+.breadcrumb a { color:var(--accent); text-decoration:none; }
+
+/* Category tabs */
+.cat-tabs { display:flex; gap:12px; flex-wrap:wrap; margin:32px 0; }
+.cat-tab { padding:8px 20px; border-radius:20px; font-size:13px; font-weight:500; text-decoration:none; border:1px solid var(--border); color:var(--text-muted); transition:all var(--transition); }
+.cat-tab:hover, .cat-tab.active { background:var(--primary); color:#fff; border-color:var(--primary); }
+
+/* Blog grid */
+.blog-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(340px,1fr)); gap:24px; }
+.blog-card { background:#fff; border-radius:10px; overflow:hidden; border:1px solid var(--border); transition:all var(--transition); text-decoration:none; display:block; }
+.blog-card:hover { box-shadow:var(--shadow); transform:translateY(-2px); }
+.blog-card .thumb { height:200px; background-size:cover; background-position:center; display:flex; align-items:center; justify-content:center; }
+.blog-card .info { padding:24px; }
+.blog-card .info .date { font-size:12px; color:var(--text-light); margin-bottom:8px; }
+.blog-card .info h3 { color:var(--text); font-size:18px; margin-bottom:8px; }
+.blog-card .info p { font-size:13px; color:var(--text-muted); margin-bottom:12px; }
+.blog-card .info .tag { display:inline-block; padding:4px 10px; border-radius:12px; font-size:11px; font-weight:600; background:rgba(26,54,93,0.06); color:var(--primary); }
+.blog-card .read-more { color:var(--accent); font-size:13px; font-weight:600; display:inline-block; margin-top:8px; }
+
+.site-footer { background:var(--primary-dark); color:rgba(255,255,255,0.7); padding:32px 0; text-align:center; margin-top:80px; font-size:13px; }
+.site-footer a { color:rgba(255,255,255,0.8); text-decoration:none; }
+.footer-logo { height: 48px; width: auto; margin-bottom: 14px; object-fit: contain; }
+
+@media (max-width:768px) {
+  .blog-grid { grid-template-columns:1fr; }
+  h1 { font-size:28px; }
+  .nav { display:none; }
+}
+@media (max-width:900px) {
+  .nav { display:none; flex-direction:column; position:absolute; top:100%; left:0; right:0; background:#fff; border-bottom:1px solid var(--border); box-shadow:0 8px 30px rgba(0,0,0,0.08); }
+  .nav.open { display:flex; }
+  .nav>li>a { padding:14px 24px; border-bottom:1px solid var(--bg-alt); }
+  .dropdown-menu { position:static; transform:none; box-shadow:none; border:none; opacity:1; visibility:visible; display:none; padding-left:16px; background:var(--bg-alt); }
+  .nav>li:hover .dropdown-menu { display:none; }
+  .nav>li.open-sub .dropdown-menu { display:block; }
+  .nav-toggle { display:block; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="logo">
+      <img src="images/logo-200.png" alt="Tianyi Machinery" class="logo-img" id="logoImg" onload="this.classList.add('loaded')" onerror="this.style.display='none';document.getElementById('logoSvg').style.display='block';">
+      <svg class="logo-svg" id="logoSvg" width="36" height="36" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="8" fill="#1a365d"/><path d="M8 20h24M20 8v24M12 14l16 12M12 26l16-12" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/></svg>
+      <span class="logo-text">Tianyi Machinery<span style="display:block;font-size:11px;font-weight:400;color:var(--text-light);">Stock: 832654</span></span>
+    </a>
+    <button class="nav-toggle" onclick="document.getElementById('mainNav').classList.toggle('open')">&#9776;</button>
+    <nav>
+      <ul class="nav" id="mainNav">
+        <li><a href="/">About Us</a>
+          <ul class="dropdown-menu">
+            <li><a href="/">Company Profile</a></li>
+            <li><a href="factory.html">Factory Tour</a></li>
+          </ul>
+        </li>
+        <li><a href="/">Products</a>
+          <ul class="dropdown-menu">
+            <li><a href="products/belt-conveyor.html">Belt Conveyor</a></li>
+            <li><a href="products/chain-conveyor.html">Chain Conveyor</a></li>
+            <li><a href="products/bucket-elevator.html">Bucket Elevator</a></li>
+            <li><a href="products/screw-conveyor.html">Screw Conveyor</a></li>
+            <li><a href="products/apron-conveyor.html">Apron Conveyor</a></li>
+            <li><a href="products/dust-collector.html">Dust Collector</a></li>
+            <li><a href="products/feeding-equipment.html">Feeding Equipment</a></li>
+            <li><a href="products/crushing-equipment.html">Crushing Equipment</a></li>
+            <li><a href="products/screening-equipment.html">Screening Equipment</a></li>
+            <li><a href="products/valves.html">Valves</a></li>
+            <li><a href="products/parts.html">Spare Parts</a></li>
+          </ul>
+        </li>
+        <li><a href="/">Projects</a></li>
+        <li><a href="blog.html" style="color:var(--primary);border-bottom-color:var(--accent);">Blog</a>
+          <ul class="dropdown-menu">
+            <li><a href="blog.html" style="color:var(--accent);font-weight:600;">All Articles</a></li>
+            <li><a href="blog.html#maintenance">Maintenance Guides</a></li>
+            <li><a href="blog.html#news">Company News</a></li>
+            <li><a href="blog.html#insights">Industry Insights</a></li>
+          </ul>
+        </li>
+        <li class="no-sub"><a href="/">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="container">
+  <nav class="breadcrumb">
+    <a href="/">Home</a> <span>&rsaquo;</span>
+    <strong>Blog &amp; News</strong>
+  </nav>
+</div>
+
+<div class="subpage-header">
+  <div class="container">
+    <h1>Blog &amp; Industry Insights</h1>
+    <p>Maintenance guides, industry trends, project stories, and technical articles from the Tianyi Machinery engineering team</p>
+  </div>
+</div>
+
+<div class="container" style="padding-top:40px;">
+
+  <!-- Category tabs -->
+  <div class="cat-tabs" id="catTabs">
+    <a href="blog.html" class="cat-tab active">All Articles</a>
+    <a href="blog.html#maintenance" class="cat-tab">Maintenance Guides</a>
+    <a href="blog.html#news" class="cat-tab">Company News</a>
+    <a href="blog.html#insights" class="cat-tab">Industry Insights</a>
+  </div>
+
+  <!-- Category: Maintenance Guides -->
+  <h2 id="maintenance" style="margin:40px 0 20px; padding-bottom:8px; border-bottom:3px solid var(--accent); display:inline-block;">Maintenance Guides</h2>
+
+  <div class="blog-grid" style="margin-top:20px;">
+    <a href="blog/scraper-conveyor-maintenance.html" class="blog-card">
+      <div class="thumb" style="background:linear-gradient(135deg,#1a365d,#2c5282);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.3);font-size:40px;">&#9998;</div>
+      <div class="info">
+        <div class="date">July 10, 2026</div>
+        <h3>Scraper Conveyor Maintenance Guide: Operation, Working Principle and Troubleshooting</h3>
+        <p>Comprehensive guide covering the daily maintenance, common issues, and best practices for keeping your scraper conveyor running at peak efficiency.</p>
+        <span class="tag">Maintenance Guide</span>
+      </div>
+    </a>
+
+    <a href="#" class="blog-card">
+      <div class="thumb" style="background:linear-gradient(135deg,#744210,#975a16);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.3);font-size:40px;">&#9998;</div>
+      <div class="info">
+        <div class="date">June 18, 2026</div>
+        <h3>5 Common Belt Conveyor Problems and How to Fix Them</h3>
+        <p>Belt misalignment, slippage, material spillage, idler failure, and belt wear — learn to diagnose and resolve the most frequent issues.</p>
+        <span class="tag">Maintenance Guide</span>
+      </div>
+    </a>
+
+    <a href="#" class="blog-card">
+      <div class="thumb" style="background:linear-gradient(135deg,#22543d,#276749);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.3);font-size:40px;">&#9998;</div>
+      <div class="info">
+        <div class="date">May 5, 2026</div>
+        <h3>Bucket Elevator Inspection Checklist: Daily, Weekly &amp; Monthly</h3>
+        <p>A practical checklist for maintenance teams to ensure safe and reliable operation of bucket elevators handling bulk materials.</p>
+        <span class="tag">Maintenance Guide</span>
+      </div>
+    </a>
+  </div>
+
+  <!-- Category: Company News -->
+  <h2 id="news" style="margin:50px 0 20px; padding-bottom:8px; border-bottom:3px solid var(--primary-light); display:inline-block;">Company News</h2>
+
+  <div class="blog-grid" style="margin-top:20px;">
+    <a href="#" class="blog-card">
+      <div class="thumb" style="background:linear-gradient(135deg,#4a5568,#2d3748);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.3);font-size:40px;">&#9998;</div>
+      <div class="info">
+        <div class="date">July 7, 2026</div>
+        <h3>Uruguay Customer Visits Tianyi Machinery to Discuss Future Cooperation</h3>
+        <p>We welcomed our valued customer from Uruguay for a factory tour and business meeting focused on bulk material handling equipment for South America.</p>
+        <span class="tag">Company News</span>
+      </div>
+    </a>
+
+    <a href="#" class="blog-card">
+      <div class="thumb" style="background:linear-gradient(135deg,#553c9a,#6b46c1);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.3);font-size:40px;">&#9998;</div>
+      <div class="info">
+        <div class="date">May 22, 2026</div>
+        <h3>Tianyi Machinery Awarded "Hubei Province Manufacturing Champion"</h3>
+        <p>Recognized for our leadership in bulk material conveying equipment manufacturing in Hubei Province.</p>
+        <span class="tag">Company News</span>
+      </div>
+    </a>
+  </div>
+
+  <!-- Category: Industry Insights -->
+  <h2 id="insights" style="margin:50px 0 20px; padding-bottom:8px; border-bottom:3px solid var(--success); display:inline-block;">Industry Insights</h2>
+
+  <div class="blog-grid" style="margin-top:20px;">
+    <a href="#" class="blog-card">
+      <div class="thumb" style="background:linear-gradient(135deg,#9b2c2c,#c53030);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.3);font-size:40px;">&#9998;</div>
+      <div class="info">
+        <div class="date">July 2, 2026</div>
+        <h3>Bulk Material Conveying System for Chlor-Alkali Chemical Industry</h3>
+        <p>Case study on a complete boiler renovation conveying system including slag handling equipment for high-temperature applications.</p>
+        <span class="tag">Industry Insights</span>
+      </div>
+    </a>
+
+    <a href="#" class="blog-card">
+      <div class="thumb" style="background:linear-gradient(135deg,#2a4365,#3182ce);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.3);font-size:40px;">&#9998;</div>
+      <div class="info">
+        <div class="date">June 5, 2026</div>
+        <h3>How to Choose the Right Conveyor for Your Bulk Material Handling System</h3>
+        <p>A decision framework covering material properties, capacity, distance, and budget to help you select the optimal conveyor type.</p>
+        <span class="tag">Industry Insights</span>
+      </div>
+    </a>
+  </div>
+
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <img src="images/logo-160.png" alt="Tianyi Machinery" class="footer-logo">
+    <p>&copy; 2026 Hubei Tianyi Machinery Co., Ltd. | Stock: 832654 | <a href="mailto:kim@tianyi-machinery.com">kim@tianyi-machinery.com</a></p>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.nav>li>a').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    if (window.innerWidth <= 900 && this.parentElement.querySelector('.dropdown-menu')) {
+      e.preventDefault();
+      this.parentElement.classList.toggle('open-sub');
+    }
+  });
+});
+</script>
+</body>
+</html>
