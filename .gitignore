@@ -35,3 +35,5 @@ $RECYCLE.BIN/
 # Temp
 *.tmp
 *.temp
+# Git
+.git/
