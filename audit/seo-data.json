@@ -1,0 +1,409 @@
+{
+  "h1s": [
+    "Reliable Bulk Material Conveying Solutions for Global Industries"
+  ],
+  "imgReport": [
+    {
+      "alt": "Tianyi Machinery",
+      "altEmpty": false,
+      "hasAlt": true,
+      "index": 0,
+      "src": "images/logo-200.png"
+    },
+    {
+      "alt": "Tianyi Machinery Factory Gate",
+      "altEmpty": false,
+      "hasAlt": true,
+      "index": 1,
+      "src": "images/about/company-gate.png"
+    },
+    {
+      "alt": "Belt Conveyor",
+      "altEmpty": false,
+      "hasAlt": true,
+      "index": 2,
+      "src": "images/products/belt-conveyor/1.jpg"
+    },
+    {
+      "alt": "Chain Conveyor",
+      "altEmpty": false,
+      "hasAlt": true,
+      "index": 3,
+      "src": "images/products/chain-conveyor/1.jpg"
+    },
+    {
+      "alt": "Bucket Elevator",
+      "altEmpty": false,
+      "hasAlt": true,
+      "index": 4,
+      "src": "images/products/bucket-elevator/1.jpg"
+    },
+    {
+      "alt": "Screw Conveyor",
+      "altEmpty": false,
+      "hasAlt": true,
+      "index": 5,
+      "src": "images/products/screw-conveyor/1.jpg"
+    },
+    {
+      "alt": "Apron Conveyor",
+      "altEmpty": false,
+      "hasAlt": true,
+      "index": 6,
+      "src": "images/products/apron-conveyor/1.jpg"
+    },
+    {
+      "alt": "Dust Collector",
+      "altEmpty": false,
+      "hasAlt": true,
+      "index": 7,
+      "src": "images/products/dust-collector/1.jpg"
+    },
+    {
+      "alt": "Feeding Equipment",
+      "altEmpty": false,
+      "hasAlt": true,
+      "index": 8,
+      "src": "images/products/feeding-equipment/1.jpg"
+    },
+    {
+      "alt": "Crushing Equipment",
+      "altEmpty": false,
+      "hasAlt": true,
+      "index": 9,
+      "src": "images/products/crushing-equipment/1.jpg"
+    },
+    {
+      "alt": "Screening Equipment",
+      "altEmpty": false,
+      "hasAlt": true,
+      "index": 10,
+      "src": "images/products/screening-equipment/1.jpg"
+    },
+    {
+      "alt": "Valves",
+      "altEmpty": false,
+      "hasAlt": true,
+      "index": 11,
+      "src": "images/products/valves/main.jpg"
+    },
+    {
+      "alt": "Spare Parts",
+      "altEmpty": false,
+      "hasAlt": true,
+      "index": 12,
+      "src": "images/products/parts/main.jpg"
+    },
+    {
+      "alt": "Chlor-Alkali Chemical Project",
+      "altEmpty": false,
+      "hasAlt": true,
+      "index": 13,
+      "src": "images/projects/chlor alkali/main.JPG"
+    },
+    {
+      "alt": "Non-Ferrous Metal Smelting",
+      "altEmpty": false,
+      "hasAlt": true,
+      "index": 14,
+      "src": "images/projects/nonferrous metal/main.jpg"
+    },
+    {
+      "alt": "Thermal Power Plant",
+      "altEmpty": false,
+      "hasAlt": true,
+      "index": 15,
+      "src": "images/projects/thermal power/main.jpg"
+    },
+    {
+      "alt": "Waste-to-Energy Plant",
+      "altEmpty": false,
+      "hasAlt": true,
+      "index": 16,
+      "src": "images/projects/waste to energy/main.jpg"
+    },
+    {
+      "alt": "Biomass Power Station",
+      "altEmpty": false,
+      "hasAlt": true,
+      "index": 17,
+      "src": "images/projects/biomass/main.jpg"
+    },
+    {
+      "alt": "Sludge Conveying System",
+      "altEmpty": false,
+      "hasAlt": true,
+      "index": 18,
+      "src": "images/projects/sludge/main.jpg"
+    },
+    {
+      "alt": "Tianyi Machinery",
+      "altEmpty": false,
+      "hasAlt": true,
+      "index": 19,
+      "src": "images/logo-160.png"
+    }
+  ],
+  "links": [
+    {
+      "href": "#",
+      "text": "Tianyi MachineryStock: 832654"
+    },
+    {
+      "href": "#about",
+      "text": "About Us"
+    },
+    {
+      "href": "#about",
+      "text": "Company Profile"
+    },
+    {
+      "href": "factory.html",
+      "text": "Factory Tour"
+    },
+    {
+      "href": "certifications.html",
+      "text": "Certifications & Honors"
+    },
+    {
+      "href": "#about",
+      "text": "Global Markets"
+    },
+    {
+      "href": "#products",
+      "text": "Products"
+    },
+    {
+      "href": "products/belt-conveyor.html",
+      "text": "Belt Conveyor"
+    },
+    {
+      "href": "products/chain-conveyor.html",
+      "text": "Chain Conveyor"
+    },
+    {
+      "href": "products/bucket-elevator.html",
+      "text": "Bucket Elevator"
+    },
+    {
+      "href": "products/screw-conveyor.html",
+      "text": "Screw Conveyor"
+    },
+    {
+      "href": "products/apron-conveyor.html",
+      "text": "Apron Conveyor"
+    },
+    {
+      "href": "products/dust-collector.html",
+      "text": "Dust Collector"
+    },
+    {
+      "href": "products/feeding-equipment.html",
+      "text": "Feeding Equipment"
+    },
+    {
+      "href": "products/crushing-equipment.html",
+      "text": "Crushing Equipment"
+    },
+    {
+      "href": "products/screening-equipment.html",
+      "text": "Screening Equipment"
+    },
+    {
+      "href": "products/valves.html",
+      "text": "Valves"
+    },
+    {
+      "href": "products/parts.html",
+      "text": "Spare Parts"
+    },
+    {
+      "href": "#projects",
+      "text": "Projects"
+    },
+    {
+      "href": "projects.html",
+      "text": "All Projects"
+    },
+    {
+      "href": "projects.html#chemical",
+      "text": "Chemical Industry"
+    },
+    {
+      "href": "projects.html#power",
+      "text": "Thermal Power"
+    },
+    {
+      "href": "projects.html#environmental",
+      "text": "Environmental Protection"
+    },
+    {
+      "href": "projects.html#mining",
+      "text": "Non-Ferrous Metal"
+    },
+    {
+      "href": "#blog",
+      "text": "Blog"
+    },
+    {
+      "href": "blog.html",
+      "text": "All Articles"
+    },
+    {
+      "href": "blog.html#maintenance",
+      "text": "Maintenance Guides"
+    },
+    {
+      "href": "blog.html#news",
+      "text": "Company News"
+    },
+    {
+      "href": "blog.html#insights",
+      "text": "Industry Insights"
+    },
+    {
+      "href": "#contact",
+      "text": "Contact Us"
+    },
+    {
+      "href": "#contact",
+      "text": "Get a Quote"
+    },
+    {
+      "href": "#products",
+      "text": "Explore Products"
+    },
+    {
+      "href": "products/belt-conveyor.html",
+      "text": "☰\n          Belt Conveyor\n        \n        \n      "
+    },
+    {
+      "href": "products/chain-conveyor.html",
+      "text": "☰\n          Chain Conveyor\n        \n        \n     "
+    },
+    {
+      "href": "products/bucket-elevator.html",
+      "text": "☰\n          Bucket Elevator\n        \n        \n    "
+    },
+    {
+      "href": "products/screw-conveyor.html",
+      "text": "☰\n          Screw Conveyor\n        \n        \n     "
+    },
+    {
+      "href": "products/apron-conveyor.html",
+      "text": "☰\n          Apron Conveyor\n        \n        \n     "
+    },
+    {
+      "href": "products/dust-collector.html",
+      "text": "☰\n          Dust Collector\n        \n        \n     "
+    },
+    {
+      "href": "products/feeding-equipment.html",
+      "text": "☰\n          Feeding Equipment\n        \n        \n  "
+    },
+    {
+      "href": "products/crushing-equipment.html",
+      "text": "☰\n          Crushing Equipment\n        \n        \n "
+    },
+    {
+      "href": "products/screening-equipment.html",
+      "text": "☰\n          Screening Equipment\n        \n        \n"
+    },
+    {
+      "href": "products/valves.html",
+      "text": "☰\n          Valves\n        \n        \n          Val"
+    },
+    {
+      "href": "products/parts.html",
+      "text": "☰\n          Spare Parts\n        \n        \n        "
+    },
+    {
+      "href": "#contact",
+      "text": "Inquire Now"
+    },
+    {
+      "href": "#",
+      "text": "Read Article →"
+    },
+    {
+      "href": "#",
+      "text": "Read Article →"
+    },
+    {
+      "href": "#",
+      "text": "Read Article →"
+    },
+    {
+      "href": "#about",
+      "text": "About Us"
+    },
+    {
+      "href": "#products",
+      "text": "Products"
+    },
+    {
+      "href": "#projects",
+      "text": "Projects"
+    },
+    {
+      "href": "#blog",
+      "text": "Blog & News"
+    },
+    {
+      "href": "#contact",
+      "text": "Contact Us"
+    },
+    {
+      "href": "products/belt-conveyor.html",
+      "text": "Belt Conveyor"
+    },
+    {
+      "href": "products/chain-conveyor.html",
+      "text": "Chain Conveyor"
+    },
+    {
+      "href": "products/bucket-elevator.html",
+      "text": "Bucket Elevator"
+    },
+    {
+      "href": "products/screw-conveyor.html",
+      "text": "Screw Conveyor"
+    },
+    {
+      "href": "products/apron-conveyor.html",
+      "text": "Apron Conveyor"
+    },
+    {
+      "href": "products/dust-collector.html",
+      "text": "Dust Collector"
+    },
+    {
+      "href": "products/feeding-equipment.html",
+      "text": "Feeding Equipment"
+    },
+    {
+      "href": "products/crushing-equipment.html",
+      "text": "Crushing Equipment"
+    },
+    {
+      "href": "products/screening-equipment.html",
+      "text": "Screening Equipment"
+    },
+    {
+      "href": "products/valves.html",
+      "text": "Valves"
+    },
+    {
+      "href": "products/parts.html",
+      "text": "Spare Parts"
+    },
+    {
+      "href": "https://wa.me/8613872451240",
+      "text": ""
+    }
+  ],
+  "metaDesc": "Hubei Tianyi Machinery Co., Ltd. (Stock Code: 832654) is a leading manufacturer of bulk material handling equipment — belt conveyors, chain conveyors, bucket elevators, screw conveyors and dust collectors. National high-tech enterprise with 100+ patents, serving 50+ countries.",
+  "title": "Hubei Tianyi Machinery | Professional Bulk Material Conveyor Manufacturer",
+  "totalImages": 20,
+  "totalLinks": 64
+}

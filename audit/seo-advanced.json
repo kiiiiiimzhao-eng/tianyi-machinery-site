@@ -1,0 +1,51 @@
+{
+  "canonical": "https://www.tianyi-machinery.com/",
+  "hreflang": [],
+  "issues": [
+    {
+      "href": "#",
+      "issue": "placeholder_link",
+      "text": "Tianyi MachineryStock: 832654"
+    },
+    {
+      "href": "#",
+      "issue": "placeholder_link",
+      "text": "Read Article →"
+    },
+    {
+      "href": "#",
+      "issue": "placeholder_link",
+      "text": "Read Article →"
+    },
+    {
+      "href": "#",
+      "issue": "placeholder_link",
+      "text": "Read Article →"
+    }
+  ],
+  "ogTags": [
+    {
+      "content": "Tianyi Machinery — Industrial Conveyor System Manufacturer",
+      "property": "og:title"
+    },
+    {
+      "content": "Professional bulk material handling equipment: belt conveyors, chain conveyors, bucket elevators, screw conveyors. 18+ years experience, 100+ patents, exported to 50+ countries.",
+      "property": "og:description"
+    },
+    {
+      "content": "website",
+      "property": "og:type"
+    },
+    {
+      "content": "https://www.tianyi-machinery.com/",
+      "property": "og:url"
+    },
+    {
+      "content": "en_US",
+      "property": "og:locale"
+    }
+  ],
+  "placeholderLinks": 4,
+  "robots": "index, follow",
+  "viewport": "width=device-width, initial-scale=1.0"
+}
