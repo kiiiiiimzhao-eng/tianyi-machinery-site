@@ -1,0 +1,15 @@
+# Cloudflare Pages 规范域名重定向（301）
+# 所有变体统一跳转到主域名 tianyimachine.com（apex）
+# 说明：_redirects 仅对“已添加到本 Pages 项目”的域名生效；
+#       旧域名 tianyi-machinery.com 若未添加，请在 Cloudflare 控制台用
+#       Bulk Redirects（批量重定向）做跨域 301。
+
+# www -> apex（同一项目，必配）
+https://www.tianyimachine.com/* https://tianyimachine.com/:splat 301
+http://www.tianyimachine.com/* https://tianyimachine.com/:splat 301
+
+# 旧域名 -> 新域名（若已将旧域名添加到本项目则生效）
+https://www.tianyi-machinery.com/* https://tianyimachine.com/:splat 301
+http://www.tianyi-machinery.com/* https://tianyimachine.com/:splat 301
+https://tianyi-machinery.com/* https://tianyimachine.com/:splat 301
+http://tianyi-machinery.com/* https://tianyimachine.com/:splat 301

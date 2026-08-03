@@ -3,7 +3,7 @@
   "name": "tianyi-machinery-site",
   "compatibility_date": "2026-07-17",
   "assets": {
-    "directory": "./dist",
+    "directory": ".",
     "not_found_handling": "404-page"
   }
 }

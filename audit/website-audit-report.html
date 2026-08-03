@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>天宜机械独立站 · 网站体检与优化建议</title>
+<style>
+  :root{
+    --primary:#1a365d; --primary-light:#2c5282; --accent:#dd6b20;
+    --text:#1a202c; --muted:#4a5568; --line:#e2e8f0; --bg:#f7fafc;
+    --red:#c53030; --amber:#b7791f; --green:#2f855a; --redbg:#fff5f5; --amberbg:#fffaf0; --greenbg:#f0fff4;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei',sans-serif;color:var(--text);line-height:1.7;background:#fff;}
+  .wrap{max-width:1000px;margin:0 auto;padding:48px 24px 80px;}
+  h1{font-size:30px;font-weight:800;color:var(--primary);letter-spacing:-.5px;}
+  h2{font-size:22px;font-weight:700;color:var(--primary);margin:44px 0 16px;padding-bottom:8px;border-bottom:2px solid var(--line);}
+  h3{font-size:17px;font-weight:700;margin:22px 0 8px;}
+  p{color:var(--muted);margin-bottom:12px;}
+  .sub{color:var(--muted);font-size:15px;margin-top:8px;}
+  .meta{font-size:13px;color:#a0aec0;margin-top:6px;}
+  .banner{border-radius:14px;padding:28px 32px;background:linear-gradient(135deg,var(--primary),var(--primary-light));color:#fff;margin-bottom:8px;}
+  .banner h1{color:#fff;}
+  .banner p{color:rgba(255,255,255,.85);margin:0;}
+  .verdict{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:28px 0 8px;}
+  .vcard{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:18px;text-align:center;}
+  .vcard .n{font-size:30px;font-weight:800;color:var(--primary);}
+  .vcard .l{font-size:12px;color:var(--muted);margin-top:4px;}
+  .vcard.warn .n{color:var(--red);}
+  .vcard.ok .n{color:var(--green);}
+  .card{border:1px solid var(--line);border-radius:12px;padding:20px 22px;margin-bottom:16px;background:#fff;}
+  .card.crit{border-left:5px solid var(--red);background:var(--redbg);}
+  .card.imp{border-left:5px solid var(--amber);background:var(--amberbg);}
+  .card.opt{border-left:5px solid var(--primary-light);}
+  .card.ok{border-left:5px solid var(--green);background:var(--greenbg);}
+  .tag{display:inline-block;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px;margin-right:8px;}
+  .tag.crit{background:var(--red);color:#fff;}
+  .tag.imp{background:var(--amber);color:#fff;}
+  .tag.opt{background:var(--primary-light);color:#fff;}
+  .tag.ok{background:var(--green);color:#fff;}
+  .card h3{margin-top:0;}
+  code{background:#edf2f7;padding:2px 6px;border-radius:5px;font-size:13px;font-family:Consolas,monospace;color:#2d3748;}
+  ul{margin:8px 0 8px 20px;color:var(--muted);}
+  li{margin-bottom:6px;}
+  .fix{background:#fff;border:1px dashed var(--line);border-radius:8px;padding:10px 14px;margin-top:10px;font-size:14px;}
+  .fix b{color:var(--primary);}
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px;}
+  th,td{border:1px solid var(--line);padding:10px 12px;text-align:left;}
+  th{background:var(--bg);color:var(--text);font-weight:600;}
+  td.p{color:var(--red);font-weight:600;}
+  td.m{color:var(--amber);font-weight:600;}
+  td.l{color:var(--green);font-weight:600;}
+  .foot{margin-top:40px;font-size:12px;color:#a0aec0;text-align:center;}
+  a{color:var(--accent);text-decoration:none;}
+</style>
+</head>
+<body>
+<div class="banner">
+  <h1>天宜机械独立站 · 体检报告</h1>
+  <p>Hubei Tianyi Machinery (Stock 832654) 官网技术与 SEO 合理性评估</p>
+  <div class="meta">检查时间：2026-08-03 ｜ 范围：index / products / blog / factory / certifications / 部署配置 / SEO</div>
+</div>
+
+<div class="wrap">
+
+  <div class="verdict">
+    <div class="vcard warn"><div class="n">5</div><div class="l">致命/高危问题</div></div>
+    <div class="vcard warn"><div class="n">4</div><div class="l">重要问题</div></div>
+    <div class="vcard ok"><div class="n">8/10</div><div class="l">SEO 基础分</div></div>
+    <div class="vcard"><div class="n">良</div><div class="l">整体评价</div></div>
+  </div>
+
+  <div class="card ok">
+    <span class="tag ok">结论</span>
+    <h3>网站整体“合理”，但处于“半成品上线”状态</h3>
+    <p>站点的<b>视觉设计、SEO 元信息、结构化数据（JSON-LD）、sitemap、robots、移动端适配</b>都做得相当专业，远超一般外贸站平均水平，说明有清晰的模板和规范。但存在若干“上线前没收尾”的问题：部署配置指向了不存在的目录、多处引用了尚未创建的页面（projects.html、博客文章页）、联系表单仍是占位符、以及一处文件尾部损坏。这些问题会直接影响<b>可用性、收录与转化</b>，需要优先处理。本报告按“致命 → 重要 → 优化”分级给出。</p>
+  </div>
+
+  <h2>一、致命 / 高危问题（影响上线与转化，需立即处理）</h2>
+
+  <div class="card crit">
+    <span class="tag crit">致命</span>
+    <h3>1. 部署配置错误：<code>wrangler.jsonc</code> 指向不存在的 <code>./dist</code></h3>
+    <p>配置文件 <code>wrangler.jsonc</code> 中 <code>assets.directory: "./dist"</code>，但项目根目录只有源 HTML 文件，<b>根本没有 <code>dist/</code> 目录，也没有任何构建脚本（package.json 不存在）</b>。执行 <code>wrangler deploy</code> / <code>wrangler dev</code> 会部署一个空站点或直接报错，线上将白屏。</p>
+    <div class="fix"><b>修复建议：</b>二选一 —— ① 将 <code>"directory": "./dist"</code> 改为 <code>"directory": "."</code>（直接用根目录作为静态资源目录）；② 或在仓库中加入构建步骤，把 HTML 输出到 <code>dist/</code>。当前纯静态站点，方案①最省事。</div>
+  </div>
+
+  <div class="card crit">
+    <span class="tag crit">致命</span>
+    <h3>2. 死链：导航引用的 <code>projects.html</code> 根本不存在</h3>
+    <p>首页顶部导航 “Projects” 下拉菜单（All Projects / Chemical / Power / Environmental / Mining）全部指向 <code>projects.html</code>，<code>seo-advanced.json</code> 也记录了这些链接，但项目中<b>没有任何 projects.html 文件</b>（Glob 确认）。点击即 404。首页自身虽有 <code>#projects</code> 锚点区块，但导航走的是独立页面逻辑。</p>
+    <div class="fix"><b>修复建议：</b>两种思路 —— ① 创建 <code>projects.html</code> 项目案例汇总页（推荐，能集中展示案例、利于 SEO）；② 若暂不做，先把下拉链接改为 <code>#projects</code> 锚点，避免 404。（注意 404 也会拉低 SEO 信任度）</div>
+  </div>
+
+  <div class="card crit">
+    <span class="tag crit">致命</span>
+    <h3>3. 死链：博客文章详情页缺失（<code>blog/</code> 目录为空）</h3>
+    <p>首页 3 篇博客卡片的 “Read Article →” 均指向 <code>href="#"</code>（占位）；<code>blog.html</code> 中 “Scraper Conveyor Maintenance Guide” 指向 <code>blog/scraper-conveyor-maintenance.html</code>，但 <b>blog/ 目录为空</b>，其余博客卡片也都是 <code>href="#"</code>。用户点击文章无法阅读，转化路径断裂。同时审计 JSON 已记录 4 处 placeholder_link。</p>
+    <div class="fix"><b>修复建议：</b>至少先补齐 1–2 篇真实文章页（如已写好的维护指南），其余暂未完成的把 <code>href="#"</code> 改为 <code>blog.html</code> 或加 “即将发布” 状态；不要长期保留指向 <code>#</code> 的链接。</div>
+  </div>
+
+  <div class="card crit">
+    <span class="tag crit">致命</span>
+    <h3>4. 联系表单未配置：Formspree 占位 ID 无法提交</h3>
+    <p>首页表单 <code>action="https://formspree.io/f/your-form-id"</code> 仍是占位符，用户提交询盘会失败/报错。好在 <code>_headers</code> 已放行 <code>connect-src 'self' https://formspree.io</code>，CSP 层面没问题。</p>
+    <div class="fix"><b>修复建议：</b>在 Formspree 注册并替换为你真实的表单 ID（形如 <code>f/abcdwxyz</code>），并做一次真实提交测试；同时确认收件邮箱为 <code>kim@tianyi-machinery.com</code>。</div>
+  </div>
+
+  <div class="card crit">
+    <span class="tag crit">致命</span>
+    <h3>5. <code>index.html</code> 文件尾部损坏（本次已修复 ✓）</h3>
+    <p>原始文件在第 1045 行正常结束 <code>&lt;/html&gt;</code> 后，又多出游离片段：<code>'load', reveal); } })(); &lt;/script&gt; &lt;/body&gt;&lt;/html&gt;</code>（1046–1052 行），属于明显的复制/合并残留，虽浏览器会忽略，但属于非法 HTML、且暴露编辑痕迹。已在本次检查中清理。</p>
+    <div class="fix"><b>状态：</b>已修正为单一段 <code>&lt;/body&gt;&lt;/html&gt;</code>。建议后续所有页面做一次“尾部完整性”扫描。</div>
+  </div>
+
+  <h2>二、重要问题（影响专业度、SEO 一致性与收录）</h2>
+
+  <div class="card imp">
+    <span class="tag imp">重要</span>
+    <h3>1. 域名 / 规范链接（canonical）不一致</h3>
+    <p>全站 canonical 出现两种写法：<code>index.html</code> 及多数产品页用 <code>https://tianyimachine.com</code>，而 <code>valves.html</code> 用 <code>https://www.tianyi-machinery.com</code>（带 www + 连字符）；历史审计 <code>seo-advanced.json</code> 记录部署版 canonical 甚至为 <code>www.tianyi-machinery.com</code>。联系邮箱 <code>kim@tianyi-machinery.com</code> 也与站点域名不同源。多个域名/写法会让搜索引擎判定为重复内容、分散权重。</p>
+    <div class="fix"><b>修复建议：</b>① 确定唯一主域名（建议用已写入 sitemap/robots 的 <code>tianyimachine.com</code>）；② 全站 canonical、OG url、Schema url 统一为该域名；③ 在 DNS/Cloudflare 做 301，把 <code>www.tianyi-machinery.com</code> 等变体跳转到主域名；④ 商务邮箱域名尽量与官网一致。</div>
+  </div>
+
+  <div class="card imp">
+    <span class="tag imp">重要</span>
+    <h3>2. 自定义 404 页面缺失</h3>
+    <p><code>wrangler.jsonc</code> 设 <code>not_found_handling: "404-page"</code>，但项目内<b>没有 404.html</b>。当用户访问错误路径（如上面的死链）时，无法展示品牌化 404 与返回首页入口，体验差且不利于留住流量。</p>
+    <div class="fix"><b>修复建议：</b>新增 <code>404.html</code>（沿用站点头部/页脚样式，提供搜索框与返回首页按钮），与现有模板风格保持一致。</div>
+  </div>
+
+  <div class="card imp">
+    <span class="tag imp">重要</span>
+    <h3>3. <code>certifications.html</code> 是“孤立页面”，风格不统一</h3>
+    <p>该页直接以 <code>&lt;body&gt;&lt;header class="subpage-header"&gt;</code> 开头，<b>没有共享的顶部导航，也没有页脚</b>，样式也明显简略（内联样式、系统字体、无品牌色变量），与其他页面（统一 header/footer/配色）视觉割裂，且缺少 OG 标签与返回导航，不利内部链接与品牌一致性。</p>
+    <div class="fix"><b>修复建议：</b>套用与其他子页一致的模板（统一 header 导航 + footer + 配色变量），至少补上“返回首页/查看产品”的导航与页脚。</div>
+  </div>
+
+  <div class="card imp">
+    <span class="tag imp">重要</span>
+    <h3>4. 4 处占位链接（<code>href="#"</code>）</h3>
+    <p>Logo（<code>href="#"</code>）、首页 3 个 “Read Article →”（<code>href="#"</code>）均为空锚点。点击无反应或跳到页顶，既损体验也浪费内部链接权重。</p>
+    <div class="fix"><b>修复建议：</b>Logo 改为 <code>href="/"</code> 或 <code>href="index.html"</code>；文章链接在补全文章前先指向 <code>blog.html</code>。</div>
+  </div>
+
+  <h2>三、优化空间（提升速度、转化与搜索表现）</h2>
+
+  <div class="card opt">
+    <span class="tag opt">优化</span>
+    <h3>A. 图片性能：300+ 张高分辨率 JPG 未压缩/未转 WebP</h3>
+    <p>仅 <code>images/products/belt-conveyor/</code> 就有 40+ 张 JPG，全站产品/项目/工厂图共 300+ 张，均为原图直出。未压缩、未使用 WebP/AVIF，会显著拖慢<b>首屏 LCP 与整体加载</b>，尤其移动端海外用户（带宽受限）。</p>
+    <ul>
+      <li>批量压缩（目标单图 &lt; 150–200KB，缩略图 &lt; 50KB）；</li>
+      <li>转 <code>.webp</code>/<code>.avif</code>，用 <code>&lt;picture&gt;</code> 渐进增强；</li>
+      <li>给 <code>&lt;img&gt;</code> 加 <code>width</code>/<code>height</code> 防布局抖动（CLS）；</li>
+      <li>首屏下图片加 <code>loading="lazy"</code>。</li>
+    </ul>
+  </div>
+
+  <div class="card opt">
+    <span class="tag opt">优化</span>
+    <h3>B. 结构化数据可进一步增强</h3>
+    <p>已有 Organization / Product / WebPage 三类 JSON-LD，基础很好。但 Product 缺 <code>price</code>、<code>aggregateRating</code>、<code>review</code>（B2B 可接受无价，但可补 <code>brand</code> 一致性）；全站缺 <code>BreadcrumbList</code>。</p>
+    <ul>
+      <li>为子页补充 BreadcrumbList（Home › Products › Belt Conveyor）；</li>
+      <li>Products 可加 <code>additionalProperty</code>（产能、适用物料等参数），利于富结果展示。</li>
+    </ul>
+  </div>
+
+  <div class="card opt">
+    <span class="tag opt">优化</span>
+    <h3>C. 内部链接与内容孤岛</h3>
+    <p>Projects、Blog 文章页缺失，使“案例/资讯”两块内容成为孤岛；首页 Projects 卡片点击无详情。建议补全 <code>projects.html</code> 与核心文章页，并在产品页/案例页之间做交叉链接（如产品页底部“相关案例”、案例页“所用设备”）。</p>
+  </div>
+
+  <div class="card opt">
+    <span class="tag opt">优化</span>
+    <h3>D. 产品页内容深度与转化</h3>
+    <p>产品页以图文+概述为主，可增强转化与专业度：</p>
+    <ul>
+      <li>加<b>规格参数表</b>（产能、功率、尺寸、材质、适用物料）；</li>
+      <li>加<b>应用案例 / 客户行业</b> 模块与图片；</li>
+      <li>加 <b>FAQ</b> 折叠块（覆盖常见选型/安装/维护问题，利于长尾词）；</li>
+      <li>加 <b>资料下载</b>（Brochure PDF）与醒目的询盘 CTA。</li>
+    </ul>
+  </div>
+
+  <div class="card opt">
+    <span class="tag opt">优化</span>
+    <h3>E. 缓存策略与性能头</h3>
+    <p><code>_headers</code> 已设 CSP / X-Frame-Options / nosniff 等安全头（做得不错），但<b>未设 <code>Cache-Control</code></b>。静态资源（CSS/图片/JS）可设长缓存提升回访速度。</p>
+    <ul>
+      <li>对带哈希/长期不变资源设 <code>Cache-Control: public, max-age=31536000, immutable</code>；</li>
+      <li>HTML 设较短缓存或 <code>no-cache</code> 以便更新即时生效。</li>
+    </ul>
+  </div>
+
+  <div class="card opt">
+    <span class="tag opt">优化</span>
+    <h3>F. 可访问性（a11y）与国际化的微调</h3>
+    <ul>
+      <li>装饰性 SVG（产品/项目图标）可加 <code>aria-hidden="true"</code>，导航图标加 <code>title</code>；</li>
+      <li>当前全站纯英文面向出口合理；若目标多语言市场（西语/俄语/阿语），建议规划 <code>hreflang</code> 与多语言版本（现 <code>hreflang</code> 为空）。</li>
+    </ul>
+  </div>
+
+  <div class="card ok">
+    <span class="tag ok">加分项</span>
+    <h3>已经做得很好的部分（请保持）</h3>
+    <ul>
+      <li><b>SEO 基础齐全</b>：每页 title / description / keywords / canonical / OG / Twitter / JSON-LD 都有；</li>
+      <li><b>robots.txt + sitemap.xml</b> 规范，sitemap 含 14 个核心页面与优先级；</li>
+      <li><b>移动端适配</b>：响应式栅格 + 汉堡菜单 + 下拉在移动端折叠；</li>
+      <li><b>安全头</b>：CSP / X-Frame-Options / nosniff / Referrer-Policy / Permissions-Policy 已配置；</li>
+      <li><b>图片 alt 文本 100% 覆盖</b>（审计 JSON 确认 20 张图全部有 alt）；</li>
+      <li><b>单页 H1</b> 结构正确，无重复标题层级问题。</li>
+    </ul>
+  </div>
+
+  <h2>四、优先级行动清单</h2>
+  <table>
+    <tr><th>优先级</th><th>问题</th><th>类型</th><th>预计工作量</th></tr>
+    <tr><td class="p">P0</td><td>wrangler 部署目录 ./dist 不存在 → 改 "." 或加构建</td><td>致命</td><td>5 分钟</td></tr>
+    <tr><td class="p">P0</td><td>projects.html 死链（建页或改 #projects）</td><td>致命</td><td>0.5–1 天</td></tr>
+    <tr><td class="p">P0</td><td>博客文章页缺失 / 占位链接</td><td>致命</td><td>0.5–2 天</td></tr>
+    <tr><td class="p">P0</td><td>Formspree 占位 ID 替换 + 测试</td><td>致命</td><td>15 分钟</td></tr>
+    <tr><td class="m">P1</td><td>统一 canonical / 主域名 + 301 跳转</td><td>重要</td><td>1 小时</td></tr>
+    <tr><td class="m">P1</td><td>新增 404.html</td><td>重要</td><td>1 小时</td></tr>
+    <tr><td class="m">P1</td><td>certifications.html 套用统一模板</td><td>重要</td><td>1 小时</td></tr>
+    <tr><td class="m">P1</td><td>清理 4 处 href="#" 占位链接</td><td>重要</td><td>10 分钟</td></tr>
+    <tr><td class="l">P2</td><td>图片压缩 + WebP + 懒加载</td><td>优化</td><td>1–2 天</td></tr>
+    <tr><td class="l">P2</td><td>产品页加规格表/FAQ/案例/CTA</td><td>优化</td><td>2–3 天</td></tr>
+    <tr><td class="l">P2</td><td>加 Cache-Control、BreadcrumbList</td><td>优化</td><td>1 小时</td></tr>
+  </table>
+
+  <h2>五、结论</h2>
+  <p>网站<b>“框架合理、上限很高”</b>——设计语言统一、SEO 与结构化数据专业，说明工程规范到位。当前短板集中在<b>“上线收尾”</b>：部署配置、缺失页面、未配置表单，以及一处文件损坏（已修）。把 P0 四项解决后，站点即可安全上线并正常收录；P1/P2 可在上线后迭代。如需，我可以继续帮你：① 直接修正 wrangler 配置与占位链接；② 生成 <code>projects.html</code> 与 <code>404.html</code> 模板；③ 批量为图片生成压缩/WebP 方案。</p>
+
+  <div class="foot">本报告由 WorkBuddy 自动体检生成 · 数据来源：站点源码 + audit/ 目录 SEO 审计 JSON · 仅含静态分析，未做线上抓取</div>
+</div>
+</body>
+</html>
