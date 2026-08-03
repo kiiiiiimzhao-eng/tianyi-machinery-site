@@ -72,6 +72,7 @@ def main():
     ap.add_argument("--root", default=None, help="项目根目录（默认脚本上两级）")
     ap.add_argument("--quality", type=int, default=80)
     ap.add_argument("--apply", action="store_true", help="真正写入（默认仅预览）")
+    ap.add_argument("--dry-run", action="store_true", help="仅预览，不写入（默认行为，也可不加任何参数）")
     ap.add_argument("--no-html", action="store_true", help="只生成 webp，不改写 HTML")
     ap.add_argument("--css", action="store_true", help="同时替换 CSS 背景图 url（无回退，慎用）")
     args = ap.parse_args()
