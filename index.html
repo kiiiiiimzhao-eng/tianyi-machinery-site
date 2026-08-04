@@ -240,24 +240,12 @@ h4 { font-size: 16px; font-weight: 600; }
 }
 .product-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-color: var(--primary-light); }
 .product-card-img {
-  height: 240px; background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
-  position: relative; overflow: hidden;
+  height: 240px; background: #fff; position: relative; overflow: hidden;
 }
-.product-card-img picture {
-  display: block; width: 100%; height: 100%;
-}
-.product-card-img img {
-  width: 100%; height: 100%; object-fit: cover; object-position: center;
-  display: block;
-}
-.product-card-img .icon {
-  font-size: 64px; opacity: 0; color: #fff; position: absolute;
-  top: 50%; left: 50%; transform: translate(-50%, -50%);
-}
-.product-card-img .label {
-  position: absolute; z-index: 2; color: #fff; font-size: 18px; font-weight: 700;
-  top: 16px; left: 16px; text-shadow: 0 2px 8px rgba(0,0,0,0.5);
-}
+.product-card-img picture { display: block; width: 100%; height: 100%; }
+.product-card-img img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
+.product-card-img .icon { display: none; }
+.product-card-img .label { display: none; }
 .product-card-body { padding: 20px; }
 .product-card-body h4 { margin-bottom: 8px; }
 .product-card-body p { font-size: 13px; color: var(--text-muted); line-height: 1.6; }
@@ -271,9 +259,11 @@ h4 { font-size: 16px; font-weight: 600; }
 .project-card:hover { box-shadow: var(--shadow); }
 .project-card-img {
   height: 200px; background: var(--bg-alt);
-  display: flex; align-items: center; justify-content: center; position: relative;
+  position: relative; overflow: hidden;
 }
-.project-card-img .icon { font-size: 48px; color: var(--primary); opacity: 0.2; }
+.project-card-img picture { display: block; width: 100%; height: 100%; }
+.project-card-img img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
+.project-card-img .icon { font-size: 48px; color: var(--primary); opacity: 0; }
 .project-card-body { padding: 24px; }
 .project-card-body h4 { margin-bottom: 8px; }
 .project-card-body p { font-size: 13px; color: var(--text-muted); line-height: 1.6; }
@@ -366,20 +356,10 @@ h4 { font-size: 16px; font-weight: 600; }
 .logo-img.loaded ~ .logo-text { display: none; }
 .logo-text { display: flex; flex-direction: column; justify-content: center; line-height: 1.2; }
 
-/* Image backgrounds — real image overrides gradient as fallback */
+/* Card image defaults */
 .product-card-img, .project-card-img, .blog-card-img {
   background-size: cover; background-position: center; background-repeat: no-repeat;
 }
-.product-card-img .icon, .product-card-img .label,
-.project-card-img .icon,
-.blog-card-img .icon {
-  transition: opacity 0.3s ease;
-}
-/* When a real image is loaded (via inline style), hide placeholder overlay */
-.product-card-img.has-image .icon,
-.product-card-img.has-image .label { opacity: 0; }
-.project-card-img.has-image .icon { opacity: 0; }
-.blog-card-img.has-image .icon { opacity: 0; }
 
 /* Hero banner image support */
 .hero.has-banner { background-blend-mode: overlay; }
@@ -606,10 +586,10 @@ h4 { font-size: 16px; font-weight: 600; }
     </p>
     <div class="product-grid" style="margin-top: 40px;">
       <a href="products/belt-conveyor.html" class="product-card">
-        <div class="product-card-img" style="background: linear-gradient(135deg, #1a365d, #2c5282);">
+        <div class="product-card-img">
           <picture>
-  <source srcset="images/products/belt-conveyor/1.webp" type="image/webp">
-  <img src="images/products/belt-conveyor/1.jpg" alt="Belt Conveyor"  onerror="this.style.display='none'">
+  <source srcset="images/products/belt-conveyor/card.webp" type="image/webp">
+  <img src="images/products/belt-conveyor/card.jpg" alt="Belt Conveyor"  onerror="this.style.display='none'">
 </picture>
           <div class="icon">&#9776;</div>
           <div class="label">Belt Conveyor</div>
@@ -620,10 +600,10 @@ h4 { font-size: 16px; font-weight: 600; }
         </div>
       </a>
       <a href="products/chain-conveyor.html" class="product-card">
-        <div class="product-card-img" style="background: linear-gradient(135deg, #744210, #975a16);">
+        <div class="product-card-img"> #744210, #975a16);">
           <picture>
-  <source srcset="images/products/chain-conveyor/1.webp" type="image/webp">
-  <img src="images/products/chain-conveyor/1.jpg" alt="Chain Conveyor"  onerror="this.style.display='none'">
+  <source srcset="images/products/chain-conveyor/card.webp" type="image/webp">
+  <img src="images/products/chain-conveyor/card.jpg" alt="Chain Conveyor"  onerror="this.style.display='none'">
 </picture>
           <div class="icon">&#9776;</div>
           <div class="label">Chain Conveyor</div>
@@ -634,10 +614,10 @@ h4 { font-size: 16px; font-weight: 600; }
         </div>
       </a>
       <a href="products/bucket-elevator.html" class="product-card">
-        <div class="product-card-img" style="background: linear-gradient(135deg, #22543d, #276749);">
+        <div class="product-card-img"> #22543d, #276749);">
           <picture>
-  <source srcset="images/products/bucket-elevator/1.webp" type="image/webp">
-  <img src="images/products/bucket-elevator/1.jpg" alt="Bucket Elevator"  onerror="this.style.display='none'">
+  <source srcset="images/products/bucket-elevator/card.webp" type="image/webp">
+  <img src="images/products/bucket-elevator/card.jpg" alt="Bucket Elevator"  onerror="this.style.display='none'">
 </picture>
           <div class="icon">&#9776;</div>
           <div class="label">Bucket Elevator</div>
@@ -648,10 +628,10 @@ h4 { font-size: 16px; font-weight: 600; }
         </div>
       </a>
       <a href="products/screw-conveyor.html" class="product-card">
-        <div class="product-card-img" style="background: linear-gradient(135deg, #9b2c2c, #c53030);">
+        <div class="product-card-img"> #9b2c2c, #c53030);">
           <picture>
-  <source srcset="images/products/screw-conveyor/1.webp" type="image/webp">
-  <img src="images/products/screw-conveyor/1.jpg" alt="Screw Conveyor"  onerror="this.style.display='none'">
+  <source srcset="images/products/screw-conveyor/card.webp" type="image/webp">
+  <img src="images/products/screw-conveyor/card.jpg" alt="Screw Conveyor"  onerror="this.style.display='none'">
 </picture>
           <div class="icon">&#9776;</div>
           <div class="label">Screw Conveyor</div>
@@ -662,10 +642,10 @@ h4 { font-size: 16px; font-weight: 600; }
         </div>
       </a>
       <a href="products/apron-conveyor.html" class="product-card">
-        <div class="product-card-img" style="background: linear-gradient(135deg, #4a5568, #2d3748);">
+        <div class="product-card-img"> #4a5568, #2d3748);">
           <picture>
-  <source srcset="images/products/apron-conveyor/1.webp" type="image/webp">
-  <img src="images/products/apron-conveyor/1.jpg" alt="Apron Conveyor"  onerror="this.style.display='none'">
+  <source srcset="images/products/apron-conveyor/card.webp" type="image/webp">
+  <img src="images/products/apron-conveyor/card.jpg" alt="Apron Conveyor"  onerror="this.style.display='none'">
 </picture>
           <div class="icon">&#9776;</div>
           <div class="label">Apron Conveyor</div>
@@ -676,10 +656,10 @@ h4 { font-size: 16px; font-weight: 600; }
         </div>
       </a>
       <a href="products/dust-collector.html" class="product-card">
-        <div class="product-card-img" style="background: linear-gradient(135deg, #2a4365, #3182ce);">
+        <div class="product-card-img"> #2a4365, #3182ce);">
           <picture>
-  <source srcset="images/products/dust-collector/1.webp" type="image/webp">
-  <img src="images/products/dust-collector/1.jpg" alt="Dust Collector"  onerror="this.style.display='none'">
+  <source srcset="images/products/dust-collector/card.webp" type="image/webp">
+  <img src="images/products/dust-collector/card.jpg" alt="Dust Collector"  onerror="this.style.display='none'">
 </picture>
           <div class="icon">&#9776;</div>
           <div class="label">Dust Collector</div>
@@ -690,10 +670,10 @@ h4 { font-size: 16px; font-weight: 600; }
         </div>
       </a>
       <a href="products/feeding-equipment.html" class="product-card">
-        <div class="product-card-img" style="background: linear-gradient(135deg, #285e61, #319795);">
+        <div class="product-card-img"> #285e61, #319795);">
           <picture>
-  <source srcset="images/products/feeding-equipment/1.webp" type="image/webp">
-  <img src="images/products/feeding-equipment/1.jpg" alt="Feeding Equipment"  onerror="this.style.display='none'">
+  <source srcset="images/products/feeding-equipment/card.webp" type="image/webp">
+  <img src="images/products/feeding-equipment/card.jpg" alt="Feeding Equipment"  onerror="this.style.display='none'">
 </picture>
           <div class="icon">&#9776;</div>
           <div class="label">Feeding Equipment</div>
@@ -704,10 +684,10 @@ h4 { font-size: 16px; font-weight: 600; }
         </div>
       </a>
       <a href="products/crushing-equipment.html" class="product-card">
-        <div class="product-card-img" style="background: linear-gradient(135deg, #6b46c1, #805ad5);">
+        <div class="product-card-img"> #6b46c1, #805ad5);">
           <picture>
-  <source srcset="images/products/crushing-equipment/1.webp" type="image/webp">
-  <img src="images/products/crushing-equipment/1.jpg" alt="Crushing Equipment"  onerror="this.style.display='none'">
+  <source srcset="images/products/crushing-equipment/card.webp" type="image/webp">
+  <img src="images/products/crushing-equipment/card.jpg" alt="Crushing Equipment"  onerror="this.style.display='none'">
 </picture>
           <div class="icon">&#9776;</div>
           <div class="label">Crushing Equipment</div>
@@ -718,10 +698,10 @@ h4 { font-size: 16px; font-weight: 600; }
         </div>
       </a>
       <a href="products/screening-equipment.html" class="product-card">
-        <div class="product-card-img" style="background: linear-gradient(135deg, #c05621, #dd6b20);">
+        <div class="product-card-img"> #c05621, #dd6b20);">
           <picture>
-  <source srcset="images/products/screening-equipment/1.webp" type="image/webp">
-  <img src="images/products/screening-equipment/1.jpg" alt="Screening Equipment"  onerror="this.style.display='none'">
+  <source srcset="images/products/screening-equipment/card.webp" type="image/webp">
+  <img src="images/products/screening-equipment/card.jpg" alt="Screening Equipment"  onerror="this.style.display='none'">
 </picture>
           <div class="icon">&#9776;</div>
           <div class="label">Screening Equipment</div>
@@ -732,10 +712,10 @@ h4 { font-size: 16px; font-weight: 600; }
         </div>
       </a>
       <a href="products/valves.html" class="product-card">
-        <div class="product-card-img" style="background: linear-gradient(135deg, #553c9a, #6b46c1);">
+        <div class="product-card-img"> #553c9a, #6b46c1);">
           <picture>
-  <source srcset="images/products/valves/main.webp" type="image/webp">
-  <img src="images/products/valves/main.jpg" alt="Valves"  onerror="this.style.display='none'">
+  <source srcset="images/products/valves/card.webp" type="image/webp">
+  <img src="images/products/valves/card.jpg" alt="Valves"  onerror="this.style.display='none'">
 </picture>
           <div class="icon">&#9776;</div>
           <div class="label">Valves</div>
@@ -746,10 +726,10 @@ h4 { font-size: 16px; font-weight: 600; }
         </div>
       </a>
       <a href="products/parts.html" class="product-card">
-        <div class="product-card-img" style="background: linear-gradient(135deg, #2d3748, #4a5568);">
+        <div class="product-card-img"> #2d3748, #4a5568);">
           <picture>
-  <source srcset="images/products/parts/main.webp" type="image/webp">
-  <img src="images/products/parts/main.jpg" alt="Spare Parts"  onerror="this.style.display='none'">
+  <source srcset="images/products/parts/card.webp" type="image/webp">
+  <img src="images/products/parts/card.jpg" alt="Spare Parts"  onerror="this.style.display='none'">
 </picture>
           <div class="icon">&#9776;</div>
           <div class="label">Spare Parts</div>
