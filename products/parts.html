@@ -144,6 +144,23 @@ h3 { font-size:20px; font-weight:600; color:var(--primary); }
   .nav-toggle { display:block; }
 }
 </style>
+<!-- ===== 网站统计 =====
+     使用方法：把下面 GA4_ID 的值改成你的 GA4 衡量ID（形如 G-ABCD123XYZ），保存推送即可生效。
+     未填写时脚本自动不加载，不影响页面速度。 -->
+<script>
+(function () {
+  var GA4_ID = "";                       // <-- 在这里填入 GA4 衡量ID
+  if (!GA4_ID) return;
+  var s = document.createElement("script");
+  s.async = true;
+  s.src = "https://www.googletagmanager.com/gtag/js?id=" + GA4_ID;
+  document.head.appendChild(s);
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function () { dataLayer.push(arguments); };
+  gtag("js", new Date());
+  gtag("config", GA4_ID);
+})();
+</script>
 </head>
 <body>
 
