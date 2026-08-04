@@ -73,54 +73,46 @@
     </table>
 
     <div class="box danger">
-      <b>为什么这是致命的？</b><br>
-      你网站里所有告诉 Google「我的正式网址是什么」的地方，填的<b>全都是不带 www 的版本</b>：
-      <ul style="margin-top:8px">
-        <li><code>canonical</code> 标签 → <code>https://tianyimachine.com/</code></li>
-        <li><code>sitemap.xml</code> 里 23 条 URL → 全部是 <code>https://tianyimachine.com/...</code></li>
-        <li><code>robots.txt</code> 指向的 sitemap 地址 → 同上</li>
-        <li>Open Graph 分享链接 → 同上</li>
-      </ul>
-      Google 按 sitemap 去抓这些网址，<b>每一条都解析失败</b>。
-      对搜索引擎来说，你这个网站等于<span class="hl">不存在</span>。<br>
-      浏览量是 0，不是因为推广没做，是因为<b>门牌号写错了，客人根本找不到门</b>。
+      <b>为什么这曾经是致命的？</b><br>
+      原来网站里所有告诉 Google「我的正式网址是什么」的地方，填的全都是不带 www 的版本
+      （<code>canonical</code> / <code>sitemap.xml</code> / <code>robots.txt</code> / Open Graph 全指向
+      <code>https://tianyimachine.com/...</code>）。Google 按 sitemap 去抓这些网址，每一条都解析失败，
+      对搜索引擎来说这个网站等于<span class="hl">不存在</span>。<br>
+      浏览量是 0，不是因为推广没做，是因为<b>门牌号写错了，客人找不到门</b>。
     </div>
 
-    <h3>怎么修（5 分钟，在 Cloudflare 控制台操作）</h3>
+    <div class="box good">
+      <b>✅ 已修复（2026-08-04 续）：改为以 www 为规范主域。</b><br>
+      由于裸域 <code>tianyimachine.com</code> 在当前 DNS 下打不开，而 <code>www.tianyimachine.com</code> 正常，
+      我已把全站 <b>canonical / sitemap / robots / Open Graph / JSON-LD</b> 全部改为可用的
+      <code>https://www.tianyimachine.com/...</code>，并撤销了原来「www → 裸域」的错误重定向、改为「裸域 → www」。<br>
+      <b>意义：只要把改动推送上线，网站立刻就能被 Google 正常抓取和收录——不再依赖裸域能否修好。</b>
+    </div>
+
+    <h3>你现在要做的（分两步）</h3>
     <div class="step">
       <div class="step-n">1</div>
       <div class="step-b">
-        <b>登录 Cloudflare → Workers &amp; Pages → 找到你的 Pages 项目</b>
-        <p>点进项目，切换到顶部的 <b>Custom domains（自定义域）</b> 标签页。</p>
+        <b>【必须】推送改动（GitHub Desktop → Push origin）</b>
+        <p>线上跑的还是旧版本（canonical 仍是裸域、产品卡还是旧样式）。把最近这些提交 Push 上去，
+           Cloudflare 会自动重新部署，www 版本随即带正确的 canonical 上线。</p>
       </div>
     </div>
     <div class="step">
       <div class="step-n">2</div>
       <div class="step-b">
-        <b>点 “Set up a custom domain”，输入 <code>tianyimachine.com</code></b>
-        <p>注意：<span class="hl">不要带 www</span>。输完点 Continue → Activate domain。</p>
-        <p>Cloudflare 会自动帮你添加对应的 DNS 记录，通常 1～3 分钟生效。</p>
-      </div>
-    </div>
-    <div class="step">
-      <div class="step-n">3</div>
-      <div class="step-b">
-        <b>验证</b>
-        <p>浏览器无痕窗口打开 <code>https://tianyimachine.com</code>，能正常显示网站即成功。</p>
-      </div>
-    </div>
-    <div class="step">
-      <div class="step-n">4</div>
-      <div class="step-b">
-        <b>确认 www 会跳到不带 www 的版本</b>
-        <p>项目里已有 <code>_redirects</code> 文件处理这条规则，域名激活后自动生效。</p>
-        <p>访问 <code>https://www.tianyimachine.com</code>，地址栏应自动变成不带 www 的地址。</p>
+        <b>【可选但推荐】修好裸域 DNS，让直接输入 tianyimachine.com 的人也能进</b>
+        <p>登录 Cloudflare → Workers &amp; Pages → 你的 Pages 项目 → <b>Custom domains</b> →
+           “Set up a custom domain” 输入 <code>tianyimachine.com</code>（不带 www）→ Activate。
+           Cloudflare 会自动加好 DNS，生效后裸域会 301 跳转到 www。
+           这步<b>不阻塞收录</b>（收录走 www），但能避免一部分直接访客看到报错。</p>
       </div>
     </div>
 
     <div class="box warn">
-      <b>另一件事：你还有一批改动没推送。</b>线上版本比本地旧（产品卡片上还能看到 ☰ 图标和重复的产品名）。
-      请在 GitHub Desktop 点 <b>Push origin</b>，把最近这些提交发上去。
+      <b>注意一个旧坑：</b>仓库里曾经有一条 <code>_redirects</code> 写的是「www → 裸域」（而裸域打不开），
+      一旦上线会把所有 www 访客跳进死链。<b>这条已撤销</b>，现在只有「裸域 → www」。
+      推送前请确认本地 <code>_redirects</code> 是这个方向。
     </div>
   </div>
 
@@ -137,7 +129,7 @@
     <h3>你需要做的（约 10 分钟）</h3>
     <ol>
       <li>打开 <code>analytics.google.com</code> → 创建账号 → 创建媒体资源（Property）</li>
-      <li>数据流选 <b>网站</b>，填入 <code>https://tianyimachine.com</code></li>
+      <li>数据流选 <b>网站</b>，填入 <code>https://www.tianyimachine.com</code></li>
       <li>创建后会给你一个<b>衡量 ID</b>，形如 <code>G-ABCD123XYZ</code></li>
       <li>把这个 ID 发给我，我帮你一次性填进全部 24 个页面（或者你自己在每个 HTML 里搜 <code>GA4_ID</code> 手动填）</li>
     </ol>
@@ -151,7 +143,7 @@
 
   <!-- ============ 收录 ============ -->
   <div class="card">
-    <h2>🔍 第三步：让 Google 真正收录你（域名修好之后再做）</h2>
+    <h2>🔍 第三步：让 Google 真正收录你（推送上线之后再做）</h2>
 
     <div class="box">
       <b>顺序很重要：</b>必须先修好上面的域名问题，否则提交给 Google 的都是死链，反而会留下负面记录。
