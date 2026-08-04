@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>从 0 到第一批询盘：流量获取行动计划 | 天宜机械</title>
+<style>
+  :root{
+    --bg:#f6f7f9; --card:#fff; --line:#e3e6ea; --text:#1f2328; --muted:#6a737d;
+    --brand:#0b5fff; --ok:#1a7f37; --warn:#9a6700; --bad:#c1121f; --soft:#f0f2f5;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;padding:32px 16px;background:var(--bg);color:var(--text);
+       font-family:-apple-system,"Segoe UI","Microsoft YaHei",sans-serif;line-height:1.72}
+  .wrap{max-width:1000px;margin:0 auto}
+  h1{font-size:27px;margin:0 0 6px}
+  .sub{color:var(--muted);font-size:14px;margin-bottom:26px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:22px 24px;margin-bottom:18px}
+  h2{font-size:19px;margin:0 0 15px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+  h3{font-size:15px;margin:20px 0 8px}
+  table{width:100%;border-collapse:collapse;font-size:14px;margin:10px 0}
+  th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+  th{background:var(--soft);font-weight:600;white-space:nowrap}
+  code{background:var(--soft);padding:1px 6px;border-radius:4px;font-size:13px;
+       font-family:Consolas,Monaco,monospace}
+  .tag{display:inline-block;padding:2px 9px;border-radius:20px;font-size:12px;font-weight:600;white-space:nowrap}
+  .t-ok{background:#e6f4ea;color:var(--ok)} .t-warn{background:#fff4d6;color:var(--warn)}
+  .t-bad{background:#fdeaea;color:var(--bad)} .t-info{background:#e7f0ff;color:var(--brand)}
+  .box{border-left:4px solid var(--brand);background:#f0f5ff;padding:13px 15px;border-radius:0 8px 8px 0;margin:13px 0;font-size:14px}
+  .box.danger{border-color:var(--bad);background:#fdeaea}
+  .box.good{border-color:var(--ok);background:#e9f7ee}
+  .box.warn{border-color:var(--warn);background:#fffaeb}
+  ol,ul{padding-left:22px;margin:8px 0} li{margin:6px 0}
+  .step{display:flex;gap:14px;align-items:flex-start;padding:14px 0;border-bottom:1px dashed var(--line)}
+  .step:last-child{border-bottom:none}
+  .step-n{flex:0 0 30px;height:30px;border-radius:50%;background:var(--brand);color:#fff;
+          display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px}
+  .step-b{flex:1}
+  .step-b b{display:block;margin-bottom:3px;font-size:15px}
+  .step-b p{margin:3px 0;font-size:14px;color:#3a4149}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  @media(max-width:760px){.grid2{grid-template-columns:1fr}}
+  .kpi{background:var(--soft);border-radius:8px;padding:14px;text-align:center}
+  .kpi .n{font-size:24px;font-weight:700;color:var(--brand)}
+  .kpi .l{font-size:12px;color:var(--muted);margin-top:2px}
+  .foot{color:var(--muted);font-size:13px;text-align:center;margin-top:26px}
+  .hl{background:#fff3cd;padding:0 3px;border-radius:3px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>从 0 到第一批询盘：流量获取行动计划</h1>
+  <div class="sub">湖北天宜机械 · tianyimachine.com · 诊断日期 2026-08-04</div>
+
+  <!-- ============ 致命问题 ============ -->
+  <div class="card" style="border-color:#f5c2c7">
+    <h2 style="color:var(--bad)">🚨 找到根本原因：你的主域名根本打不开</h2>
+
+    <p>我实测了 DNS 解析，结果如下：</p>
+    <table>
+      <tr><th>网址</th><th>DNS 解析结果</th><th>能否访问</th></tr>
+      <tr>
+        <td><code>www.tianyimachine.com</code></td>
+        <td>指向 Cloudflare（104.21.34.89 等）</td>
+        <td><span class="tag t-ok">✓ 正常</span></td>
+      </tr>
+      <tr>
+        <td><code>tianyimachine.com</code>（不带 www）</td>
+        <td><b>没有任何 A / CNAME 记录</b></td>
+        <td><span class="tag t-bad">✗ 打不开</span></td>
+      </tr>
+    </table>
+
+    <div class="box danger">
+      <b>为什么这是致命的？</b><br>
+      你网站里所有告诉 Google「我的正式网址是什么」的地方，填的<b>全都是不带 www 的版本</b>：
+      <ul style="margin-top:8px">
+        <li><code>canonical</code> 标签 → <code>https://tianyimachine.com/</code></li>
+        <li><code>sitemap.xml</code> 里 23 条 URL → 全部是 <code>https://tianyimachine.com/...</code></li>
+        <li><code>robots.txt</code> 指向的 sitemap 地址 → 同上</li>
+        <li>Open Graph 分享链接 → 同上</li>
+      </ul>
+      Google 按 sitemap 去抓这些网址，<b>每一条都解析失败</b>。
+      对搜索引擎来说，你这个网站等于<span class="hl">不存在</span>。<br>
+      浏览量是 0，不是因为推广没做，是因为<b>门牌号写错了，客人根本找不到门</b>。
+    </div>
+
+    <h3>怎么修（5 分钟，在 Cloudflare 控制台操作）</h3>
+    <div class="step">
+      <div class="step-n">1</div>
+      <div class="step-b">
+        <b>登录 Cloudflare → Workers &amp; Pages → 找到你的 Pages 项目</b>
+        <p>点进项目，切换到顶部的 <b>Custom domains（自定义域）</b> 标签页。</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-n">2</div>
+      <div class="step-b">
+        <b>点 “Set up a custom domain”，输入 <code>tianyimachine.com</code></b>
+        <p>注意：<span class="hl">不要带 www</span>。输完点 Continue → Activate domain。</p>
+        <p>Cloudflare 会自动帮你添加对应的 DNS 记录，通常 1～3 分钟生效。</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-n">3</div>
+      <div class="step-b">
+        <b>验证</b>
+        <p>浏览器无痕窗口打开 <code>https://tianyimachine.com</code>，能正常显示网站即成功。</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-n">4</div>
+      <div class="step-b">
+        <b>确认 www 会跳到不带 www 的版本</b>
+        <p>项目里已有 <code>_redirects</code> 文件处理这条规则，域名激活后自动生效。</p>
+        <p>访问 <code>https://www.tianyimachine.com</code>，地址栏应自动变成不带 www 的地址。</p>
+      </div>
+    </div>
+
+    <div class="box warn">
+      <b>另一件事：你还有一批改动没推送。</b>线上版本比本地旧（产品卡片上还能看到 ☰ 图标和重复的产品名）。
+      请在 GitHub Desktop 点 <b>Push origin</b>，把最近这些提交发上去。
+    </div>
+  </div>
+
+  <!-- ============ 第二问题：没装统计 ============ -->
+  <div class="card">
+    <h2>📊 第二个问题：你现在其实「看不见」流量</h2>
+    <p>我检查了全部 24 个页面，<b>没有任何统计代码</b>——没有 GA4、没有 Clarity、没有百度统计。
+      也就是说即使有人来访问，你也无从得知。</p>
+
+    <h3>我已经做好的部分</h3>
+    <p>24 个页面的 <code>&lt;head&gt;</code> 里都已经埋好了 GA4 代码框架，<b>只差一个 ID</b>。
+      未填 ID 时脚本自动不加载，不会拖慢网站。</p>
+
+    <h3>你需要做的（约 10 分钟）</h3>
+    <ol>
+      <li>打开 <code>analytics.google.com</code> → 创建账号 → 创建媒体资源（Property）</li>
+      <li>数据流选 <b>网站</b>，填入 <code>https://tianyimachine.com</code></li>
+      <li>创建后会给你一个<b>衡量 ID</b>，形如 <code>G-ABCD123XYZ</code></li>
+      <li>把这个 ID 发给我，我帮你一次性填进全部 24 个页面（或者你自己在每个 HTML 里搜 <code>GA4_ID</code> 手动填）</li>
+    </ol>
+
+    <div class="box good">
+      <b>另外一个 0 成本选项：</b>Cloudflare 控制台 → 你的 Pages 项目 → <b>Analytics</b> 标签页，
+      内置的 Web Analytics 完全免费、无需改代码、不用 Cookie。虽然不如 GA4 详细，但先看个访问量足够了。
+      <b>建议现在就打开。</b>
+    </div>
+  </div>
+
+  <!-- ============ 收录 ============ -->
+  <div class="card">
+    <h2>🔍 第三步：让 Google 真正收录你（域名修好之后再做）</h2>
+
+    <div class="box">
+      <b>顺序很重要：</b>必须先修好上面的域名问题，否则提交给 Google 的都是死链，反而会留下负面记录。
+    </div>
+
+    <table>
+      <tr><th>#</th><th>动作</th><th>在哪做</th><th>说明</th></tr>
+      <tr>
+        <td>1</td><td>验证网站所有权</td><td>Google Search Console</td>
+        <td>你的首页已埋好验证码 <code>0HoGztPVUQ...</code>，选 HTML 标记方式直接验证即可</td>
+      </tr>
+      <tr>
+        <td>2</td><td>提交 sitemap</td><td>GSC → Sitemaps</td>
+        <td>填 <code>sitemap.xml</code> 提交（已刷新为最新日期，共 23 条 URL）</td>
+      </tr>
+      <tr>
+        <td>3</td><td>手动请求收录首页</td><td>GSC → 网址检查</td>
+        <td>粘贴首页地址 → 点「请求编入索引」。重要页面（首页 + 3~5 个主力产品页）都做一遍</td>
+      </tr>
+      <tr>
+        <td>4</td><td>同步做 Bing</td><td>Bing Webmaster Tools</td>
+        <td>支持从 GSC 一键导入，2 分钟搞定。Bing 流量常被低估，欧美 B2B 采购占比不低</td>
+      </tr>
+    </table>
+
+    <div class="box warn">
+      <b>关于时间预期，说点实话：</b>新域名 + 新站，从提交到 Google 稳定收录通常需要
+      <b>2～6 周</b>；开始有自然搜索流量一般在 <b>2～4 个月</b>后；
+      靠 SEO 拿到稳定询盘，现实周期是 <b>6～12 个月</b>。
+      这是行业常态，不是你做错了什么。如果需要快速见效，看下一节。
+    </div>
+  </div>
+
+  <!-- ============ 见效速度分层 ============ -->
+  <div class="card">
+    <h2>⚡ 第四步：按见效速度排序的获客渠道</h2>
+
+    <h3>立刻见效（本周就能有访问）</h3>
+    <table>
+      <tr><th>渠道</th><th>怎么做</th><th>成本</th><th>见效</th></tr>
+      <tr>
+        <td><b>邮件签名 + 现有客户</b></td>
+        <td>所有对外邮件签名加上网址；给历史客户群发一封「新官网上线」通知，附 2 篇技术文章链接</td>
+        <td>0</td><td><span class="tag t-ok">当天</span></td>
+      </tr>
+      <tr>
+        <td><b>阿里国际站 / 中国制造网</b></td>
+        <td>店铺简介、产品详情页加官网链接（若平台不允许放外链，就放在图片水印或 PDF 目录里）</td>
+        <td>0</td><td><span class="tag t-ok">几天</span></td>
+      </tr>
+      <tr>
+        <td><b>LinkedIn 公司主页</b></td>
+        <td>建公司页 → 填官网 → 每周发 1 条（项目照片 / 技术图解）。业务员个人号也加官网到简介</td>
+        <td>0</td><td><span class="tag t-ok">1~2 周</span></td>
+      </tr>
+      <tr>
+        <td><b>YouTube</b></td>
+        <td>把车间、设备运转、装柜发货的视频传上去，简介第一行放官网链接。工业设备视频转化率很高</td>
+        <td>0</td><td><span class="tag t-warn">2~4 周</span></td>
+      </tr>
+      <tr>
+        <td><b>Google Ads</b></td>
+        <td>投 <code>belt conveyor manufacturer</code>、<code>bucket elevator supplier</code> 这类词，日预算 $20~50 起测</td>
+        <td>$$</td><td><span class="tag t-ok">当天</span></td>
+      </tr>
+    </table>
+
+    <h3>中期（1~3 个月）</h3>
+    <ul>
+      <li><b>B2B 目录站登记</b>：ThomasNet、Kompass、Europages、GlobalSpec、DirectIndustry。
+        免费收录 + 一条外链，对新站权重帮助明显。</li>
+      <li><b>行业协会</b>：中国重型机械工业协会输送机分会的会员单位页面，争取带官网链接。</li>
+      <li><b>展会</b>：bauma、Powtech、IFAT 的参展商名录页通常允许留官网，权重很高。</li>
+      <li><b>内容加速</b>：现在 7 篇文章，建议加到 20 篇以上。见下一节选题。</li>
+    </ul>
+
+    <h3>长期（3~12 个月）</h3>
+    <ul>
+      <li>持续产出技术型长文（1500 字以上），围绕采购者真实搜索的问题。</li>
+      <li>做出「行业资源」型内容：选型计算器、规格对照表、可下载 PDF 手册——这类页面最容易自然获得外链。</li>
+      <li>项目案例页做成独立页面（现在只是首页上的卡片），每个案例一页，标题带行业词。</li>
+    </ul>
+  </div>
+
+  <!-- ============ 内容选题 ============ -->
+  <div class="card">
+    <h2>✍️ 第五步：接下来写什么（按搜索价值排序）</h2>
+    <p>B2B 工业设备的搜索流量集中在「<b>选型 / 参数 / 故障 / 价格</b>」四类问题。以下选题都是采购工程师真实会搜的：</p>
+
+    <table>
+      <tr><th>优先级</th><th>标题方向（英文站请用英文写）</th><th>为什么值得写</th></tr>
+      <tr><td><span class="tag t-bad">高</span></td>
+        <td>Belt Conveyor vs Chain Conveyor vs Screw Conveyor: Which One Do You Need?</td>
+        <td>对比型内容搜索量大、竞争相对低，能一次覆盖三个产品线关键词</td></tr>
+      <tr><td><span class="tag t-bad">高</span></td>
+        <td>Belt Conveyor Capacity Calculation: Formula, Table and Examples</td>
+        <td>带公式和表格的实用内容，采购和设计院都会搜，容易被引用产生外链</td></tr>
+      <tr><td><span class="tag t-bad">高</span></td>
+        <td>How Much Does an Industrial Conveyor System Cost? (2026 Buyer's Guide)</td>
+        <td>价格类关键词意图极强，来的都是准客户。不用报具体价，讲清成本构成即可</td></tr>
+      <tr><td><span class="tag t-warn">中</span></td>
+        <td>Bucket Elevator Selection Guide: TH vs TD Series</td>
+        <td>承接你现有的斗提机产品线，长尾精准</td></tr>
+      <tr><td><span class="tag t-warn">中</span></td>
+        <td>Explosion-Proof Conveying Systems for Biomass and Coal Handling</td>
+        <td>安全合规是采购硬需求，这类词竞争小、转化高</td></tr>
+      <tr><td><span class="tag t-warn">中</span></td>
+        <td>Conveyor Belt Types: Rubber, PVC, Steel Cord — Full Comparison</td>
+        <td>基础科普词搜索量大，适合拉新用户进站</td></tr>
+      <tr><td><span class="tag t-info">补充</span></td>
+        <td>每个已交付项目写成一个独立案例页（含行业、工况、设备清单、产能数据）</td>
+        <td>案例页天然带行业长尾词，且是最强的信任背书</td></tr>
+    </table>
+
+    <div class="box">
+      <b>写作节奏建议：</b>每周 1 篇、每篇 1500 字以上、配 2~3 张真实设备图。
+      比起一次性写 10 篇然后停更，<b>稳定更新的信号对 Google 更有价值</b>。
+    </div>
+  </div>
+
+  <!-- ============ 转化 ============ -->
+  <div class="card">
+    <h2>💬 第六步：别让来了的人白来</h2>
+    <p>流量只是分子，<b>转化率是分母</b>。现在网站已有 WhatsApp 悬浮按钮和询盘表单，还可以补强：</p>
+    <div class="grid2">
+      <div>
+        <h3>建议增加</h3>
+        <ul>
+          <li>产品页底部加固定的「Request a Quote」按钮，不要只靠页脚</li>
+          <li>提供<b>可下载的 PDF 产品目录</b>，用邮箱换下载 → 直接留资</li>
+          <li>表单字段砍到最少：姓名 + 邮箱 + 需求，越少填写率越高</li>
+          <li>加上「24 小时内回复」「支持定制」等承诺文案，降低询盘心理门槛</li>
+        </ul>
+      </div>
+      <div>
+        <h3>信任信号（你已有，但要更突出）</h3>
+        <ul>
+          <li>股票代码 832654 —— 建议放到首屏，这是极强的背书</li>
+          <li>ISO 三体系 + CE 认证 —— 产品页也放一排小图标</li>
+          <li>出口 50+ 国家 —— 配一张世界地图会更直观</li>
+          <li>真实客户来访照片 —— 已有乌拉圭客户那篇，多积累几个</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ 优先级总表 ============ -->
+  <div class="card">
+    <h2>✅ 现在就按这个顺序做</h2>
+    <table>
+      <tr><th>顺序</th><th>动作</th><th>谁做</th><th>耗时</th><th>重要性</th></tr>
+      <tr><td>1</td><td><b>Cloudflare Pages 添加 <code>tianyimachine.com</code> 自定义域</b></td><td>你</td><td>5 分钟</td><td><span class="tag t-bad">决定成败</span></td></tr>
+      <tr><td>2</td><td>GitHub Desktop → Push origin（推送本地所有改动）</td><td>你</td><td>1 分钟</td><td><span class="tag t-bad">必做</span></td></tr>
+      <tr><td>3</td><td>开启 Cloudflare Web Analytics（零代码）</td><td>你</td><td>2 分钟</td><td><span class="tag t-warn">高</span></td></tr>
+      <tr><td>4</td><td>注册 GA4，把衡量 ID 给我</td><td>你 → 我</td><td>10 分钟</td><td><span class="tag t-warn">高</span></td></tr>
+      <tr><td>5</td><td>Search Console 验证 + 提交 sitemap + 请求收录</td><td>你</td><td>15 分钟</td><td><span class="tag t-bad">必做</span></td></tr>
+      <tr><td>6</td><td>Bing Webmaster 一键导入</td><td>你</td><td>3 分钟</td><td><span class="tag t-warn">高</span></td></tr>
+      <tr><td>7</td><td>邮件签名 + 现有客户群发官网</td><td>你</td><td>30 分钟</td><td><span class="tag t-warn">高</span></td></tr>
+      <tr><td>8</td><td>LinkedIn 公司主页 + 官网链接</td><td>你</td><td>30 分钟</td><td><span class="tag t-info">中</span></td></tr>
+      <tr><td>9</td><td>B2B 目录站登记（ThomasNet / Kompass / Europages）</td><td>你</td><td>2 小时</td><td><span class="tag t-info">中</span></td></tr>
+      <tr><td>10</td><td>按上面选题继续写文章，每周 1 篇</td><td>你 + 我</td><td>持续</td><td><span class="tag t-info">中</span></td></tr>
+    </table>
+
+    <div class="box good">
+      <b>一句话总结：</b>第 1 条是水龙头开关，其他都是接水的桶。
+      域名不修好，后面九条全部白做。<b>今天就把它修了。</b>
+    </div>
+  </div>
+
+  <div class="foot">湖北天宜机械有限公司 · 流量获取行动计划 · 2026-08-04</div>
+</div>
+</body>
+</html>
