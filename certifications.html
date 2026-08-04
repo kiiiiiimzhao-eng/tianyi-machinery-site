@@ -69,11 +69,15 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
 
 /* Certifications */
 .cert-section { padding:40px 0 80px; }
-.cert-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:30px; }
-.cert-card { border:1px solid var(--border); border-radius:12px; padding:24px; transition:all 0.3s ease; background:#fff; }
-.cert-card:hover { transform:translateY(-5px); box-shadow:0 10px 30px rgba(0,0,0,0.05); }
-.cert-card h3 { color:var(--primary); margin-bottom:12px; font-size:18px; }
-.cert-card p { color:var(--text-muted); font-size:14px; margin:0; }
+.cert-intro { max-width:760px; margin:0 auto 40px; text-align:center; color:var(--text-muted); }
+.cert-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:28px; }
+.cert-card { border:1px solid var(--border); border-radius:12px; padding:18px; transition:all 0.3s ease; background:#fff; display:flex; flex-direction:column; }
+.cert-card:hover { transform:translateY(-5px); box-shadow:0 10px 30px rgba(0,0,0,0.08); }
+.cert-img-link { display:block; background:#fff; border:1px solid var(--border); border-radius:8px; padding:12px; margin-bottom:16px; transition:border-color var(--transition); }
+.cert-img-link:hover { border-color:var(--accent); }
+.cert-img-link img { width:100%; height:210px; object-fit:contain; object-position:center; display:block; }
+.cert-card h3 { color:var(--primary); margin-bottom:10px; font-size:16px; line-height:1.4; }
+.cert-card p { color:var(--text-muted); font-size:13.5px; margin:0; }
 
 .cta-band { background:var(--bg-alt); border:1px solid var(--border); border-radius:14px; padding:40px; text-align:center; margin:48px 0 8px; }
 .cta-band h2 { margin:0 0 12px; }
@@ -163,30 +167,49 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
 
 <section class="cert-section">
   <div class="container">
+    <p class="cert-intro">The following are our actual certificates and compliance documents. Click any certificate to view the full-size image. Tianyi Machinery is also recognized as a National High-Tech Enterprise with 100+ national patents, a Green Factory, and a participant in drafting national and industry standards.</p>
     <div class="cert-grid">
       <div class="cert-card">
-        <h3>National High-Tech Enterprise</h3>
-        <p>Recognized for our continuous investment in R&D and technological innovation in bulk material handling.</p>
+        <a href="images/certificates/iso9001-quality.webp" target="_blank" class="cert-img-link">
+          <img src="images/certificates/iso9001-quality.webp" alt="ISO 9001:2015 Quality Management System Certificate — Tianyi Machinery" loading="lazy">
+        </a>
+        <h3>ISO 9001:2015 Quality Management</h3>
+        <p>Certified quality management system across the design, manufacturing, and service of bulk material handling equipment.</p>
       </div>
       <div class="cert-card">
+        <a href="images/certificates/iso14001-environment.webp" target="_blank" class="cert-img-link">
+          <img src="images/certificates/iso14001-environment.webp" alt="ISO 14001 Environmental Management System Certificate — Tianyi Machinery" loading="lazy">
+        </a>
+        <h3>ISO 14001 Environmental Management</h3>
+        <p>Demonstrates our commitment to minimizing environmental impact throughout manufacturing operations.</p>
+      </div>
+      <div class="cert-card">
+        <a href="images/certificates/iso45001-safety.webp" target="_blank" class="cert-img-link">
+          <img src="images/certificates/iso45001-safety.webp" alt="Occupational Health and Safety Management System Certificate — Tianyi Machinery" loading="lazy">
+        </a>
+        <h3>Occupational Health &amp; Safety</h3>
+        <p>Certified occupational health and safety management system protecting our workforce and workplace.</p>
+      </div>
+      <div class="cert-card">
+        <a href="images/certificates/ce-belt-conveyor.png" target="_blank" class="cert-img-link">
+          <img src="images/certificates/ce-belt-conveyor.png" alt="CE Certification for Belt Conveyor — Tianyi Machinery" loading="lazy">
+        </a>
+        <h3>CE Certified — Belt Conveyor</h3>
+        <p>CE marking for our belt conveyor systems, compliant with EU machinery directives for the European market.</p>
+      </div>
+      <div class="cert-card">
+        <a href="images/certificates/little-giant.png" target="_blank" class="cert-img-link">
+          <img src="images/certificates/little-giant.png" alt="National Little Giant Enterprise Certificate — Tianyi Machinery" loading="lazy">
+        </a>
         <h3>National "Little Giant" Enterprise</h3>
-        <p>Awarded to specialized and innovative SMEs that demonstrate high growth potential and core competitiveness.</p>
+        <p>Recognized by China's MIIT as a specialized, sophisticated, distinctive, and innovative SME leader.</p>
       </div>
       <div class="cert-card">
-        <h3>ISO 9001:2015 Certified</h3>
-        <p>International standard for quality management systems, ensuring consistent product quality and customer satisfaction.</p>
-      </div>
-      <div class="cert-card">
-        <h3>100+ National Patents</h3>
-        <p>Including 13 invention patents and 7 software copyrights in conveyor design and manufacturing.</p>
-      </div>
-      <div class="cert-card">
-        <h3>Green Factory Certified</h3>
-        <p>Hubei Province certification for sustainable and environmentally friendly manufacturing processes.</p>
-      </div>
-      <div class="cert-card">
-        <h3>Industry Standard Setter</h3>
-        <p>Participant in drafting 3 national standards and 5 industry standards for the heavy machinery industry.</p>
+        <a href="images/certificates/ip-compliance.webp" target="_blank" class="cert-img-link">
+          <img src="images/certificates/ip-compliance.webp" alt="Intellectual Property Compliance Management System Certificate — Tianyi Machinery" loading="lazy">
+        </a>
+        <h3>IP Compliance Management System</h3>
+        <p>Certified intellectual property compliance management, safeguarding our 100+ patents and proprietary technologies.</p>
       </div>
     </div>
 
