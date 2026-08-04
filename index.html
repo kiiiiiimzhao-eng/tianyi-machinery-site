@@ -240,14 +240,23 @@ h4 { font-size: 16px; font-weight: 600; }
 }
 .product-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-color: var(--primary-light); }
 .product-card-img {
-  height: 220px; background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
-  display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;
+  height: 240px; background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  position: relative; overflow: hidden;
+}
+.product-card-img picture {
+  display: block; width: 100%; height: 100%;
+}
+.product-card-img img {
+  width: 100%; height: 100%; object-fit: cover; object-position: center;
+  display: block;
 }
 .product-card-img .icon {
-  font-size: 64px; opacity: 0.15; color: #fff; position: absolute;
+  font-size: 64px; opacity: 0; color: #fff; position: absolute;
+  top: 50%; left: 50%; transform: translate(-50%, -50%);
 }
 .product-card-img .label {
-  position: relative; z-index: 1; color: #fff; font-size: 18px; font-weight: 700;
+  position: absolute; z-index: 2; color: #fff; font-size: 18px; font-weight: 700;
+  top: 16px; left: 16px; text-shadow: 0 2px 8px rgba(0,0,0,0.5);
 }
 .product-card-body { padding: 20px; }
 .product-card-body h4 { margin-bottom: 8px; }
@@ -600,7 +609,7 @@ h4 { font-size: 16px; font-weight: 600; }
         <div class="product-card-img" style="background: linear-gradient(135deg, #1a365d, #2c5282);">
           <picture>
   <source srcset="images/products/belt-conveyor/1.webp" type="image/webp">
-  <img src="images/products/belt-conveyor/1.jpg" alt="Belt Conveyor" style="position:absolute;width:100%;height:100%;object-fit:contain;object-position:center;padding:8px;" onerror="this.style.display='none'">
+  <img src="images/products/belt-conveyor/1.jpg" alt="Belt Conveyor"  onerror="this.style.display='none'">
 </picture>
           <div class="icon">&#9776;</div>
           <div class="label">Belt Conveyor</div>
@@ -614,7 +623,7 @@ h4 { font-size: 16px; font-weight: 600; }
         <div class="product-card-img" style="background: linear-gradient(135deg, #744210, #975a16);">
           <picture>
   <source srcset="images/products/chain-conveyor/1.webp" type="image/webp">
-  <img src="images/products/chain-conveyor/1.jpg" alt="Chain Conveyor" style="position:absolute;width:100%;height:100%;object-fit:contain;object-position:center;padding:8px;" onerror="this.style.display='none'">
+  <img src="images/products/chain-conveyor/1.jpg" alt="Chain Conveyor"  onerror="this.style.display='none'">
 </picture>
           <div class="icon">&#9776;</div>
           <div class="label">Chain Conveyor</div>
@@ -628,7 +637,7 @@ h4 { font-size: 16px; font-weight: 600; }
         <div class="product-card-img" style="background: linear-gradient(135deg, #22543d, #276749);">
           <picture>
   <source srcset="images/products/bucket-elevator/1.webp" type="image/webp">
-  <img src="images/products/bucket-elevator/1.jpg" alt="Bucket Elevator" style="position:absolute;width:100%;height:100%;object-fit:contain;object-position:center;padding:8px;" onerror="this.style.display='none'">
+  <img src="images/products/bucket-elevator/1.jpg" alt="Bucket Elevator"  onerror="this.style.display='none'">
 </picture>
           <div class="icon">&#9776;</div>
           <div class="label">Bucket Elevator</div>
@@ -642,7 +651,7 @@ h4 { font-size: 16px; font-weight: 600; }
         <div class="product-card-img" style="background: linear-gradient(135deg, #9b2c2c, #c53030);">
           <picture>
   <source srcset="images/products/screw-conveyor/1.webp" type="image/webp">
-  <img src="images/products/screw-conveyor/1.jpg" alt="Screw Conveyor" style="position:absolute;width:100%;height:100%;object-fit:contain;object-position:center;padding:8px;" onerror="this.style.display='none'">
+  <img src="images/products/screw-conveyor/1.jpg" alt="Screw Conveyor"  onerror="this.style.display='none'">
 </picture>
           <div class="icon">&#9776;</div>
           <div class="label">Screw Conveyor</div>
@@ -656,7 +665,7 @@ h4 { font-size: 16px; font-weight: 600; }
         <div class="product-card-img" style="background: linear-gradient(135deg, #4a5568, #2d3748);">
           <picture>
   <source srcset="images/products/apron-conveyor/1.webp" type="image/webp">
-  <img src="images/products/apron-conveyor/1.jpg" alt="Apron Conveyor" style="position:absolute;width:100%;height:100%;object-fit:contain;object-position:center;padding:8px;" onerror="this.style.display='none'">
+  <img src="images/products/apron-conveyor/1.jpg" alt="Apron Conveyor"  onerror="this.style.display='none'">
 </picture>
           <div class="icon">&#9776;</div>
           <div class="label">Apron Conveyor</div>
@@ -670,7 +679,7 @@ h4 { font-size: 16px; font-weight: 600; }
         <div class="product-card-img" style="background: linear-gradient(135deg, #2a4365, #3182ce);">
           <picture>
   <source srcset="images/products/dust-collector/1.webp" type="image/webp">
-  <img src="images/products/dust-collector/1.jpg" alt="Dust Collector" style="position:absolute;width:100%;height:100%;object-fit:contain;object-position:center;padding:8px;" onerror="this.style.display='none'">
+  <img src="images/products/dust-collector/1.jpg" alt="Dust Collector"  onerror="this.style.display='none'">
 </picture>
           <div class="icon">&#9776;</div>
           <div class="label">Dust Collector</div>
@@ -684,7 +693,7 @@ h4 { font-size: 16px; font-weight: 600; }
         <div class="product-card-img" style="background: linear-gradient(135deg, #285e61, #319795);">
           <picture>
   <source srcset="images/products/feeding-equipment/1.webp" type="image/webp">
-  <img src="images/products/feeding-equipment/1.jpg" alt="Feeding Equipment" style="position:absolute;width:100%;height:100%;object-fit:contain;object-position:center;padding:8px;" onerror="this.style.display='none'">
+  <img src="images/products/feeding-equipment/1.jpg" alt="Feeding Equipment"  onerror="this.style.display='none'">
 </picture>
           <div class="icon">&#9776;</div>
           <div class="label">Feeding Equipment</div>
@@ -698,7 +707,7 @@ h4 { font-size: 16px; font-weight: 600; }
         <div class="product-card-img" style="background: linear-gradient(135deg, #6b46c1, #805ad5);">
           <picture>
   <source srcset="images/products/crushing-equipment/1.webp" type="image/webp">
-  <img src="images/products/crushing-equipment/1.jpg" alt="Crushing Equipment" style="position:absolute;width:100%;height:100%;object-fit:contain;object-position:center;padding:8px;" onerror="this.style.display='none'">
+  <img src="images/products/crushing-equipment/1.jpg" alt="Crushing Equipment"  onerror="this.style.display='none'">
 </picture>
           <div class="icon">&#9776;</div>
           <div class="label">Crushing Equipment</div>
@@ -712,7 +721,7 @@ h4 { font-size: 16px; font-weight: 600; }
         <div class="product-card-img" style="background: linear-gradient(135deg, #c05621, #dd6b20);">
           <picture>
   <source srcset="images/products/screening-equipment/1.webp" type="image/webp">
-  <img src="images/products/screening-equipment/1.jpg" alt="Screening Equipment" style="position:absolute;width:100%;height:100%;object-fit:contain;object-position:center;padding:8px;" onerror="this.style.display='none'">
+  <img src="images/products/screening-equipment/1.jpg" alt="Screening Equipment"  onerror="this.style.display='none'">
 </picture>
           <div class="icon">&#9776;</div>
           <div class="label">Screening Equipment</div>
@@ -726,7 +735,7 @@ h4 { font-size: 16px; font-weight: 600; }
         <div class="product-card-img" style="background: linear-gradient(135deg, #553c9a, #6b46c1);">
           <picture>
   <source srcset="images/products/valves/main.webp" type="image/webp">
-  <img src="images/products/valves/main.jpg" alt="Valves" style="position:absolute;width:100%;height:100%;object-fit:contain;object-position:center;padding:8px;" onerror="this.style.display='none'">
+  <img src="images/products/valves/main.jpg" alt="Valves"  onerror="this.style.display='none'">
 </picture>
           <div class="icon">&#9776;</div>
           <div class="label">Valves</div>
@@ -740,7 +749,7 @@ h4 { font-size: 16px; font-weight: 600; }
         <div class="product-card-img" style="background: linear-gradient(135deg, #2d3748, #4a5568);">
           <picture>
   <source srcset="images/products/parts/main.webp" type="image/webp">
-  <img src="images/products/parts/main.jpg" alt="Spare Parts" style="position:absolute;width:100%;height:100%;object-fit:contain;object-position:center;padding:8px;" onerror="this.style.display='none'">
+  <img src="images/products/parts/main.jpg" alt="Spare Parts"  onerror="this.style.display='none'">
 </picture>
           <div class="icon">&#9776;</div>
           <div class="label">Spare Parts</div>
@@ -774,7 +783,7 @@ h4 { font-size: 16px; font-weight: 600; }
         <div class="project-card-img" style="background: linear-gradient(135deg, #f7fafc, #edf2f7);">
           <picture>
   <source srcset="images/projects/chlor alkali/main.webp" type="image/webp">
-  <img src="images/projects/chlor alkali/main.JPG" alt="Chlor-Alkali Chemical Project" style="position:absolute;width:100%;height:100%;object-fit:contain;object-position:center;padding:8px;" onerror="this.style.display='none'">
+  <img src="images/projects/chlor alkali/main.JPG" alt="Chlor-Alkali Chemical Project"  onerror="this.style.display='none'">
 </picture>
           <div class="icon">
             <svg width="64" height="64" viewBox="0 0 48 48" fill="none"><rect x="4" y="8" width="40" height="32" rx="4" stroke="#1a365d" stroke-width="2" fill="none"/><path d="M14 16h20M14 22h16M14 28h12" stroke="#1a365d" stroke-width="2" stroke-linecap="round"/></svg>
@@ -790,7 +799,7 @@ h4 { font-size: 16px; font-weight: 600; }
         <div class="project-card-img" style="background: linear-gradient(135deg, #f7fafc, #edf2f7);">
           <picture>
   <source srcset="images/projects/nonferrous metal/main.webp" type="image/webp">
-  <img src="images/projects/nonferrous metal/main.jpg" alt="Non-Ferrous Metal Smelting" style="position:absolute;width:100%;height:100%;object-fit:contain;object-position:center;padding:8px;" onerror="this.style.display='none'">
+  <img src="images/projects/nonferrous metal/main.jpg" alt="Non-Ferrous Metal Smelting"  onerror="this.style.display='none'">
 </picture>
           <div class="icon">
             <svg width="64" height="64" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="18" stroke="#1a365d" stroke-width="2" fill="none"/><path d="M16 24h16M24 16v16" stroke="#1a365d" stroke-width="2" stroke-linecap="round"/><path d="M20 20l8 8M28 20l-8 8" stroke="#1a365d" stroke-width="1.5" stroke-linecap="round"/></svg>
@@ -806,7 +815,7 @@ h4 { font-size: 16px; font-weight: 600; }
         <div class="project-card-img" style="background: linear-gradient(135deg, #f7fafc, #edf2f7);">
           <picture>
   <source srcset="images/projects/thermal power/main.webp" type="image/webp">
-  <img src="images/projects/thermal power/main.jpg" alt="Thermal Power Plant" style="position:absolute;width:100%;height:100%;object-fit:contain;object-position:center;padding:8px;" onerror="this.style.display='none'">
+  <img src="images/projects/thermal power/main.jpg" alt="Thermal Power Plant"  onerror="this.style.display='none'">
 </picture>
           <div class="icon">
             <svg width="64" height="64" viewBox="0 0 48 48" fill="none"><path d="M8 36V16L24 6l16 10v20L24 46z" stroke="#1a365d" stroke-width="2" fill="none"/><path d="M24 22v12M16 26v8M32 26v8" stroke="#1a365d" stroke-width="1.5" stroke-linecap="round"/></svg>
@@ -822,7 +831,7 @@ h4 { font-size: 16px; font-weight: 600; }
         <div class="project-card-img" style="background: linear-gradient(135deg, #f7fafc, #edf2f7);">
           <picture>
   <source srcset="images/projects/waste to energy/main.webp" type="image/webp">
-  <img src="images/projects/waste to energy/main.jpg" alt="Waste-to-Energy Plant" style="position:absolute;width:100%;height:100%;object-fit:contain;object-position:center;padding:8px;" onerror="this.style.display='none'">
+  <img src="images/projects/waste to energy/main.jpg" alt="Waste-to-Energy Plant"  onerror="this.style.display='none'">
 </picture>
           <div class="icon">
             <svg width="64" height="64" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="#1a365d" stroke-width="2" fill="none"/><path d="M16 24c0-2 1.5-4 4-4 2 0 3 2 4 4s-2 4-4 4c-2.5 0-4-1.5-4-4z" stroke="#1a365d" stroke-width="1.5"/><path d="M24 24c0-2 1-4 3-4s4 2 4 4-1.5 4-3 4" stroke="#1a365d" stroke-width="1.5"/></svg>
@@ -838,7 +847,7 @@ h4 { font-size: 16px; font-weight: 600; }
         <div class="project-card-img" style="background: linear-gradient(135deg, #f7fafc, #edf2f7);">
           <picture>
   <source srcset="images/projects/biomass/main.webp" type="image/webp">
-  <img src="images/projects/biomass/main.jpg" alt="Biomass Power Station" style="position:absolute;width:100%;height:100%;object-fit:contain;object-position:center;padding:8px;" onerror="this.style.display='none'">
+  <img src="images/projects/biomass/main.jpg" alt="Biomass Power Station"  onerror="this.style.display='none'">
 </picture>
           <div class="icon">
             <svg width="64" height="64" viewBox="0 0 48 48" fill="none"><rect x="6" y="12" width="36" height="24" rx="4" stroke="#1a365d" stroke-width="2" fill="none"/><circle cx="18" cy="28" r="4" stroke="#1a365d" stroke-width="1.5" fill="none"/><circle cx="30" cy="28" r="4" stroke="#1a365d" stroke-width="1.5" fill="none"/><path d="M22 28h4" stroke="#1a365d" stroke-width="1.5"/></svg>
@@ -854,7 +863,7 @@ h4 { font-size: 16px; font-weight: 600; }
         <div class="project-card-img" style="background: linear-gradient(135deg, #f7fafc, #edf2f7);">
           <picture>
   <source srcset="images/projects/sludge/main.webp" type="image/webp">
-  <img src="images/projects/sludge/main.jpg" alt="Sludge Conveying System" style="position:absolute;width:100%;height:100%;object-fit:contain;object-position:center;padding:8px;" onerror="this.style.display='none'">
+  <img src="images/projects/sludge/main.jpg" alt="Sludge Conveying System"  onerror="this.style.display='none'">
 </picture>
           <div class="icon">
             <svg width="64" height="64" viewBox="0 0 48 48" fill="none"><path d="M8 36V16l8-4 8 4 8-4 8 4v20" stroke="#1a365d" stroke-width="2" fill="none"/><line x1="8" y1="16" x2="40" y2="16" stroke="#1a365d" stroke-width="1"/><circle cx="24" cy="16" r="6" stroke="#1a365d" stroke-width="1.5" fill="none"/></svg>
