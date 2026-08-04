@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Belt Conveyor Installation &amp; Commissioning Guide | Tianyi Machinery</title>
+<meta name="description" content="A practical, step-by-step belt conveyor installation and commissioning checklist for plant engineers: foundation prep, idler/pulley alignment, belt splicing, no-load and load testing, and first-month maintenance.">
+<meta name="keywords" content="belt conveyor installation, conveyor commissioning, belt conveyor commissioning checklist, conveyor alignment, belt splicing, conveyor startup procedure, bulk material handling">
+<link rel="canonical" href="https://tianyimachine.com/blog/belt-conveyor-installation-guide.html">
+
+<meta property="og:title" content="Belt Conveyor Installation &amp; Commissioning Guide — Tianyi Machinery">
+<meta property="og:description" content="A practical, step-by-step installation and commissioning checklist for belt conveyors: foundation, alignment, splicing, testing, and first-month maintenance.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://tianyimachine.com/blog/belt-conveyor-installation-guide.html">
+<meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Belt Conveyor Installation & Commissioning Guide",
+  "description": "A practical, step-by-step belt conveyor installation and commissioning checklist for plant engineers.",
+  "image": "https://tianyimachine.com/images/products/belt-conveyor/main.jpg",
+  "datePublished": "2026-08-04",
+  "dateModified": "2026-08-04",
+  "author": { "@type": "Organization", "name": "Tianyi Machinery Engineering Team" },
+  "publisher": { "@type": "Organization", "name": "Hubei Tianyi Machinery Co., Ltd.", "logo": { "@type": "ImageObject", "url": "https://tianyimachine.com/images/logo-200.png" } },
+  "mainEntityOfPage": "https://tianyimachine.com/blog/belt-conveyor-installation-guide.html"
+}
+</script>
+
+<style>
+:root { --primary:#1a365d; --primary-light:#2c5282; --primary-dark:#0f2341; --accent:#dd6b20; --accent-hover:#c05621; --text:#1a202c; --text-muted:#4a5568; --text-light:#a0aec0; --bg:#ffffff; --bg-alt:#f7fafc; --border:#e2e8f0; --radius:8px; --shadow:0 4px 24px rgba(0,0,0,0.06); --transition:0.25s ease; }
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif; color:var(--text); background:var(--bg); line-height:1.7; font-size:15px; -webkit-font-smoothing:antialiased; }
+.container { max-width:1200px; margin:0 auto; padding:0 24px; }
+h1 { font-size:38px; font-weight:700; letter-spacing:-0.5px; }
+h2 { font-size:28px; font-weight:700; margin:40px 0 16px; }
+h3 { font-size:20px; font-weight:600; color:var(--primary); margin:24px 0 12px; }
+p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
+
+/* Header */
+.site-header { position:fixed; top:0; left:0; right:0; z-index:1000; background:rgba(255,255,255,0.96); backdrop-filter:blur(10px); border-bottom:1px solid var(--border); }
+.header-inner { display:flex; align-items:center; justify-content:space-between; max-width:1200px; margin:0 auto; padding:14px 24px; }
+.logo { font-size:22px; font-weight:800; color:var(--primary); text-decoration:none; display:flex; align-items:center; gap:10px; }
+.logo span { font-size:11px; color:var(--text-light); display:block; font-weight:400; }
+.logo-img { height: 64px; width: auto; display: none; object-fit: contain; }
+.logo-img.loaded { display: block; }
+.logo-svg { display: block; }
+.logo-img.loaded ~ .logo-svg { display: none; }
+.logo-img.loaded ~ .logo-text { display: none; }
+.logo-text { display: flex; flex-direction: column; justify-content: center; line-height: 1.2; }
+.nav { display:flex; gap:0; list-style:none; }
+.nav>li { position:relative; }
+.nav>li>a { display:block; text-decoration:none; color:var(--text-muted); font-size:14px; font-weight:500; padding:20px 14px; border-bottom:2px solid transparent; transition:all var(--transition); white-space:nowrap; cursor:pointer; }
+.nav>li>a::after { content:''; display:inline-block; width:0; height:0; border-left:4px solid transparent; border-right:4px solid transparent; border-top:5px solid var(--text-muted); margin-left:6px; vertical-align:middle; transition:transform 0.2s ease; }
+.nav>li.no-sub>a::after { display:none; }
+.nav>li>a:hover { color:var(--primary); border-bottom-color:var(--accent); }
+.nav>li>a:hover::after { border-top-color:var(--primary); transform:rotate(180deg); }
+.dropdown-menu { position:absolute; top:100%; left:50%; transform:translateX(-50%) translateY(6px); min-width:200px; background:#fff; border:1px solid var(--border); border-radius:10px; box-shadow:0 10px 40px rgba(0,0,0,0.1); padding:8px 0; opacity:0; visibility:hidden; transition:all 0.2s ease; list-style:none; z-index:1001; }
+.nav>li:hover .dropdown-menu { opacity:1; visibility:visible; transform:translateX(-50%) translateY(0); }
+.dropdown-menu li a { display:block; padding:10px 20px; font-size:13px; color:var(--text-muted); text-decoration:none; white-space:nowrap; transition:all 0.15s ease; }
+.dropdown-menu li a:hover { background:var(--bg-alt); color:var(--primary); }
+.dropdown-menu li+li { border-top:1px solid var(--bg-alt); }
+.nav-toggle { display:none; background:none; border:none; font-size:24px; color:var(--primary); cursor:pointer; padding:4px; }
+
+.breadcrumb { padding:100px 0 18px; font-size:13px; color:var(--text-light); }
+.breadcrumb a { color:var(--accent); text-decoration:none; }
+
+/* Article hero */
+.article-hero { background:linear-gradient(135deg,var(--primary-dark),var(--primary)); color:#fff; padding:140px 0 64px; }
+.article-hero .wrap { max-width:820px; margin:0 auto; }
+.article-hero .cat { display:inline-block; padding:5px 14px; border-radius:14px; background:rgba(255,255,255,0.15); font-size:12px; font-weight:600; margin-bottom:18px; letter-spacing:.5px; text-transform:uppercase; }
+.article-hero h1 { font-size:34px; line-height:1.28; margin-bottom:18px; }
+.article-meta { display:flex; gap:20px; flex-wrap:wrap; font-size:13px; color:rgba(255,255,255,0.78); }
+.article-meta span { display:inline-flex; align-items:center; gap:6px; }
+
+/* Article body */
+.article-body { max-width:820px; margin:0 auto; padding:48px 0 10px; }
+.article-body .lead { font-size:18px; color:var(--text); line-height:1.75; margin-bottom:26px; }
+.article-body h2 { font-size:26px; margin:44px 0 16px; padding-bottom:10px; border-bottom:3px solid var(--accent); display:inline-block; }
+.article-body h3 { font-size:20px; margin:30px 0 12px; }
+.article-body ul, .article-body ol { margin:0 0 20px 22px; color:var(--text-muted); }
+.article-body li { margin-bottom:10px; line-height:1.8; }
+.article-body strong { color:var(--text); }
+.article-body table { width:100%; border-collapse:collapse; margin:24px 0; font-size:14px; }
+.article-body th, .article-body td { border:1px solid var(--border); padding:12px 14px; text-align:left; }
+.article-body th { background:var(--bg-alt); font-weight:600; color:var(--primary); }
+.callout { background:var(--bg-alt); border-left:4px solid var(--accent); padding:18px 22px; border-radius:0 10px 10px 0; margin:24px 0; }
+.callout strong { color:var(--primary); }
+.toc { background:var(--bg-alt); border:1px solid var(--border); border-radius:12px; padding:20px 24px; margin:28px 0; }
+.toc h4 { font-size:13px; text-transform:uppercase; letter-spacing:.5px; color:var(--text-light); margin-bottom:10px; }
+.toc a { display:block; color:var(--primary); text-decoration:none; padding:5px 0; font-size:14px; }
+.toc a:hover { color:var(--accent); }
+.figure { margin:28px 0; }
+.figure img { width:100%; border-radius:12px; border:1px solid var(--border); }
+.figure figcaption { font-size:13px; color:var(--text-light); text-align:center; margin-top:10px; }
+
+.cta-box { background:linear-gradient(135deg,var(--primary),var(--primary-light)); color:#fff; border-radius:14px; padding:40px; text-align:center; margin:46px 0; }
+.cta-box h2 { color:#fff; margin:0 0 12px; border:none; font-size:26px; }
+.cta-box p { color:rgba(255,255,255,0.85); margin-bottom:22px; }
+.cta-box .btn { background:#fff; color:var(--primary); }
+.btn { display:inline-flex; align-items:center; gap:8px; padding:14px 32px; border-radius:6px; font-size:15px; font-weight:600; text-decoration:none; cursor:pointer; border:none; transition:all var(--transition); }
+.btn-primary { background:var(--accent); color:#fff; }
+.btn-primary:hover { background:var(--accent-hover); transform:translateY(-1px); box-shadow:0 6px 20px rgba(221,107,32,0.25); }
+
+.related-posts { border-top:1px solid var(--border); margin-top:40px; padding-top:36px; }
+.related-posts h3 { margin-bottom:16px; }
+.related-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:18px; }
+.related-post { border:1px solid var(--border); border-radius:10px; padding:18px; text-decoration:none; display:block; transition:all .25s; background:#fff; }
+.related-post:hover { box-shadow:var(--shadow); transform:translateY(-2px); }
+.related-post h4 { color:var(--text); font-size:15px; margin-bottom:6px; }
+.related-post span { font-size:12px; color:var(--accent); font-weight:600; }
+
+.site-footer { background:var(--primary-dark); color:rgba(255,255,255,0.7); padding:32px 0; text-align:center; margin-top:80px; font-size:13px; }
+.site-footer a { color:rgba(255,255,255,0.8); text-decoration:none; }
+.footer-logo { height: 48px; width: auto; margin-bottom: 14px; object-fit: contain; }
+
+@media (max-width:768px) {
+  .article-hero h1 { font-size:26px; }
+  h1 { font-size:28px; }
+  .nav { display:none; }
+}
+@media (max-width:900px) {
+  .nav { display:none; flex-direction:column; position:absolute; top:100%; left:0; right:0; background:#fff; border-bottom:1px solid var(--border); box-shadow:0 8px 30px rgba(0,0,0,0.08); padding:0; }
+  .nav.open { display:flex; }
+  .nav>li>a { padding:14px 24px; border-bottom:1px solid var(--bg-alt); }
+  .dropdown-menu { position:static; transform:none; box-shadow:none; border:none; opacity:1; visibility:visible; display:none; padding-left:16px; background:var(--bg-alt); }
+  .nav>li:hover .dropdown-menu { display:none; }
+  .nav>li.open-sub .dropdown-menu { display:block; }
+  .nav-toggle { display:block; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="../index.html" class="logo">
+      <img src="../images/logo-200.png" alt="Tianyi Machinery" class="logo-img" id="logoImg" onload="this.classList.add('loaded')" onerror="this.style.display='none';document.getElementById('logoSvg').style.display='block';">
+      <svg class="logo-svg" id="logoSvg" width="36" height="36" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="8" fill="#1a365d"/><path d="M8 20h24M20 8v24M12 14l16 12M12 26l16-12" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/></svg>
+      <span class="logo-text">Tianyi Machinery<span style="display:block;font-size:11px;font-weight:400;color:var(--text-light);">Stock: 832654</span></span>
+    </a>
+    <button class="nav-toggle" onclick="document.getElementById('mainNav').classList.toggle('open')">&#9776;</button>
+    <nav>
+      <ul class="nav" id="mainNav">
+        <li><a href="../index.html">About Us</a>
+          <ul class="dropdown-menu">
+            <li><a href="../index.html">Company Profile</a></li>
+            <li><a href="../factory.html">Factory Tour</a></li>
+          </ul>
+        </li>
+        <li><a href="../index.html">Products</a>
+          <ul class="dropdown-menu">
+            <li><a href="../products/belt-conveyor.html">Belt Conveyor</a></li>
+            <li><a href="../products/chain-conveyor.html">Chain Conveyor</a></li>
+            <li><a href="../products/bucket-elevator.html">Bucket Elevator</a></li>
+            <li><a href="../products/screw-conveyor.html">Screw Conveyor</a></li>
+            <li><a href="../products/apron-conveyor.html">Apron Conveyor</a></li>
+            <li><a href="../products/dust-collector.html">Dust Collector</a></li>
+            <li><a href="../products/feeding-equipment.html">Feeding Equipment</a></li>
+            <li><a href="../products/crushing-equipment.html">Crushing Equipment</a></li>
+            <li><a href="../products/screening-equipment.html">Screening Equipment</a></li>
+            <li><a href="../products/valves.html">Valves</a></li>
+            <li><a href="../products/parts.html">Spare Parts</a></li>
+          </ul>
+        </li>
+        <li><a href="../projects.html">Projects</a></li>
+        <li><a href="../blog.html" style="color:var(--primary);border-bottom-color:var(--accent);">Blog</a>
+          <ul class="dropdown-menu">
+            <li><a href="../blog.html" style="color:var(--accent);font-weight:600;">All Articles</a></li>
+            <li><a href="../blog.html#maintenance">Maintenance Guides</a></li>
+            <li><a href="../blog.html#news">Company News</a></li>
+            <li><a href="../blog.html#insights">Industry Insights</a></li>
+          </ul>
+        </li>
+        <li class="no-sub"><a href="../index.html#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb" style="max-width:820px;margin:0 auto;">
+  <div class="container" style="padding:0 24px;">
+    <a href="../index.html">Home</a> <span>&rsaquo;</span>
+    <a href="../blog.html">Blog</a> <span>&rsaquo;</span>
+    <strong>Belt Conveyor Installation Guide</strong>
+  </div>
+</div>
+
+<section class="article-hero">
+  <div class="wrap container" style="padding:0 24px;">
+    <span class="cat">Maintenance Guide</span>
+    <h1>Belt Conveyor Installation &amp; Commissioning: A Practical Checklist</h1>
+    <div class="article-meta">
+      <span>&#128197; August 4, 2026</span>
+      <span>&#8986; 9 min read</span>
+      <span>&#9998; Tianyi Engineering Team</span>
+    </div>
+  </div>
+</section>
+
+<article class="article-body container">
+  <p class="lead">A belt conveyor is one of the simplest pieces of bulk-handling equipment &mdash; until it is installed poorly. Most premature belt wear, mis-tracking, and spillage problems trace back to the first week of installation, not to the equipment itself. This guide walks plant engineers and maintenance leads through a field-tested sequence: from foundation survey to first load test.</p>
+
+  <div class="toc">
+    <h4>In this guide</h4>
+    <a href="#prep">1. Pre-installation preparation</a>
+    <a href="#install">2. Step-by-step installation</a>
+    <a href="#commission">3. Commissioning &amp; startup</a>
+    <a href="#safety">4. Safety verification</a>
+    <a href="#maintenance">5. First-month maintenance</a>
+  </div>
+
+  <h2 id="prep">1. Pre-Installation Preparation</h2>
+  <p>Before a single support is placed, confirm that the site matches the approved general arrangement (GA) drawing. Tianyi conveyors are supplied against your capacity, distance, and material data, so the foundation dimensions are specific to your order &mdash; do not assume a standard footprint.</p>
+  <ul>
+    <li><strong>Verify foundations and anchor bolt positions.</strong> Check centerline, elevation, and spacing against the drawing with a tolerance of &plusmn;5&nbsp;mm. Wrong anchor positions are the #1 cause of rework.</li>
+    <li><strong>Confirm material characteristics.</strong> Bulk density, particle size, moisture, and temperature determine belt selection (rubber EP/NN/ST, PVC, PU, heat-resistant, oil-resistant, or flame-retardant). Re-check these against the quote.</li>
+    <li><strong>Stage components by sequence.</strong> Unpack idlers, pulleys, frames, and the drive unit; keep the belt roll in a shaded, flat area off the ground.</li>
+    <li><strong>Tooling readiness.</strong> Alignment laser or string line, torque wrench, belt clamp, vulcanizing kit (for hot/cold splicing), and lifting gear rated for the heaviest module.</li>
+  </ul>
+
+  <div class="callout">
+    <strong>Tip:</strong> For inclined sections, decide early whether you need a standard belt (max ~18&deg;) or a chevron (cleated) belt (up to ~28&deg;). Retrofitting grip after installation is costly.
+  </div>
+
+  <h2 id="install">2. Step-by-Step Installation</h2>
+
+  <h3>2.1 Support structure &amp; pulleys</h3>
+  <p>Set the tail and head pulley frames first, then string a centerline between them. All intermediate support stands must sit on this line. Level the stands and grout the base plates before torquing anchors to specification.</p>
+
+  <h3>2.2 Idler installation</h3>
+  <p>Troughing idlers (3-roll or 5-roll), flat return idlers, impact idlers at the loading zone, and self-aligning idlers should be fitted in the correct order. Self-aligning idlers are placed every 10&ndash;15 m and at both ends of horizontal curves &mdash; they are your first defense against mis-tracking.</p>
+
+  <h3>2.3 Belt placement &amp; splicing</h3>
+  <p>Thread the belt and pull it around the pulleys. For fabric belts, use a certified vulcanized (hot or cold) splice; for steel-cord belts, only a vulcanized splice meets the mechanical load. A poorly made splice is a permanent weak point &mdash; verify peel and shear test samples if possible.</p>
+
+  <h3>2.4 Drive &amp; take-up</h3>
+  <p>Mount the drive motor, gearbox, and coupling. Set the take-up (screw, winch, or gravity) so the belt has enough tension to avoid slip at the drive pulley but not so much that it overloads the bearings. Belt speed on Tianyi units typically runs 0.8&ndash;5.0&nbsp;m/s depending on model.</p>
+
+  <div class="figure">
+    <picture>
+      <source srcset="../images/products/belt-conveyor/main.webp" type="image/webp">
+      <img src="../images/products/belt-conveyor/main.jpg" alt="Tianyi belt conveyor installation" onerror="this.parentElement.innerHTML='<div style=\'aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#1a365d,#2c5282);color:#fff;font-weight:700;border-radius:12px;\'>Belt Conveyor</div>'">
+    </picture>
+    <figcaption>Figure 1. A typical Tianyi long-distance belt conveyor in a bulk handling plant.</figcaption>
+  </div>
+
+  <h2 id="commission">3. Commissioning &amp; Startup</h2>
+  <p>Commissioning is a staged process. Never load material on day one.</p>
+  <ol>
+    <li><strong>Visual &amp; torque check.</strong> Re-torque all fasteners, confirm guardrails and emergency stops are in place.</li>
+    <li><strong>No-load run (30&ndash;60 min).</strong> Run empty and watch the belt path. It should track within the idler edges. Minor drift is corrected with training idlers, not by forcing the frame.</li>
+    <li><strong>Alignment &amp; tension.</strong> Check pulley and idler alignment with a laser. Adjust take-up so sag between return idlers is ~1&ndash;2% of span.</li>
+    <li><strong>Gradual loading.</strong> Start at 25% capacity, then 50%, then full over 2&ndash;3 shifts. Watch for spillage at the loading zone and belt cleaner performance.</li>
+    <li><strong>Load test sign-off.</strong> Record amp draw, belt speed, and temperature of bearings. Compare against the nameplate for the drive power range (1.5&ndash;500&nbsp;kW on Tianyi models).</li>
+  </ol>
+
+  <table>
+    <tr><th>Model series</th><th>Belt width</th><th>Capacity</th><th>Max inclination</th></tr>
+    <tr><td>TD75 / DTII / DTII(A) / DX</td><td>500&ndash;2000 mm</td><td>45&ndash;2,000 t/h</td><td>18&deg; (28&deg; chevron)</td></tr>
+  </table>
+
+  <h2 id="safety">4. Safety Verification</h2>
+  <ul>
+    <li>All rotating parts (pulleys, coupling, take-up) enclosed with guards.</li>
+    <li>Pull-cord emergency stops accessible along the full length, tested.</li>
+    <li>Belt misalignment switches, speed monitors, and (if specified) rip detection and bearing-temperature sensors wired to the control system.</li>
+    <li>Lockout/tagout (LOTO) procedure documented for maintenance crews.</li>
+  </ul>
+
+  <h2 id="maintenance">5. First-Month Maintenance</h2>
+  <p>The first 30 days decide the belt's service life. Build this routine:</p>
+  <ul>
+    <li><strong>Daily:</strong> Inspect belt edges for fraying, check cleaners are removing carry-back, listen for abnormal idler noise.</li>
+    <li><strong>Weekly:</strong> Re-torque take-up, verify tracking, check for material buildup on return idlers (a common mis-tracking cause).</li>
+    <li><strong>Monthly:</strong> Grease bearings per schedule, inspect splice condition, measure belt drift trend.</li>
+  </ul>
+  <p>Because Tianyi conveyors use standardized idlers, pulleys, and drives, spare sourcing is straightforward. Keep a small critical-spare kit (2&ndash;3 idlers per size, one scraper blade, one set of bearings) on site to avoid unplanned downtime.</p>
+
+  <div class="cta-box">
+    <h2>Planning a New Conveyor Line?</h2>
+    <p>Send us your material type, capacity, conveying distance, and site layout. Our engineering team returns a tailored proposal &mdash; including GA drawing and installation supervision &mdash; within 24 hours.</p>
+    <a href="../index.html#contact" class="btn">Request a Quote</a>
+  </div>
+
+  <div class="related-posts">
+    <h3>Related Reading</h3>
+    <div class="related-grid">
+      <a href="../products/belt-conveyor.html" class="related-post"><h4>Belt Conveyor Product Page</h4><span>Specs &amp; features</span></a>
+      <a href="../products/parts.html" class="related-post"><h4>Spare Parts</h4><span>Idlers, pulleys, scrapers</span></a>
+      <a href="../products/valves.html" class="related-post"><h4>Industrial Valves</h4><span>Flow control for your system</span></a>
+    </div>
+  </div>
+</article>
+
+<footer class="site-footer">
+  <div class="container">
+    <img src="../images/logo-160.png" alt="Tianyi Machinery" class="footer-logo">
+    <p>&copy; 2026 Hubei Tianyi Machinery Co., Ltd. | Stock: 832654 | <a href="mailto:kim@tianyi-machinery.com">kim@tianyi-machinery.com</a></p>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.nav>li>a').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    if (window.innerWidth <= 900 && this.parentElement.querySelector('.dropdown-menu')) {
+      e.preventDefault();
+      this.parentElement.classList.toggle('open-sub');
+    }
+  });
+});
+</script>
+
+</body>
+</html>
