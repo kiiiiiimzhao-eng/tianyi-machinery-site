@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>双域名运营配置说明 | 天宜机械</title>
+<style>
+  :root{
+    --bg:#f6f7f9; --card:#ffffff; --line:#e3e6ea; --text:#1f2328;
+    --muted:#6a737d; --brand:#0b5fff; --ok:#1a7f37; --warn:#9a6700; --bad:#c1121f;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;padding:32px 16px;background:var(--bg);color:var(--text);
+       font-family:-apple-system,"Segoe UI","Microsoft YaHei",sans-serif;line-height:1.7}
+  .wrap{max-width:960px;margin:0 auto}
+  h1{font-size:26px;margin:0 0 6px}
+  .sub{color:var(--muted);font-size:14px;margin-bottom:24px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;
+        padding:20px 22px;margin-bottom:18px}
+  h2{font-size:18px;margin:0 0 14px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+  h3{font-size:15px;margin:18px 0 8px}
+  table{width:100%;border-collapse:collapse;font-size:14px}
+  th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+  th{background:#f0f2f5;font-weight:600;white-space:nowrap}
+  code{background:#f0f2f5;padding:1px 6px;border-radius:4px;font-size:13px}
+  .tag{display:inline-block;padding:2px 9px;border-radius:20px;font-size:12px;font-weight:600}
+  .t-ok{background:#e6f4ea;color:var(--ok)}
+  .t-warn{background:#fff4d6;color:var(--warn)}
+  .t-bad{background:#fdeaea;color:var(--bad)}
+  .box{border-left:4px solid var(--brand);background:#f0f5ff;padding:12px 14px;border-radius:0 8px 8px 0;margin:12px 0;font-size:14px}
+  .box.danger{border-color:var(--bad);background:#fdeaea}
+  .box.good{border-color:var(--ok);background:#e9f7ee}
+  ol,ul{padding-left:22px;margin:8px 0}
+  li{margin:5px 0}
+  .foot{color:var(--muted);font-size:13px;text-align:center;margin-top:26px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>双域名运营配置说明</h1>
+  <div class="sub">湖北天宜机械 · 更新于 2026-08-04 · 策略：两个域名各自独立运营，互不跳转</div>
+
+  <div class="card">
+    <h2>一、职责划分（最终方案）</h2>
+    <table>
+      <tr><th>域名</th><th>用途</th><th>托管在哪</th><th>谁来维护</th></tr>
+      <tr>
+        <td><code>tianyimachine.com</code></td>
+        <td>新独立站（英文 B2B 官网、产品页、博客、询盘表单）</td>
+        <td>Cloudflare Pages（GitHub 自动部署）</td>
+        <td>本仓库</td>
+      </tr>
+      <tr>
+        <td><code>tianyi-machinery.com</code></td>
+        <td>老站，继续展示产品 <b>+ 企业邮箱域名</b>（<code>kim@tianyi-machinery.com</code>）</td>
+        <td>阿里云 CDN（<code>*.w.cdngslb.com</code>）+ 阿里云企业邮箱（MX：<code>mxn/mxw.mxhichina.com</code>）</td>
+        <td>原有服务商 / 原有后台</td>
+      </tr>
+    </table>
+    <div class="box good">
+      <b>好消息：</b>实测老域名当前解析走的是阿里云 CDN，<b>并没有指向新站</b>，MX 邮件记录也完好。
+      也就是说——老站和邮箱本来就在正常独立运行，<b>你不需要做任何 DNS 改动</b>。
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>二、需要做的事（只有 1 件，已由我完成）</h2>
+    <h3>✅ 已改：删除仓库里旧域名 → 新域名的 301 规则</h3>
+    <p>项目根目录 <code>_redirects</code> 里原本写了 4 条「<code>tianyi-machinery.com/*</code> 跳转到 <code>tianyimachine.com</code>」的规则。
+      这是按「老域名退役」思路写的，与你现在「两站独立」的方案冲突，已删除。现在该文件只保留：</p>
+    <ul>
+      <li><code>www.tianyimachine.com</code> → <code>tianyimachine.com</code>（新站自己的 www 归一，必须保留）</li>
+    </ul>
+    <p class="sub" style="margin:8px 0 0">你只需在 GitHub Desktop 点一次 <b>Push origin</b>，Cloudflare 会自动重新部署。</p>
+  </div>
+
+  <div class="card">
+    <h2>三、绝对不要做的事</h2>
+    <table>
+      <tr><th>动作</th><th>后果</th><th>结论</th></tr>
+      <tr>
+        <td>在 Cloudflare Pages 里把 <code>tianyi-machinery.com</code> 添加为自定义域</td>
+        <td>老域名会开始显示新站内容，老站被顶掉</td>
+        <td><span class="tag t-bad">禁止</span></td>
+      </tr>
+      <tr>
+        <td>开启 Cloudflare <b>Email Routing</b>（邮件路由）</td>
+        <td>会覆盖 <code>mxhichina</code> 的 MX 记录，<b>kim@ 邮箱立刻收不到信</b></td>
+        <td><span class="tag t-bad">禁止</span></td>
+      </tr>
+      <tr>
+        <td>做跨域 Bulk Redirect（老域名 301 到新域名）</td>
+        <td>老站直接消失</td>
+        <td><span class="tag t-bad">禁止</span></td>
+      </tr>
+      <tr>
+        <td>把老域名的 NS 切到 Cloudflare</td>
+        <td>没必要；切换过程若漏记录会同时打断老站和邮箱</td>
+        <td><span class="tag t-warn">不建议</span></td>
+      </tr>
+    </table>
+    <div class="box danger">
+      如果你之前已经把 <code>tianyi-machinery.com</code> 添加进了 Cloudflare 站点列表：
+      只要 <b>没有把域名的 NS（名称服务器）改成 Cloudflare 给的那两条</b>，它就一直是 Pending 状态、不生效。
+      建议直接在 Cloudflare 里把这个站点 <b>Remove Site</b> 删掉，避免以后误操作。
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>四、询盘怎么进邮箱（不需要任何 DNS 设置）</h2>
+    <ol>
+      <li><b>页面上的邮箱链接</b>：全站页脚 / 联系区都是 <code>mailto:kim@tianyi-machinery.com</code>，点击直接唤起客户邮件客户端，走的是客户自己的邮箱，与我方域名配置无关。</li>
+      <li><b>网站表单</b>：新站表单用的是 Web3Forms（access key <code>c6eeec07-…</code>）。收件人是你在 Web3Forms 后台绑定的邮箱地址，只要那里填的是 <code>kim@tianyi-machinery.com</code>，询盘就会进这个邮箱。</li>
+      <li>因此：<b>新站 ≠ 需要邮箱域名</b>。两者完全解耦。</li>
+    </ol>
+    <div class="box">
+      <b>建议做一次实测：</b>上线后到新站联系表单填一条测试询盘提交，确认 <code>kim@tianyi-machinery.com</code> 能收到（注意查垃圾箱，首次可能被判垃圾，标记「非垃圾」即可）。
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>五、两站并行的 SEO 注意事项</h2>
+    <ul>
+      <li><b>内容不要照搬。</b>两个站如果产品文案高度雷同，Google 会判重复内容，通常只收录其中一个、另一个降权。建议新站主打英文外贸长文＋博客，老站保留原有内容体系，不要把新站文案复制过去。</li>
+      <li><b>各自 canonical 指向自己。</b>新站所有页面 canonical 已统一为 <code>https://tianyimachine.com/...</code>；老站的 canonical 保持指向老域名，不要互相指。</li>
+      <li><b>不要互相做大量页脚全站互链。</b>首页放一个「集团/关联站点」入口即可，避免被判操纵链接。</li>
+      <li><b>Search Console 分别提交。</b>两个域名各自验证、各自提交 sitemap，数据独立看。</li>
+      <li>公司名、地址、电话、股票代码（832654）等 NAP 信息两站要一致，这对本地/企业实体识别是加分项。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>六、当前待办清单</h2>
+    <table>
+      <tr><th>#</th><th>事项</th><th>谁做</th><th>状态</th></tr>
+      <tr><td>1</td><td>删除 <code>_redirects</code> 中旧域名 301 规则</td><td>已完成</td><td><span class="tag t-ok">完成</span></td></tr>
+      <tr><td>2</td><td>GitHub Desktop → Push origin，触发部署</td><td>你</td><td><span class="tag t-warn">待办</span></td></tr>
+      <tr><td>3</td><td>Cloudflare 里删除 pending 的 <code>tianyi-machinery.com</code> 站点（如已添加）</td><td>你</td><td><span class="tag t-warn">待办</span></td></tr>
+      <tr><td>4</td><td>Web3Forms 后台确认收件邮箱 = <code>kim@tianyi-machinery.com</code> 并实测一封</td><td>你</td><td><span class="tag t-warn">待办</span></td></tr>
+      <tr><td>5</td><td>新站 www→apex 的 301（Bulk Redirect 或 _redirects 已覆盖）</td><td>你</td><td><span class="tag t-warn">确认</span></td></tr>
+    </table>
+  </div>
+
+  <div class="foot">湖北天宜机械有限公司 · 双域名运营配置说明 · 本文件仅供内部参考</div>
+</div>
+</body>
+</html>
