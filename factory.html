@@ -74,7 +74,9 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
 .factory-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(350px,1fr)); gap:24px; margin:32px 0; }
 .factory-card { background:#fff; border-radius:10px; overflow:hidden; border:1px solid var(--border); transition:all var(--transition); }
 .factory-card:hover { box-shadow:var(--shadow); }
-.factory-card .image { height:240px; background-size:cover; background-position:center; display:flex; align-items:center; justify-content:center; }
+.factory-card .image { height:240px; background:#f0f0f0; overflow:hidden; position:relative; }
+.factory-card .image picture { display:block; width:100%; height:100%; }
+.factory-card .image img { width:100%; height:100%; object-fit:cover; display:block; }
 .factory-card .info { padding:20px; }
 .factory-card .info h4 { margin-bottom:6px; }
 .factory-card .info p { font-size:13px; color:var(--text-muted); margin:0; }
@@ -196,12 +198,11 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
 
   <div class="factory-grid">
     <div class="factory-card">
-      <div class="image" style="background:linear-gradient(135deg,#1a365d,#2c5282);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.3);font-size:48px;position:relative;overflow:hidden;">
+      <div class="image">
         <picture>
   <source srcset="images/factory/workshop 1/IMG_20241127_100440.webp" type="image/webp">
-  <img src="images/factory/workshop 1/IMG_20241127_100440.jpg" alt="CNC Machining Center" style="position:absolute;width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'" loading="lazy">
+  <img src="images/factory/workshop 1/IMG_20241127_100440.jpg" alt="CNC Machining Center" loading="lazy">
 </picture>
-        &#9881;
       </div>
       <div class="info">
         <h4>CNC Machining Center</h4>
@@ -209,12 +210,11 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
       </div>
     </div>
     <div class="factory-card">
-      <div class="image" style="background:linear-gradient(135deg,#744210,#975a16);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.3);font-size:48px;position:relative;overflow:hidden;">
+      <div class="image">
         <picture>
   <source srcset="images/factory/workshop 1/IMG_20241127_100020.webp" type="image/webp">
-  <img src="images/factory/workshop 1/IMG_20241127_100020.jpg" alt="Steel Structure Workshop" style="position:absolute;width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'" loading="lazy">
+  <img src="images/factory/workshop 1/IMG_20241127_100020.jpg" alt="Steel Structure Workshop" loading="lazy">
 </picture>
-        &#9881;
       </div>
       <div class="info">
         <h4>Steel Structure Workshop</h4>
@@ -222,12 +222,11 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
       </div>
     </div>
     <div class="factory-card">
-      <div class="image" style="background:linear-gradient(135deg,#22543d,#276749);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.3);font-size:48px;position:relative;overflow:hidden;">
+      <div class="image">
         <picture>
   <source srcset="images/factory/workshop 2/IMG_20241127_100407.webp" type="image/webp">
-  <img src="images/factory/workshop 2/IMG_20241127_100407.jpg" alt="Assembly &amp; Testing Workshop" style="position:absolute;width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'" loading="lazy">
+  <img src="images/factory/workshop 2/IMG_20241127_100407.jpg" alt="Assembly &amp; Testing Workshop" loading="lazy">
 </picture>
-        &#9881;
       </div>
       <div class="info">
         <h4>Assembly &amp; Testing Workshop</h4>
@@ -235,12 +234,11 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
       </div>
     </div>
     <div class="factory-card">
-      <div class="image" style="background:linear-gradient(135deg,#9b2c2c,#c53030);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.3);font-size:48px;position:relative;overflow:hidden;">
+      <div class="image">
         <picture>
   <source srcset="images/factory/office/main.webp" type="image/webp">
-  <img src="images/factory/office/main.jpg" alt="Quality Control Lab" style="position:absolute;width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'" loading="lazy">
+  <img src="images/factory/office/main.jpg" alt="Quality Control Lab" loading="lazy">
 </picture>
-        &#9881;
       </div>
       <div class="info">
         <h4>Quality Control Lab</h4>
@@ -248,12 +246,11 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
       </div>
     </div>
     <div class="factory-card">
-      <div class="image" style="background:linear-gradient(135deg,#4a5568,#2d3748);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.3);font-size:48px;position:relative;overflow:hidden;">
+      <div class="image">
         <picture>
   <source srcset="images/factory/team/main.webp" type="image/webp">
-  <img src="images/factory/team/main.jpg" alt="R&amp;D Technology Center" style="position:absolute;width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'" loading="lazy">
+  <img src="images/factory/team/main.jpg" alt="R&amp;D Technology Center" loading="lazy">
 </picture>
-        &#9881;
       </div>
       <div class="info">
         <h4>R&amp;D Technology Center</h4>
@@ -261,12 +258,11 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
       </div>
     </div>
     <div class="factory-card">
-      <div class="image" style="background:linear-gradient(135deg,#553c9a,#6b46c1);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.3);font-size:48px;position:relative;overflow:hidden;">
+      <div class="image">
         <picture>
   <source srcset="images/factory/warehouse/IMG_20251209_084719.webp" type="image/webp">
-  <img src="images/factory/warehouse/IMG_20251209_084719.jpg" alt="Finished Product Warehouse" style="position:absolute;width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'" loading="lazy">
+  <img src="images/factory/warehouse/IMG_20251209_084719.jpg" alt="Finished Product Warehouse" loading="lazy">
 </picture>
-        &#9881;
       </div>
       <div class="info">
         <h4>Finished Product Warehouse</h4>
