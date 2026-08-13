@@ -76,7 +76,9 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
 .project-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(350px,1fr)); gap:24px; margin:24px 0 40px; }
 .project-card { background:#fff; border-radius:12px; overflow:hidden; border:1px solid var(--border); transition:all var(--transition); display:flex; flex-direction:column; }
 .project-card:hover { box-shadow:var(--shadow); transform:translateY(-3px); }
-.project-card .thumb { height:210px; display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,0.25); font-size:44px; position:relative; }
+.project-card .thumb { height:210px; position:relative; overflow:hidden; background:#f0f0f0; }
+.project-card .thumb picture { display:block; width:100%; height:100%; }
+.project-card .thumb img { width:100%; height:100%; object-fit:cover; display:block; }
 .project-card .thumb .tag { position:absolute; top:14px; left:14px; background:rgba(255,255,255,0.92); color:var(--primary); font-size:11px; font-weight:700; padding:4px 12px; border-radius:12px; }
 .project-card .info { padding:22px; display:flex; flex-direction:column; flex:1; }
 .project-card .info h3 { margin:0 0 8px; font-size:18px; }
@@ -210,8 +212,12 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
   <div class="project-grid" id="projectGrid">
 
     <div class="project-card" data-category="chemical">
-      <div class="thumb" style="background:linear-gradient(135deg,#1a365d,#2c5282);">
-        <span class="tag">Chemical</span>&#9881;
+      <div class="thumb">
+        <span class="tag">Chemical</span>
+        <picture>
+          <source srcset="images/projects/chlor alkali/main.webp" type="image/webp">
+          <img src="images/projects/chlor alkali/main.jpg" alt="Chlor-Alkali Plant Bulk Conveying System Project" loading="lazy">
+        </picture>
       </div>
       <div class="info">
         <h3>Chlor-Alkali Plant Bulk Conveying System</h3>
@@ -222,8 +228,12 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
     </div>
 
     <div class="project-card" data-category="power">
-      <div class="thumb" style="background:linear-gradient(135deg,#744210,#975a16);">
-        <span class="tag">Power</span>&#9889;
+      <div class="thumb">
+        <span class="tag">Power</span>
+        <picture>
+          <source srcset="images/projects/thermal power/main.webp" type="image/webp">
+          <img src="images/projects/thermal power/main.jpg" alt="Thermal Power Plant Coal Handling System Project" loading="lazy">
+        </picture>
       </div>
       <div class="info">
         <h3>2×350MW Power Plant Coal Handling</h3>
@@ -234,8 +244,12 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
     </div>
 
     <div class="project-card" data-category="mining">
-      <div class="thumb" style="background:linear-gradient(135deg,#22543d,#276749);">
-        <span class="tag">Mining</span>&#9935;
+      <div class="thumb">
+        <span class="tag">Mining</span>
+        <picture>
+          <source srcset="images/projects/nonferrous metal/main.webp" type="image/webp">
+          <img src="images/projects/nonferrous metal/main.jpg" alt="Copper Mine Overland Conveyor Project" loading="lazy">
+        </picture>
       </div>
       <div class="info">
         <h3>Copper Ore Overland Conveyor</h3>
@@ -246,8 +260,12 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
     </div>
 
     <div class="project-card" data-category="environmental">
-      <div class="thumb" style="background:linear-gradient(135deg,#4a5568,#2d3748);">
-        <span class="tag">Environmental</span>&#9851;
+      <div class="thumb">
+        <span class="tag">Environmental</span>
+        <picture>
+          <source srcset="images/projects/waste to energy/main.webp" type="image/webp">
+          <img src="images/projects/waste to energy/main.jpg" alt="Waste Incineration Material Handling Project" loading="lazy">
+        </picture>
       </div>
       <div class="info">
         <h3>Waste Incineration Material Handling</h3>
@@ -258,8 +276,12 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
     </div>
 
     <div class="project-card" data-category="cement">
-      <div class="thumb" style="background:linear-gradient(135deg,#553c9a,#6b46c1);">
-        <span class="tag">Cement</span>&#9650;
+      <div class="thumb">
+        <span class="tag">Cement</span>
+        <picture>
+          <source srcset="images/projects/sludge/main.webp" type="image/webp">
+          <img src="images/projects/sludge/main.jpg" alt="Cement Plant Bucket Elevator Upgrade Project" loading="lazy">
+        </picture>
       </div>
       <div class="info">
         <h3>Cement Clinker Bucket Elevator Upgrade</h3>
@@ -270,8 +292,12 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
     </div>
 
     <div class="project-card" data-category="power">
-      <div class="thumb" style="background:linear-gradient(135deg,#9b2c2c,#c53030);">
-        <span class="tag">Power</span>&#9889;
+      <div class="thumb">
+        <span class="tag">Power</span>
+        <picture>
+          <source srcset="images/projects/biomass/main.webp" type="image/webp">
+          <img src="images/projects/biomass/main.jpg" alt="Biomass Power Plant Fuel Conveying Project" loading="lazy">
+        </picture>
       </div>
       <div class="info">
         <h3>Biomass Power Plant Fuel Conveying</h3>
@@ -282,8 +308,12 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
     </div>
 
     <div class="project-card" data-category="chemical">
-      <div class="thumb" style="background:linear-gradient(135deg,#2a4365,#3182ce);">
-        <span class="tag">Chemical</span>&#9881;
+      <div class="thumb">
+        <span class="tag">Chemical</span>
+        <picture>
+          <source srcset="images/projects/chlor alkali/main.webp" type="image/webp">
+          <img src="images/projects/chlor alkali/main.jpg" alt="Urea Handling and Diverter System Project" loading="lazy">
+        </picture>
       </div>
       <div class="info">
         <h3>Urea Handling &amp; Diverter System</h3>
@@ -294,8 +324,12 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
     </div>
 
     <div class="project-card" data-category="mining">
-      <div class="thumb" style="background:linear-gradient(135deg,#975a16,#b7791f);">
-        <span class="tag">Mining</span>&#9935;
+      <div class="thumb">
+        <span class="tag">Mining</span>
+        <picture>
+          <source srcset="images/projects/nonferrous metal/main.webp" type="image/webp">
+          <img src="images/projects/nonferrous metal/main.jpg" alt="Iron Ore Screening and Crushing Line Project" loading="lazy">
+        </picture>
       </div>
       <div class="info">
         <h3>Iron Ore Screening &amp; Crushing Line</h3>
