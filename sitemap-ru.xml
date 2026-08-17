@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.tianyimachine.com/ru/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.tianyimachine.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tianyimachine.com/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tianyimachine.com/"/>
+    <lastmod>2026-08-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.tianyimachine.com/ru/products/belt-conveyor.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.tianyimachine.com/ru/products/belt-conveyor.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tianyimachine.com/products/belt-conveyor.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tianyimachine.com/products/belt-conveyor.html"/>
+    <lastmod>2026-08-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.tianyimachine.com/ru/products/chain-conveyor.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.tianyimachine.com/ru/products/chain-conveyor.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tianyimachine.com/products/chain-conveyor.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tianyimachine.com/products/chain-conveyor.html"/>
+    <lastmod>2026-08-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.tianyimachine.com/ru/products/bucket-elevator.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.tianyimachine.com/ru/products/bucket-elevator.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tianyimachine.com/products/bucket-elevator.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tianyimachine.com/products/bucket-elevator.html"/>
+    <lastmod>2026-08-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.tianyimachine.com/ru/products/screw-conveyor.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.tianyimachine.com/ru/products/screw-conveyor.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tianyimachine.com/products/screw-conveyor.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tianyimachine.com/products/screw-conveyor.html"/>
+    <lastmod>2026-08-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.tianyimachine.com/ru/products/apron-conveyor.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.tianyimachine.com/ru/products/apron-conveyor.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tianyimachine.com/products/apron-conveyor.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tianyimachine.com/products/apron-conveyor.html"/>
+    <lastmod>2026-08-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.tianyimachine.com/ru/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.tianyimachine.com/ru/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tianyimachine.com/#contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tianyimachine.com/#contact"/>
+    <lastmod>2026-08-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>
