@@ -8,11 +8,12 @@
 
 ## 用户目标 / 方向
 - **俄语版本站点（/ru/ 子目录）**：让俄语客户在 Yandex 用俄语搜到网站。用户提出后已完成 pilot 实施。
-  - 已建页面（共 15 页）：ru/index.html、11 个产品页（belt/chain/bucket/screw/apron/dust-collector/feeding-equipment/crushing-equipment/screening-equipment/valves/parts）、ru/contact.html、ru/blog.html、ru/projects.html。
+  - 已建页面（共 17 页）：ru/index.html、11 个产品页（belt/chain/bucket/screw/apron/dust-collector/feeding-equipment/crushing-equipment/screening-equipment/valves/parts）、ru/contact.html、ru/blog.html、ru/projects.html、ru/factory.html、ru/certifications.html。
   - 每页：lang="ru" + 俄语 title/description/keywords/og:locale ru_RU + hreflang ru/en/x-default 互链 + 独立 canonical + GA4 + "EN" 切换。
   - 英文对应页（index + 11 产品 + blog + projects，共 14 页）已加 hreflang ru 互链 + "RU" 切换。
-  - sitemap-ru.xml 已建（15 条 RU URL，含 xhtml:link 互链），robots.txt 已引用；待用户提交 Yandex/Google。
-  - 全站已补全：14 个英文页与 15 个 RU 页语言切换对称。遗留：factory.html / certifications.html 无 RU 版，RU 首页暂指向其英文版。
+  - sitemap-ru.xml（17 条 RU URL，含 xhtml:link 互链），robots.txt 已引用；待用户提交 Yandex/Google。
+  - 全站完全双语：17 个英文页（含 factory/certifications）与 17 个 RU 页语言切换对称，RU 站内链接均指向 /ru/*。
+  - 注意：英文站无独立 contact.html（联系方式为 index.html#contact 锚点），故 ru/contact.html 的英文互链与 sitemap 均指向首页 /（而非 /contact.html）。其余 RU 页英文互链均指向对应英文页。
 
 ## 常用技术约定
 - Cloudflare Pages 区分文件名大小写（Linux）→ 引用与文件名必须完全一致（曾因 main.JPG vs main.jpg 裂图）。
