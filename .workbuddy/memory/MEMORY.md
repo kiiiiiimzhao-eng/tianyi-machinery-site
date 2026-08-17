@@ -8,11 +8,11 @@
 
 ## 用户目标 / 方向
 - **俄语版本站点（/ru/ 子目录）**：让俄语客户在 Yandex 用俄语搜到网站。用户提出后已完成 pilot 实施。
-  - 已建页面：ru/index.html、ru/products/{belt,chain,bucket,screw,apron}-conveyor.html、ru/contact.html（共 7 页）。
+  - 已建页面（共 15 页）：ru/index.html、11 个产品页（belt/chain/bucket/screw/apron/dust-collector/feeding-equipment/crushing-equipment/screening-equipment/valves/parts）、ru/contact.html、ru/blog.html、ru/projects.html。
   - 每页：lang="ru" + 俄语 title/description/keywords/og:locale ru_RU + hreflang ru/en/x-default 互链 + 独立 canonical + GA4 + "EN" 切换。
-  - 英文对应页（index + 5 个产品页）已加 hreflang ru 互链 + "RU" 切换。
-  - sitemap-ru.xml 已建（含 xhtml:link 互链），robots.txt 已引用；待用户提交 Yandex/Google。
-  - 仅 pilot：其余 6 个产品、博客、项目页暂用英文页/绝对链接过渡。后续可继续补全。
+  - 英文对应页（index + 11 产品 + blog + projects，共 14 页）已加 hreflang ru 互链 + "RU" 切换。
+  - sitemap-ru.xml 已建（15 条 RU URL，含 xhtml:link 互链），robots.txt 已引用；待用户提交 Yandex/Google。
+  - 全站已补全：14 个英文页与 15 个 RU 页语言切换对称。遗留：factory.html / certifications.html 无 RU 版，RU 首页暂指向其英文版。
 
 ## 常用技术约定
 - Cloudflare Pages 区分文件名大小写（Linux）→ 引用与文件名必须完全一致（曾因 main.JPG vs main.jpg 裂图）。
