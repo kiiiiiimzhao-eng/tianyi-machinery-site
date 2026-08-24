@@ -69,8 +69,8 @@ Use this skill when the user asks to:
 
 ### 5. Add Cards to the Blog Index Pages
 
-- In `blog.html`, add an EN card under the correct category (usually `Industry Insights`). Place the newest article first.
-- In `ru/blog.html`, add a matching RU card under the corresponding Russian category (`Ot raslevye obzory`).
+- In `blog.html`, add an EN card under the correct category (`Industry Insights` for technical guides, `Company News` for project/case-study articles). Place the newest article first.
+- In `ru/blog.html`, add a matching RU card under the corresponding Russian category (`Отраслевые обзоры` or `Новости компании`).
 - Use the processed image as the card thumbnail via `background-image` CSS.
 - Ensure RU index cards link to RU article URLs, not English URLs. Fix any existing wrong links found while editing.
 

@@ -13,7 +13,7 @@ Example:
 
 import sys
 import os
-from PIL import Image
+from PIL import Image, ImageOps
 
 
 def process_image(src_path: str, out_dir: str, max_size: int = 1400) -> None:
@@ -24,6 +24,9 @@ def process_image(src_path: str, out_dir: str, max_size: int = 1400) -> None:
         im = im.convert("RGB")
     else:
         im = im.convert("RGB")
+
+    # Correct orientation based on EXIF data (important for mobile/clipboard photos)
+    im = ImageOps.exif_transpose(im)
 
     w, h = im.size
     if max(w, h) > max_size:
