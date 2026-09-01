@@ -25,9 +25,100 @@
   "@type": "Product",
   "name": "Дробильное оборудование",
   "description": "Щёковые, молотковые, валковые и роторные дробилки для измельчения сыпучих материалов. Высокая степень дробления, регулируемая щель выгрузки, износостойкие плиты из марганцовистой стали и гидравлическая защита от перегрузки.",
-  "brand": { "@type": "Brand", "name": "Tianyi Machinery" },
-  "manufacturer": { "@type": "Organization", "name": "Hubei Tianyi Machinery Co., Ltd." },
-  "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "itemCondition": "https://schema.org/NewCondition" }
+  "brand": {
+    "@type": "Brand",
+    "name": "Tianyi Machinery"
+  },
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "Hubei Tianyi Machinery Co., Ltd."
+  },
+  "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/InStock",
+    "itemCondition": "https://schema.org/NewCondition"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "Типы",
+      "value": "щёковые (PE), молотковые (PC), валковые (2PG), роторные"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Макс. размер загрузки",
+      "value": "до 1 200 мм"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Размер продукта",
+      "value": "5 - 150 мм"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Производительность",
+      "value": "5 - 1 000 т/ч"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Степень дробления",
+      "value": "от 4:1 до 20:1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Изнашиваемые части",
+      "value": "сталь Г13/Г18 (марганцовистая), высокохромистый сплав"
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Какие типы дробилок доступны?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Щёковые дробилки (PE) для первичного дробления, молотковые (PC) для среднетвёрдых хрупких материалов, валковые (2PG) для липких и мягких материалов, роторные - для кубовидного продукта."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Каков максимальный размер загрузки и продукта?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Максимальный размер загрузки достигает 1 200 мм, размер продукта регулируется от 5 до 150 мм."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Какая производительность возможна?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Производительность составляет от 5 до 1 000 т/ч в зависимости от модели и материала, степень дробления - от 4:1 до 20:1."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Как регулируется размер продукта?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "С помощью ручного клинового, гидравлического или прокладочного механизма для управления гранулометрией."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Из чего изготавливаются изнашиваемые части?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Марганцовистая сталь (Г13/Г18) для щёк и валков, высокохромистый сплав для молотков - для длительного срока службы при абразивном износе."
+      }
+    }
+  ]
 }
 </script>
 
@@ -91,6 +182,11 @@ h3 { font-size:20px; font-weight:600; color:var(--primary); }
 .feature-item { padding:24px; border:1px solid var(--border); border-radius:10px; background:#fff; }
 .feature-item h4 { margin-bottom:8px; font-size:16px; }
 .feature-item p { font-size:13px; color:var(--text-muted); margin:0; }
+/* FAQ (GEO template) */
+.faq-list { margin-top:8px; }
+.faq-item { border:1px solid var(--border); border-radius:10px; padding:18px 20px; margin-bottom:14px; background:#fff; }
+.faq-item h3 { font-size:16px; color:var(--primary); margin-bottom:8px; line-height:1.4; }
+.faq-item p { margin:0; font-size:14px; color:var(--text-muted); }
 .cta-box { background:linear-gradient(135deg,var(--primary),var(--primary-light)); color:#fff; padding:50px; border-radius:12px; text-align:center; margin:40px 0; }
 .cta-box h2 { color:#fff; margin-bottom:12px; }
 .cta-box p { color:rgba(255,255,255,0.85); font-size:16px; margin-bottom:24px; }
@@ -239,6 +335,34 @@ h3 { font-size:20px; font-weight:600; color:var(--primary); }
       <div class="feature-item"><h4>Углеподготовка</h4><p>Дробление и фракционирование угля для ТЭС, коксовых и углехимических производств.</p></div>
       <div class="feature-item"><h4>Стройматериалы</h4><p>Переработка строительных и сносных отходов. Дробление гипса, извести и других материалов.</p></div>
       <div class="feature-item"><h4>Химическая отрасль</h4><p>Измельчение химического сырья, удобрений, соли и промышленных минералов до требуемых параметров.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <div class="container">
+    <h2>Часто задаваемые вопросы</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3>Какие типы дробилок доступны?</h3>
+        <p>Щёковые дробилки (PE) для первичного дробления, молотковые (PC) для среднетвёрдых хрупких материалов, валковые (2PG) для липких и мягких материалов, роторные - для кубовидного продукта.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Каков максимальный размер загрузки и продукта?</h3>
+        <p>Максимальный размер загрузки достигает 1 200 мм, размер продукта регулируется от 5 до 150 мм.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Какая производительность возможна?</h3>
+        <p>Производительность составляет от 5 до 1 000 т/ч в зависимости от модели и материала, степень дробления - от 4:1 до 20:1.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Как регулируется размер продукта?</h3>
+        <p>С помощью ручного клинового, гидравлического или прокладочного механизма для управления гранулометрией.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Из чего изготавливаются изнашиваемые части?</h3>
+        <p>Марганцовистая сталь (Г13/Г18) для щёк и валков, высокохромистый сплав для молотков - для длительного срока службы при абразивном износе.</p>
+      </div>
     </div>
   </div>
 </section>

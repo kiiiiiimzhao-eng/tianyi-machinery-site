@@ -25,9 +25,100 @@
   "@type": "Product",
   "name": "Запасные части",
   "description": "Оригинальные запасные части (OEM) для всего конвейерного оборудования Тяньи Машинери. Ролики, звёздочки, цепи, ковши, подшипники, компоненты муфт и изнашиваемые детали для бесперебойной работы ваших систем.",
-  "brand": { "@type": "Brand", "name": "Tianyi Machinery" },
-  "manufacturer": { "@type": "Organization", "name": "Hubei Tianyi Machinery Co., Ltd." },
-  "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "itemCondition": "https://schema.org/NewCondition" }
+  "brand": {
+    "@type": "Brand",
+    "name": "Tianyi Machinery"
+  },
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "Hubei Tianyi Machinery Co., Ltd."
+  },
+  "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/InStock",
+    "itemCondition": "https://schema.org/NewCondition"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "Категории",
+      "value": "ролики, звёздочки и цепи, ковши, подшипники и муфты, футеровки"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Шаг звёздочки",
+      "value": "50,8 - 304,8 мм"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Вместимость ковша",
+      "value": "0,5 - 80 л"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Материал ковша",
+      "value": "пластик, углеродистая сталь, нержавеющая сталь, износостойкий сплав"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Футеровка",
+      "value": "керамика, биметалл, полиуретан, Hardox, наплавка карбидом хрома"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Срок поставки",
+      "value": "3-5 дней (стандарт), 2-4 недели (на заказ)"
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Какие запасные части поставляет Тяньи?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ролики конвейеров, звёздочки и цепи, ковши, подшипники и муфты, а также футеровки для систем транспортировки сыпучих материалов."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Какие типы роликов и ковшей доступны?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Желобчатые, плоские, амортизирующие и самоцентрирующиеся ролики; ковши ленточных и цепных элеваторов из пластика, стали и износостойкого сплава вместимостью 0,5-80 л."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Какие цепи и звёздочки предлагаются?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Приводные и роликовые цепи, кованые скребковые цепи, а также штыревые и сварные цепи ковшовых элеваторов с шагом звёздочки 50,8-304,8 мм."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Из каких материалов изготавливается футеровка?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Керамика (оксид алюминия), биметалл, полиуретан, Hardox и наплавка карбидом хрома для продления срока службы."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Какие типичные сроки поставки?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Стандартные детали - 3-5 дней; детали по индивидуальному заказу - 2-4 недели."
+      }
+    }
+  ]
 }
 </script>
 
@@ -91,6 +182,11 @@ h3 { font-size:20px; font-weight:600; color:var(--primary); }
 .feature-item { padding:24px; border:1px solid var(--border); border-radius:10px; background:#fff; }
 .feature-item h4 { margin-bottom:8px; font-size:16px; }
 .feature-item p { font-size:13px; color:var(--text-muted); margin:0; }
+/* FAQ (GEO template) */
+.faq-list { margin-top:8px; }
+.faq-item { border:1px solid var(--border); border-radius:10px; padding:18px 20px; margin-bottom:14px; background:#fff; }
+.faq-item h3 { font-size:16px; color:var(--primary); margin-bottom:8px; line-height:1.4; }
+.faq-item p { margin:0; font-size:14px; color:var(--text-muted); }
 .cta-box { background:linear-gradient(135deg,var(--primary),var(--primary-light)); color:#fff; padding:50px; border-radius:12px; text-align:center; margin:40px 0; }
 .cta-box h2 { color:#fff; margin-bottom:12px; }
 .cta-box p { color:rgba(255,255,255,0.85); font-size:16px; margin-bottom:24px; }
@@ -239,6 +335,34 @@ h3 { font-size:20px; font-weight:600; color:var(--primary); }
       <div class="feature-item"><h4>Запчасти для шнековых конвейеров</h4><p>Винты и шнеки, футеровки жёлобов, подвесные подшипники, опорные подшипники, уплотнения и муфты валов.</p></div>
       <div class="feature-item"><h4>Запчасти для пластинчатых конвейеров</h4><p>Перекрывающиеся стальные полки, приводные цепи, ролики-опоры, звёздочки и направляющие для тяжёлых пластинчатых питателей и конвейеров.</p></div>
       <div class="feature-item"><h4>Прочие изнашиваемые детали</h4><p>Керамические и биметаллические футеровки, футеровки жёлобов, ударные брусья, скребки ленты и пылевые уплотнения для всех типов конвейеров.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <div class="container">
+    <h2>Часто задаваемые вопросы</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3>Какие запасные части поставляет Тяньи?</h3>
+        <p>Ролики конвейеров, звёздочки и цепи, ковши, подшипники и муфты, а также футеровки для систем транспортировки сыпучих материалов.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Какие типы роликов и ковшей доступны?</h3>
+        <p>Желобчатые, плоские, амортизирующие и самоцентрирующиеся ролики; ковши ленточных и цепных элеваторов из пластика, стали и износостойкого сплава вместимостью 0,5-80 л.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Какие цепи и звёздочки предлагаются?</h3>
+        <p>Приводные и роликовые цепи, кованые скребковые цепи, а также штыревые и сварные цепи ковшовых элеваторов с шагом звёздочки 50,8-304,8 мм.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Из каких материалов изготавливается футеровка?</h3>
+        <p>Керамика (оксид алюминия), биметалл, полиуретан, Hardox и наплавка карбидом хрома для продления срока службы.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Какие типичные сроки поставки?</h3>
+        <p>Стандартные детали - 3-5 дней; детали по индивидуальному заказу - 2-4 недели.</p>
+      </div>
     </div>
   </div>
 </section>

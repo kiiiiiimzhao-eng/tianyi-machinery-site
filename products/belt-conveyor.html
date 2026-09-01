@@ -24,13 +24,100 @@
   "@type": "Product",
   "name": "Belt Conveyor",
   "description": "Long-distance, large-capacity belt conveyors for bulk material handling. Available in semi-enclosed and open configurations with capacities up to 2,000 t/h.",
-  "brand": { "@type": "Brand", "name": "Tianyi Machinery" },
-  "manufacturer": { "@type": "Organization", "name": "Hubei Tianyi Machinery Co., Ltd." },
+  "brand": {
+    "@type": "Brand",
+    "name": "Tianyi Machinery"
+  },
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "Hubei Tianyi Machinery Co., Ltd."
+  },
   "offers": {
     "@type": "Offer",
     "availability": "https://schema.org/InStock",
     "itemCondition": "https://schema.org/NewCondition"
-  }
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "Model Series",
+      "value": "TD75, DTII, DTII(A), DX"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Belt Width",
+      "value": "500 - 2000 mm"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Capacity",
+      "value": "45 - 2,000 t/h"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Belt Speed",
+      "value": "0.8 - 5.0 m/s"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Max Inclination",
+      "value": "Up to 18 deg (28 deg with chevron belt)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Frame Material",
+      "value": "Carbon steel (standard), stainless steel (optional)"
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a belt conveyor and what is it used for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A belt conveyor uses a continuous moving belt to transport bulk materials over long distances at high capacity. It is widely used for coal, ore, aggregates, cement, grain, and other free-flowing solids in mining, power, port, and cement industries."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What belt widths and capacities are available?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Belt widths range from 500 to 2000 mm, with capacities from 45 to 2,000 t/h depending on belt speed (0.8-5.0 m/s) and material. Larger widths and speeds deliver higher throughput."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the maximum inclination for a belt conveyor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Standard troughed belt conveyors handle inclinations up to about 18 degrees. With chevron (patterned) belts, the angle can reach up to 28 degrees for loose, non-slip materials."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What belt and frame materials are offered?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Belts include rubber (EP/NN/ST), PVC, PU, and heat-, oil-, or flame-resistant grades. Frames are carbon steel as standard, with stainless steel optional for food and chemical applications."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does a belt conveyor compare to a chain or screw conveyor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Belt conveyors are best for long-distance, high-speed transport of low-abrasive bulk solids. Chain and screw conveyors are better for sealed, dust-tight handling, multiple inlets and outlets, and abrasive or hazardous materials."
+      }
+    }
+  ]
 }
 </script>
 
@@ -110,6 +197,11 @@ h3 { font-size:20px; font-weight:600; color:var(--primary); }
 .feature-item { padding:24px; border:1px solid var(--border); border-radius:10px; background:#fff; }
 .feature-item h4 { margin-bottom:8px; font-size:16px; }
 .feature-item p { font-size:13px; color:var(--text-muted); margin:0; }
+/* FAQ (GEO template) */
+.faq-list { margin-top:8px; }
+.faq-item { border:1px solid var(--border); border-radius:10px; padding:18px 20px; margin-bottom:14px; background:#fff; }
+.faq-item h3 { font-size:16px; color:var(--primary); margin-bottom:8px; line-height:1.4; }
+.faq-item p { margin:0; font-size:14px; color:var(--text-muted); }
 
 /* CTA */
 .cta-box { background:linear-gradient(135deg,var(--primary),var(--primary-light)); color:#fff; padding:50px; border-radius:12px; text-align:center; margin:40px 0; }
@@ -316,6 +408,34 @@ h3 { font-size:20px; font-weight:600; color:var(--primary); }
       <div class="feature-item">
         <h4>Biomass &amp; Waste-to-Energy</h4>
         <p>Fuel handling conveyors for wood chips, rice husk, RDF (refuse-derived fuel), and agricultural residues.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <div class="container">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3>What is a belt conveyor and what is it used for?</h3>
+        <p>A belt conveyor uses a continuous moving belt to transport bulk materials over long distances at high capacity. It is widely used for coal, ore, aggregates, cement, grain, and other free-flowing solids in mining, power, port, and cement industries.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What belt widths and capacities are available?</h3>
+        <p>Belt widths range from 500 to 2000 mm, with capacities from 45 to 2,000 t/h depending on belt speed (0.8-5.0 m/s) and material. Larger widths and speeds deliver higher throughput.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What is the maximum inclination for a belt conveyor?</h3>
+        <p>Standard troughed belt conveyors handle inclinations up to about 18 degrees. With chevron (patterned) belts, the angle can reach up to 28 degrees for loose, non-slip materials.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What belt and frame materials are offered?</h3>
+        <p>Belts include rubber (EP/NN/ST), PVC, PU, and heat-, oil-, or flame-resistant grades. Frames are carbon steel as standard, with stainless steel optional for food and chemical applications.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How does a belt conveyor compare to a chain or screw conveyor?</h3>
+        <p>Belt conveyors are best for long-distance, high-speed transport of low-abrasive bulk solids. Chain and screw conveyors are better for sealed, dust-tight handling, multiple inlets and outlets, and abrasive or hazardous materials.</p>
       </div>
     </div>
   </div>

@@ -30,7 +30,71 @@
     "@type": "Offer",
     "availability": "https://schema.org/InStock",
     "itemCondition": "https://schema.org/NewCondition"
-  }
+  },
+  "additionalProperty": [
+    { "@type": "PropertyValue", "name": "Model Series", "value": "TH (chain, deep bucket), TD (belt), NE (chain, heavy-duty)" },
+    { "@type": "PropertyValue", "name": "Conveying Capacity", "value": "4 – 800 m³/h" },
+    { "@type": "PropertyValue", "name": "Lifting Height", "value": "Up to 60 m" },
+    { "@type": "PropertyValue", "name": "Bucket Width", "value": "160 – 800 mm" },
+    { "@type": "PropertyValue", "name": "Drive Type", "value": "Belt drive (TD); chain drive (TH, NE)" }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a bucket elevator used for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A bucket elevator is vertical conveying equipment that lifts bulk solid materials — grain, cement, coal, fertilizer, minerals, and chemical powders — using buckets attached to a belt or chain. It is used to raise material efficiently to silos, bins, or the next process stage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between TH, TD, and NE bucket elevators?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "TH uses a chain with deep (high-efficiency) buckets; TD uses a belt drive; NE is a heavy-duty chain-type elevator for abrasive or high-capacity duty. The right choice depends on your material, capacity, and lifting height."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the maximum lifting height and capacity?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Capacity ranges from 4 to 800 m³/h and lifting heights reach up to 60 m, with custom designs available for greater heights."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are explosion-proof bucket elevators available for grain and combustible dust?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. ATEX-compliant options include explosion relief vents, anti-static belts, spark detection, and sealed housings for grain, flour, and other combustible dusts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What safety features are included?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Standard safety features include a backstop device (anti-rollback), belt misalignment switch, overflow sensor with automatic shutdown, and optional explosion relief vents."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I choose the right bucket elevator for my material?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Consider material type (abrasive, wet, or friable), required capacity, lifting height, and discharge method (centrifugal vs gravity). Share these details with our engineers for a tailored proposal."
+      }
+    }
+  ]
 }
 </script>
 
@@ -110,6 +174,12 @@ h3 { font-size:20px; font-weight:600; color:var(--primary); }
 .feature-item { padding:24px; border:1px solid var(--border); border-radius:10px; background:#fff; }
 .feature-item h4 { margin-bottom:8px; font-size:16px; }
 .feature-item p { font-size:13px; color:var(--text-muted); margin:0; }
+
+/* FAQ (GEO template) */
+.faq-list { margin-top:8px; }
+.faq-item { border:1px solid var(--border); border-radius:10px; padding:18px 20px; margin-bottom:14px; background:#fff; }
+.faq-item h3 { font-size:16px; color:var(--primary); margin-bottom:8px; line-height:1.4; }
+.faq-item p { margin:0; font-size:14px; color:var(--text-muted); }
 
 /* CTA */
 .cta-box { background:linear-gradient(135deg,var(--primary),var(--primary-light)); color:#fff; padding:50px; border-radius:12px; text-align:center; margin:40px 0; }
@@ -316,6 +386,38 @@ h3 { font-size:20px; font-weight:600; color:var(--primary); }
       <div class="feature-item">
         <h4>Chemical Powders</h4>
         <p>Safe vertical conveying of chemical powders with sealed, dust-tight design. Stainless steel options for food-grade and corrosive chemical applications.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <div class="container">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3>What is a bucket elevator used for?</h3>
+        <p>A bucket elevator is vertical conveying equipment that lifts bulk solid materials — grain, cement, coal, fertilizer, minerals, and chemical powders — using buckets attached to a belt or chain. It is used to raise material efficiently to silos, bins, or the next process stage.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What is the difference between TH, TD, and NE bucket elevators?</h3>
+        <p>TH uses a chain with deep (high-efficiency) buckets; TD uses a belt drive; NE is a heavy-duty chain-type elevator for abrasive or high-capacity duty. The right choice depends on your material, capacity, and lifting height.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What is the maximum lifting height and capacity?</h3>
+        <p>Capacity ranges from 4 to 800 m³/h and lifting heights reach up to 60 m, with custom designs available for greater heights.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Are explosion-proof bucket elevators available for grain and combustible dust?</h3>
+        <p>Yes. ATEX-compliant options include explosion relief vents, anti-static belts, spark detection, and sealed housings for grain, flour, and other combustible dusts.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What safety features are included?</h3>
+        <p>Standard safety features include a backstop device (anti-rollback), belt misalignment switch, overflow sensor with automatic shutdown, and optional explosion relief vents.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How do I choose the right bucket elevator for my material?</h3>
+        <p>Consider material type (abrasive, wet, or friable), required capacity, lifting height, and discharge method (centrifugal vs gravity). Share these details with our engineers for a tailored proposal.</p>
       </div>
     </div>
   </div>

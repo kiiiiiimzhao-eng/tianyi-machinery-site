@@ -25,9 +25,100 @@
   "@type": "Product",
   "name": "Промышленный пылеуловитель",
   "description": "Рукавные пылеуловители серии PPCS с импульсной продувкой для очистки промышленных газов. Высокая эффективность фильтрации 99,9%+ при модульной конструкции для цементной, химической, металлургической отраслей и ТЭС.",
-  "brand": { "@type": "Brand", "name": "Tianyi Machinery" },
-  "manufacturer": { "@type": "Organization", "name": "Hubei Tianyi Machinery Co., Ltd." },
-  "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "itemCondition": "https://schema.org/NewCondition" }
+  "brand": {
+    "@type": "Brand",
+    "name": "Tianyi Machinery"
+  },
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "Hubei Tianyi Machinery Co., Ltd."
+  },
+  "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/InStock",
+    "itemCondition": "https://schema.org/NewCondition"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "Серия моделей",
+      "value": "PPCS (рукавный пылеуловитель с импульсной продувкой)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Производительность по воздуху",
+      "value": "5 000 - 500 000 м3/ч"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Площадь фильтрации",
+      "value": "60 - 6 000 м2"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Запылённость на выходе",
+      "value": "< 30 мг/нм3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Материал рукавов",
+      "value": "полиэстер, Nomex, PPS, PTFE"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Рабочая температура",
+      "value": "до 260°C"
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Что такое рукавный пылеуловитель с импульсной продувкой?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Он улавливает пыль из технологического воздуха с помощью фильтровальных рукавов, а короткие импульсы сжатого воздуха очищают рукава на ходу или с остановкой. Широко применяется на цементных, энергетических, металлургических, химических и пищевых предприятиях."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Какой уровень выбросов он обеспечивает?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Концентрация пыли на выходе ниже 30 мг/нм3, что соответствует строгим экологическим нормам."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Какие производительность по воздуху и площадь фильтрации доступны?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Производительность по воздуху - от 5 000 до 500 000 м3/ч, площадь фильтрации - от 60 до 6 000 м2 для предприятий любого масштаба."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Из каких материалов изготавливаются рукава?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Полиэстер для обычных температур, Nomex и PPS для высоких температур, PTFE - для агрессивных и экстремальных условий. Рабочая температура достигает 260 градусов C."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Подходит ли он для взрывоопасной пыли?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Да. Доступны взрывные клапаны, антистатические рукава и искроулавливание, а также исполнение по стандарту ATEX."
+      }
+    }
+  ]
 }
 </script>
 
@@ -91,6 +182,11 @@ h3 { font-size:20px; font-weight:600; color:var(--primary); }
 .feature-item { padding:24px; border:1px solid var(--border); border-radius:10px; background:#fff; }
 .feature-item h4 { margin-bottom:8px; font-size:16px; }
 .feature-item p { font-size:13px; color:var(--text-muted); margin:0; }
+/* FAQ (GEO template) */
+.faq-list { margin-top:8px; }
+.faq-item { border:1px solid var(--border); border-radius:10px; padding:18px 20px; margin-bottom:14px; background:#fff; }
+.faq-item h3 { font-size:16px; color:var(--primary); margin-bottom:8px; line-height:1.4; }
+.faq-item p { margin:0; font-size:14px; color:var(--text-muted); }
 .cta-box { background:linear-gradient(135deg,var(--primary),var(--primary-light)); color:#fff; padding:50px; border-radius:12px; text-align:center; margin:40px 0; }
 .cta-box h2 { color:#fff; margin-bottom:12px; }
 .cta-box p { color:rgba(255,255,255,0.85); font-size:16px; margin-bottom:24px; }
@@ -239,6 +335,34 @@ h3 { font-size:20px; font-weight:600; color:var(--primary); }
       <div class="feature-item"><h4>Химические реакторы</h4><p>Очистка технологического газа и улавливание продукта на химических и нефтехимических предприятиях.</p></div>
       <div class="feature-item"><h4>Литейное производство</h4><p>Контроль пыли при подготовке песка, выбивке и дробеструйной очистке в литейных цехах.</p></div>
       <div class="feature-item"><h4>Горная отрасль и руды</h4><p>Подавление пыли у дробилок, грохотов и перегрузочных узлов на горно-обогатительных комбинатах.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <div class="container">
+    <h2>Часто задаваемые вопросы</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3>Что такое рукавный пылеуловитель с импульсной продувкой?</h3>
+        <p>Он улавливает пыль из технологического воздуха с помощью фильтровальных рукавов, а короткие импульсы сжатого воздуха очищают рукава на ходу или с остановкой. Широко применяется на цементных, энергетических, металлургических, химических и пищевых предприятиях.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Какой уровень выбросов он обеспечивает?</h3>
+        <p>Концентрация пыли на выходе ниже 30 мг/нм3, что соответствует строгим экологическим нормам.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Какие производительность по воздуху и площадь фильтрации доступны?</h3>
+        <p>Производительность по воздуху - от 5 000 до 500 000 м3/ч, площадь фильтрации - от 60 до 6 000 м2 для предприятий любого масштаба.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Из каких материалов изготавливаются рукава?</h3>
+        <p>Полиэстер для обычных температур, Nomex и PPS для высоких температур, PTFE - для агрессивных и экстремальных условий. Рабочая температура достигает 260 градусов C.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Подходит ли он для взрывоопасной пыли?</h3>
+        <p>Да. Доступны взрывные клапаны, антистатические рукава и искроулавливание, а также исполнение по стандарту ATEX.</p>
+      </div>
     </div>
   </div>
 </section>

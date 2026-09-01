@@ -25,9 +25,100 @@
   "@type": "Product",
   "name": "Пластинчатый конвейер",
   "description": "Тяжёлые пластинчатые конвейеры для транспортировки горячих, тяжёлых, абразивных и крупнокусковых материалов. Серия BLT с перекрывающимися стальными лотками на тяжёлых роликовых цепях. Температура до 600°C, производительность до 1000 т/ч.",
-  "brand": { "@type": "Brand", "name": "Tianyi Machinery" },
-  "manufacturer": { "@type": "Organization", "name": "Hubei Tianyi Machinery Co., Ltd." },
-  "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "itemCondition": "https://schema.org/NewCondition" }
+  "brand": {
+    "@type": "Brand",
+    "name": "Tianyi Machinery"
+  },
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "Hubei Tianyi Machinery Co., Ltd."
+  },
+  "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/InStock",
+    "itemCondition": "https://schema.org/NewCondition"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "Серия моделей",
+      "value": "BLT (тяжёлый пластинчатый конвейер)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Ширина полотна",
+      "value": "400 - 2400 мм"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Производительность",
+      "value": "до 1 000 т/ч"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Макс. температура материала",
+      "value": "до 600°C"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Макс. угол наклона",
+      "value": "до 35°"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Материал полотна",
+      "value": "углеродистая сталь, износостойкая сталь, жаропрочный сплав, нержавеющая сталь"
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Что такое пластинчатый конвейер и где он применяется?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Пластинчатый конвейер использует перекрывающиеся стальные пластины на роликовых цепях для перемещения горячих, тяжёлых и абразивных сыпучих материалов. Применяется на металлургических и литейных заводах, в цементной отрасли и горной промышленности для клинкера, агломерата, горячего спека и металлолома."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Какую максимальную температуру материала он выдерживает?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Стандартные пластины выдерживают умеренные температуры, а пластины из жаропрочного сплава - до 600 градусов C."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Какие производительность и углы наклона возможны?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Производительность достигает 1 000 т/ч, угол наклона - до 35 градусов в зависимости от свойств материала."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Как приводится пластинчатый конвейер?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Стандартно - низкоскоростной высокомоментный редукторный электродвигатель; опционально - гидропривод для плавного пуска и регулировки скорости."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Чем пластинчатый конвейер отличается от ленточного?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Пластинчатые конвейеры перемещают горячие, тяжёлые и острые материалы, которые повредили бы ленту. Ленточные конвейеры лучше подходят для холодных, мелких, скоростных перевозок на большие расстояния."
+      }
+    }
+  ]
 }
 </script>
 
@@ -91,6 +182,11 @@ h3 { font-size:20px; font-weight:600; color:var(--primary); }
 .feature-item { padding:24px; border:1px solid var(--border); border-radius:10px; background:#fff; }
 .feature-item h4 { margin-bottom:8px; font-size:16px; }
 .feature-item p { font-size:13px; color:var(--text-muted); margin:0; }
+/* FAQ (GEO template) */
+.faq-list { margin-top:8px; }
+.faq-item { border:1px solid var(--border); border-radius:10px; padding:18px 20px; margin-bottom:14px; background:#fff; }
+.faq-item h3 { font-size:16px; color:var(--primary); margin-bottom:8px; line-height:1.4; }
+.faq-item p { margin:0; font-size:14px; color:var(--text-muted); }
 .cta-box { background:linear-gradient(135deg,var(--primary),var(--primary-light)); color:#fff; padding:50px; border-radius:12px; text-align:center; margin:40px 0; }
 .cta-box h2 { color:#fff; margin-bottom:12px; }
 .cta-box p { color:rgba(255,255,255,0.85); font-size:16px; margin-bottom:24px; }
@@ -239,6 +335,34 @@ h3 { font-size:20px; font-weight:600; color:var(--primary); }
       <div class="feature-item"><h4>Транспортировка цементного клинкера</h4><p>Подача горячего клинкера от холодильника на склад. Жаропрочные лотки выдерживают температуру клинкера до 600&deg;C с минимальной термодеформацией.</p></div>
       <div class="feature-item"><h4>Тепловые электростанции</h4><p>Удаление шлака и золы из-под котлов. Прочная цепь и лотки справляются с влажным шлаком, клинкером и колчеданом с надёжной работой.</p></div>
       <div class="feature-item"><h4>Биомасса и вторичная переработка</h4><p>Системы подачи древесной щепы, коры, строительного мусора и вторичных материалов в перерабатывающее оборудование. Регулируемая скорость для контроля подачи.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <div class="container">
+    <h2>Часто задаваемые вопросы</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3>Что такое пластинчатый конвейер и где он применяется?</h3>
+        <p>Пластинчатый конвейер использует перекрывающиеся стальные пластины на роликовых цепях для перемещения горячих, тяжёлых и абразивных сыпучих материалов. Применяется на металлургических и литейных заводах, в цементной отрасли и горной промышленности для клинкера, агломерата, горячего спека и металлолома.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Какую максимальную температуру материала он выдерживает?</h3>
+        <p>Стандартные пластины выдерживают умеренные температуры, а пластины из жаропрочного сплава - до 600 градусов C.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Какие производительность и углы наклона возможны?</h3>
+        <p>Производительность достигает 1 000 т/ч, угол наклона - до 35 градусов в зависимости от свойств материала.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Как приводится пластинчатый конвейер?</h3>
+        <p>Стандартно - низкоскоростной высокомоментный редукторный электродвигатель; опционально - гидропривод для плавного пуска и регулировки скорости.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Чем пластинчатый конвейер отличается от ленточного?</h3>
+        <p>Пластинчатые конвейеры перемещают горячие, тяжёлые и острые материалы, которые повредили бы ленту. Ленточные конвейеры лучше подходят для холодных, мелких, скоростных перевозок на большие расстояния.</p>
+      </div>
     </div>
   </div>
 </section>

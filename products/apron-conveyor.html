@@ -24,13 +24,100 @@
   "@type": "Product",
   "name": "Apron Conveyor",
   "description": "Heavy-duty apron/pan conveyors for transporting hot, heavy, abrasive, and large-lump bulk materials. BLT series using overlapping steel pans on heavy-duty roller chains. Temperature up to 600°C, capacity up to 1,000 t/h.",
-  "brand": { "@type": "Brand", "name": "Tianyi Machinery" },
-  "manufacturer": { "@type": "Organization", "name": "Hubei Tianyi Machinery Co., Ltd." },
+  "brand": {
+    "@type": "Brand",
+    "name": "Tianyi Machinery"
+  },
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "Hubei Tianyi Machinery Co., Ltd."
+  },
   "offers": {
     "@type": "Offer",
     "availability": "https://schema.org/InStock",
     "itemCondition": "https://schema.org/NewCondition"
-  }
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "Model Series",
+      "value": "BLT (Heavy-Duty Apron Conveyor)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Pan Width",
+      "value": "400 - 2400 mm"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Capacity",
+      "value": "Up to 1,000 t/h"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Max Material Temperature",
+      "value": "Up to 600 deg C"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Max Inclination",
+      "value": "Up to 35 deg"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Pan Material",
+      "value": "Carbon steel, wear-resistant steel, heat-resistant alloy, stainless steel"
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is an apron conveyor and where is it used?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An apron conveyor uses overlapping steel pans mounted on roller chains to move hot, heavy, and abrasive bulk materials. It is common in steel mills, foundries, cement plants, and mining for clinker, sinter, hot sinter, and scrap."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the maximum material temperature it can handle?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Standard pans handle moderate temperatures, while heat-resistant alloy steel pans withstand material temperatures up to 600 degrees C."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What capacities and inclinations are possible?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Capacities reach up to 1,000 t/h, and inclinations up to 35 degrees depending on material properties."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is an apron conveyor driven?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A low-speed high-torque gear motor is standard; hydraulic drive is optional for soft start and variable speed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does an apron conveyor compare to a belt conveyor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Apron conveyors carry hot, heavy, and sharp materials that would damage belts. Belt conveyors are better for cool, fine, high-speed, long-distance transport."
+      }
+    }
+  ]
 }
 </script>
 
@@ -110,6 +197,11 @@ h3 { font-size:20px; font-weight:600; color:var(--primary); }
 .feature-item { padding:24px; border:1px solid var(--border); border-radius:10px; background:#fff; }
 .feature-item h4 { margin-bottom:8px; font-size:16px; }
 .feature-item p { font-size:13px; color:var(--text-muted); margin:0; }
+/* FAQ (GEO template) */
+.faq-list { margin-top:8px; }
+.faq-item { border:1px solid var(--border); border-radius:10px; padding:18px 20px; margin-bottom:14px; background:#fff; }
+.faq-item h3 { font-size:16px; color:var(--primary); margin-bottom:8px; line-height:1.4; }
+.faq-item p { margin:0; font-size:14px; color:var(--text-muted); }
 
 /* CTA */
 .cta-box { background:linear-gradient(135deg,var(--primary),var(--primary-light)); color:#fff; padding:50px; border-radius:12px; text-align:center; margin:40px 0; }
@@ -316,6 +408,34 @@ h3 { font-size:20px; font-weight:600; color:var(--primary); }
       <div class="feature-item">
         <h4>Biomass &amp; Recycling</h4>
         <p>Feeding systems for wood chips, bark, demolition waste, and recycled materials into processing equipment. Adjustable speed for controlled feed rates.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <div class="container">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3>What is an apron conveyor and where is it used?</h3>
+        <p>An apron conveyor uses overlapping steel pans mounted on roller chains to move hot, heavy, and abrasive bulk materials. It is common in steel mills, foundries, cement plants, and mining for clinker, sinter, hot sinter, and scrap.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What is the maximum material temperature it can handle?</h3>
+        <p>Standard pans handle moderate temperatures, while heat-resistant alloy steel pans withstand material temperatures up to 600 degrees C.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What capacities and inclinations are possible?</h3>
+        <p>Capacities reach up to 1,000 t/h, and inclinations up to 35 degrees depending on material properties.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How is an apron conveyor driven?</h3>
+        <p>A low-speed high-torque gear motor is standard; hydraulic drive is optional for soft start and variable speed.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How does an apron conveyor compare to a belt conveyor?</h3>
+        <p>Apron conveyors carry hot, heavy, and sharp materials that would damage belts. Belt conveyors are better for cool, fine, high-speed, long-distance transport.</p>
       </div>
     </div>
   </div>

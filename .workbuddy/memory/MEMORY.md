@@ -21,3 +21,9 @@
 - 中文路径用 PowerShell 操作；rm/中文路径在 bash(MSYS) 易出编码/segfault 问题。
 - git 在 Windows 默认大小写不敏感：`git rm --cached old.JPG` + `git add new.jpg` 才能正确暂存重命名。
 - 推送必须用户手动在 GitHub Desktop 执行；我本地改完会给出 Summary 文案。
+
+## GEO 产品页模板（已完成全部 11 EN + 11 RU）
+- 全部产品页已落地 GEO 三件套：① 参数表（已有 `.spec-table` 真实 HTML 表）；② FAQ 区块 + FAQPage JSON-LD（每页 5 条，文字与 schema 逐字一致）；③ Product schema 加 `additionalProperty`（关键规格机器可读）。
+- 复用脚本/技能：`.workbuddy/skills/tianyi-geo-product-template/`（SKILL.md + scripts/apply_geo_template.py），新增产品时编辑 CONFIG 重跑即可，脚本内置校验（JSON-LD 合法、FAQ 数==可见数）。
+- 后续可选 GEO 动作：选型指南长文（权威科普易被 AI 引用）+ 全站 Organization schema + 根目录 llms.txt（AI 版 robots.txt）。
+- 已知遗留：RU 产品页顶部下拉导航中 dust-collector/feeding/crushing/screening/valves/parts 仍指向英文 `/products/*.html`，非 GEO 范围，需时单独修。

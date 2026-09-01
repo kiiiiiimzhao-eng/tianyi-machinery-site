@@ -25,13 +25,100 @@
   "@type": "Product",
   "name": "Industrial Valves",
   "description": "Complete range of industrial valves for bulk material handling systems. Pneumatic, electric, and manual plug-in valves, flap valves, slide gates, roller gates, three-way and four-way diverter valves in sizes DN150-DN1000.",
-  "brand": { "@type": "Brand", "name": "Tianyi Machinery" },
-  "manufacturer": { "@type": "Organization", "name": "Hubei Tianyi Machinery Co., Ltd." },
+  "brand": {
+    "@type": "Brand",
+    "name": "Tianyi Machinery"
+  },
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "Hubei Tianyi Machinery Co., Ltd."
+  },
   "offers": {
     "@type": "Offer",
     "availability": "https://schema.org/InStock",
     "itemCondition": "https://schema.org/NewCondition"
-  }
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "Types",
+      "value": "Plug-in, flap, roller gate, three-way, four-way, E-type gate"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Size Range",
+      "value": "DN150 - DN1000"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Material",
+      "value": "Carbon steel, stainless steel"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Actuation",
+      "value": "Manual, electric, pneumatic, hydraulic"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Working Pressure",
+      "value": "Up to 1.6 MPa"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Explosion-Proof",
+      "value": "ATEX/IECEx compliant actuators"
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What industrial valves does Tianyi supply?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Plug-in valves, flap valves, roller gates, three-way valves, four-way valves, and E-type gate valves for bulk material handling lines."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What sizes and actuation options are available?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sizes range from DN150 to DN1000, with manual handwheel, electric motor, pneumatic cylinder, or hydraulic actuation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What sealing options are offered?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Metal-to-metal, soft seals (EPDM/NBR/PTFE), and inflatable seals for dust-tight shutoff."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are explosion-proof versions available?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Pneumatic and electric actuators can be supplied with ATEX/IECEx compliance for combustible dust environments."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How are the valves controlled?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Via local push-button, remote PLC/DCS, with position feedback sensors and limit switches for automation."
+      }
+    }
+  ]
 }
 </script>
 
@@ -111,6 +198,11 @@ h3 { font-size:20px; font-weight:600; color:var(--primary); }
 .feature-item { padding:24px; border:1px solid var(--border); border-radius:10px; background:#fff; }
 .feature-item h4 { margin-bottom:8px; font-size:16px; }
 .feature-item p { font-size:13px; color:var(--text-muted); margin:0; }
+/* FAQ (GEO template) */
+.faq-list { margin-top:8px; }
+.faq-item { border:1px solid var(--border); border-radius:10px; padding:18px 20px; margin-bottom:14px; background:#fff; }
+.faq-item h3 { font-size:16px; color:var(--primary); margin-bottom:8px; line-height:1.4; }
+.faq-item p { margin:0; font-size:14px; color:var(--text-muted); }
 
 /* CTA */
 .cta-box { background:linear-gradient(135deg,var(--primary),var(--primary-light)); color:#fff; padding:50px; border-radius:12px; text-align:center; margin:40px 0; }
@@ -317,6 +409,34 @@ h3 { font-size:20px; font-weight:600; color:var(--primary); }
       <div class="feature-item">
         <h4>Gravity Flow Control</h4>
         <p>Manual and powered gates for regulating gravity chute material flow rates in blending, batching, and continuous process applications.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <div class="container">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3>What industrial valves does Tianyi supply?</h3>
+        <p>Plug-in valves, flap valves, roller gates, three-way valves, four-way valves, and E-type gate valves for bulk material handling lines.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What sizes and actuation options are available?</h3>
+        <p>Sizes range from DN150 to DN1000, with manual handwheel, electric motor, pneumatic cylinder, or hydraulic actuation.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What sealing options are offered?</h3>
+        <p>Metal-to-metal, soft seals (EPDM/NBR/PTFE), and inflatable seals for dust-tight shutoff.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Are explosion-proof versions available?</h3>
+        <p>Yes. Pneumatic and electric actuators can be supplied with ATEX/IECEx compliance for combustible dust environments.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How are the valves controlled?</h3>
+        <p>Via local push-button, remote PLC/DCS, with position feedback sensors and limit switches for automation.</p>
       </div>
     </div>
   </div>

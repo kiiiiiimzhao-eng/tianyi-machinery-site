@@ -25,13 +25,100 @@
   "@type": "Product",
   "name": "Industrial Dust Collector",
   "description": "PPCS series pulse-jet bag dust collectors for industrial air pollution control. High filtration efficiency 99.9%+ with modular design for cement, chemical, metallurgical, and power plant operations.",
-  "brand": { "@type": "Brand", "name": "Tianyi Machinery" },
-  "manufacturer": { "@type": "Organization", "name": "Hubei Tianyi Machinery Co., Ltd." },
+  "brand": {
+    "@type": "Brand",
+    "name": "Tianyi Machinery"
+  },
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "Hubei Tianyi Machinery Co., Ltd."
+  },
   "offers": {
     "@type": "Offer",
     "availability": "https://schema.org/InStock",
     "itemCondition": "https://schema.org/NewCondition"
-  }
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "Model Series",
+      "value": "PPCS (Pulse-Jet Bag Dust Collector)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Air Volume",
+      "value": "5,000 - 500,000 m3/h"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Filtration Area",
+      "value": "60 - 6,000 m2"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Dust Emission",
+      "value": "< 30 mg/Nm3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Filter Bag Material",
+      "value": "Polyester, Nomex, PPS, PTFE"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Operating Temperature",
+      "value": "Up to 260 deg C"
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a pulse-jet bag dust collector?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It captures dust from process air using filter bags, with short compressed-air pulses cleaning the bags online or offline. It is widely used in cement, power, metallurgy, chemical, and food plants."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What emission level can it achieve?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Outlet dust concentration is below 30 mg/Nm3, meeting strict environmental emission standards."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What air volumes and filtration areas are available?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Air volumes range from 5,000 to 500,000 m3/h with filtration areas from 60 to 6,000 m2 to suit small and large plants."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What filter bag materials are used?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Polyester for normal temperatures, Nomex and PPS for high temperatures, and PTFE for corrosive or extreme conditions. Operating temperature reaches up to 260 degrees C."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it suitable for explosive dust?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Explosion venting, anti-static bags, and spark detection options are available for combustible dust, with ATEX-compliant configurations."
+      }
+    }
+  ]
 }
 </script>
 
@@ -111,6 +198,11 @@ h3 { font-size:20px; font-weight:600; color:var(--primary); }
 .feature-item { padding:24px; border:1px solid var(--border); border-radius:10px; background:#fff; }
 .feature-item h4 { margin-bottom:8px; font-size:16px; }
 .feature-item p { font-size:13px; color:var(--text-muted); margin:0; }
+/* FAQ (GEO template) */
+.faq-list { margin-top:8px; }
+.faq-item { border:1px solid var(--border); border-radius:10px; padding:18px 20px; margin-bottom:14px; background:#fff; }
+.faq-item h3 { font-size:16px; color:var(--primary); margin-bottom:8px; line-height:1.4; }
+.faq-item p { margin:0; font-size:14px; color:var(--text-muted); }
 
 /* CTA */
 .cta-box { background:linear-gradient(135deg,var(--primary),var(--primary-light)); color:#fff; padding:50px; border-radius:12px; text-align:center; margin:40px 0; }
@@ -317,6 +409,34 @@ h3 { font-size:20px; font-weight:600; color:var(--primary); }
       <div class="feature-item">
         <h4>Mining &amp; Minerals</h4>
         <p>Crusher, screen, and transfer point dust suppression in mining and mineral processing plants.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <div class="container">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3>What is a pulse-jet bag dust collector?</h3>
+        <p>It captures dust from process air using filter bags, with short compressed-air pulses cleaning the bags online or offline. It is widely used in cement, power, metallurgy, chemical, and food plants.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What emission level can it achieve?</h3>
+        <p>Outlet dust concentration is below 30 mg/Nm3, meeting strict environmental emission standards.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What air volumes and filtration areas are available?</h3>
+        <p>Air volumes range from 5,000 to 500,000 m3/h with filtration areas from 60 to 6,000 m2 to suit small and large plants.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What filter bag materials are used?</h3>
+        <p>Polyester for normal temperatures, Nomex and PPS for high temperatures, and PTFE for corrosive or extreme conditions. Operating temperature reaches up to 260 degrees C.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Is it suitable for explosive dust?</h3>
+        <p>Yes. Explosion venting, anti-static bags, and spark detection options are available for combustible dust, with ATEX-compliant configurations.</p>
       </div>
     </div>
   </div>
