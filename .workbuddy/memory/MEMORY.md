@@ -26,4 +26,10 @@
 - 全部产品页已落地 GEO 三件套：① 参数表（已有 `.spec-table` 真实 HTML 表）；② FAQ 区块 + FAQPage JSON-LD（每页 5 条，文字与 schema 逐字一致）；③ Product schema 加 `additionalProperty`（关键规格机器可读）。
 - 复用脚本/技能：`.workbuddy/skills/tianyi-geo-product-template/`（SKILL.md + scripts/apply_geo_template.py），新增产品时编辑 CONFIG 重跑即可，脚本内置校验（JSON-LD 合法、FAQ 数==可见数）。
 - 后续可选 GEO 动作：选型指南长文（权威科普易被 AI 引用）+ 全站 Organization schema + 根目录 llms.txt（AI 版 robots.txt）。
-- 已知遗留：RU 产品页顶部下拉导航中 dust-collector/feeding/crushing/screening/valves/parts 仍指向英文 `/products/*.html`，非 GEO 范围，需时单独修。
+- RU 全站链接对称性已修复（2026-09-01）：曾发现 RU 页面顶部下拉/页脚/正文里 dust-collector/feeding/crushing/screening/valves/parts + projects/blog 仍指向英文 `/products/*.html`、`/projects.html`、`/blog.html`、`/blog/...`，已全部改为 `/ru/...`；校验后 RU 站 0 处残留英文内部链接。
+
+## 双语链接对称性约定（强制）
+- RU 页（nav/页脚/正文/related-card/面包屑等）所有内部链接必须指向 `/ru/...`；仅语言切换按钮 `class="lang-switch"` 指向 `/`（英文首页）。
+- EN 页所有内部链接指向根级 `/...`；仅语言切换按钮 `RU` 指向 `/ru/...`。
+- 资源类（`/favicon.ico`、`/images/*`）与 `mailto:`/`tel:`/外链不受此约束。
+- 修复方法：扫描所有 `href="/..."`（排除 /ru/、http、mailto、tel、/、/#、/favicon.ico、/images/），将其 products/projects/blog 链接补 `/ru/` 前缀；注意 `<nav>` 内的嵌套 `<ul>` 易误判，按整文件字符串替换更稳。MSYS bash 处理中文路径 I/O 偶发 segfault，改用 PowerShell 跑脚本。
