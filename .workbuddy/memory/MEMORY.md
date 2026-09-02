@@ -25,7 +25,8 @@
 ## GEO 产品页模板（已完成全部 11 EN + 11 RU）
 - 全部产品页已落地 GEO 三件套：① 参数表（已有 `.spec-table` 真实 HTML 表）；② FAQ 区块 + FAQPage JSON-LD（每页 5 条，文字与 schema 逐字一致）；③ Product schema 加 `additionalProperty`（关键规格机器可读）。
 - 复用脚本/技能：`.workbuddy/skills/tianyi-geo-product-template/`（SKILL.md + scripts/apply_geo_template.py），新增产品时编辑 CONFIG 重跑即可，脚本内置校验（JSON-LD 合法、FAQ 数==可见数）。
-- 后续可选 GEO 动作：选型指南长文（权威科普易被 AI 引用）+ 全站 Organization schema + 根目录 llms.txt（AI 版 robots.txt）。
+- GEO 第 2、3 项已完成（2026-09-02）：① 选型指南长文 `blog/bulk-material-handling-equipment-selection-guide.html`（EN+RU），含 Article+FAQPage schema、TOC、内链、hero 图（ImageGen 生成），已加 blog.html/ru/blog.html 卡片与两个 sitemap；② 全站 58 个 HTML 页注入 Organization schema（各 1 个，index.html 原本已有，其余 56 页脚本注入于 `</head>` 前）；③ 根目录 `llms.txt`（AI 版 robots.txt，列产品/案例/博客/公司链接 + /ru/ 镜像说明）。
+- 复用脚本/技能已扩充：`.workbuddy/skills/tianyi-geo-product-template/`（apply_geo_template.py + inject_org_schema.py + SKILL.md 已记录完整 GEO 流程）。
 - RU 全站链接对称性已修复（2026-09-01）：曾发现 RU 页面顶部下拉/页脚/正文里 dust-collector/feeding/crushing/screening/valves/parts + projects/blog 仍指向英文 `/products/*.html`、`/projects.html`、`/blog.html`、`/blog/...`，已全部改为 `/ru/...`；校验后 RU 站 0 处残留英文内部链接。
 
 ## 双语链接对称性约定（强制）

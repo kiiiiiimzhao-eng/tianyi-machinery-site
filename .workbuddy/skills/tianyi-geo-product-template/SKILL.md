@@ -50,7 +50,35 @@ faq-items, every Q/A string present in HTML). All pages must print `VALID`.
   size / dust-tight or explosion-proof / comparison to sibling equipment.
 - `additionalProperty`: 5–6 key specs pulled from the existing `.spec-table`.
 
-## Rollout completed (2026-09-01)
-All 11 EN + 11 RU product pages done (chain-conveyor & bucket-elevator EN done first as samples).
-Remaining GEO steps (not yet done): selection-guide long-form article, site-wide `Organization`
-schema, root `llms.txt`.
+## Site-wide Organization schema (done 2026-09-02)
+A single `Organization` JSON-LD block (name, url, logo, description, foundingDate, address,
+contactPoint, numberOfEmployees) is injected into **every** HTML page so AI engines resolve the
+company entity consistently. `index.html` already had one; 56 other pages got it added.
+
+- `scripts/inject_org_schema.py` — scans all `*.html` (excluding `.workbuddy`/`audit`), skips pages
+  that already have a top-level `"@type":"Organization"`, injects the block right before `</head>`.
+  Idempotent. Re-run after adding new pages.
+- Verify with a second pass counting top-level Organization blocks == 1 per page and JSON valid.
+
+## Selection-guide long-form article (done 2026-09-02)
+`blog/bulk-material-handling-equipment-selection-guide.html` (+ RU mirror in `ru/blog/`) is the
+flagship GEO asset: comprehensive, fact-dense, with `Article` + `FAQPage` JSON-LD, TOC, internal
+links to every product page, and a hero image. Pattern to copy for future guides:
+- Copy the TDG blog-post template (`blog/tdg-gas-tight-explosion-proof-bucket-elevator.html`).
+- Use real `spec-table`/`faq` content; keep FAQ text byte-identical to `FAQPage` schema.
+- Add a card to `blog.html` (Industry Insights) + `ru/blog.html` (Отраслевые обзоры), and add the
+  URL to `sitemap.xml` (EN) + `sitemap-ru.xml` (RU, with xhtml:link alternates).
+- Hero image: generate with ImageGen, then run `tianyi-bilingual-blog-post` `process_blog_image.py`
+  to emit `main.jpg` (q85) + `main.webp` (q82).
+
+## Root llms.txt (done 2026-09-02)
+`llms.txt` at site root is the AI-version of robots.txt: `# Title`, `> description`, then `##`
+sections listing Products / Project Solutions / Technical Guides & Blog / Company, each as
+`- [Label](url): description`. Points AI crawlers to the canonical EN pages and notes the `/ru/`
+mirror. No robots.txt change needed (`Allow: /` already covers it).
+
+## Full GEO rollout status (2026-09-02)
+- [x] Product pages: FAQ + FAQPage + Product additionalProperty (11 EN + 11 RU)
+- [x] Selection-guide long-form article (EN + RU) with FAQPage + sitemaps
+- [x] Site-wide `Organization` schema (58 pages, 1 each)
+- [x] Root `llms.txt`
