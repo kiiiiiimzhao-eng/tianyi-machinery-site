@@ -137,6 +137,13 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
   .nav>li.open-sub .dropdown-menu { display:block; }
   .nav-toggle { display:block; }
 }
+
+.faq-section { margin:36px 0; }
+.faq-section h2 { font-size:24px; margin-bottom:18px; color:var(--primary); }
+.faq-item { border:1px solid var(--border); border-radius:var(--radius); margin-bottom:12px; background:var(--bg-alt); }
+.faq-item h3 { font-size:16px; margin:0; padding:14px 18px; color:var(--primary); line-height:1.4; }
+.faq-item .faq-a { padding:0 18px 16px; color:var(--text-muted); line-height:1.8; }
+.faq-item .faq-a p { margin:0; }
 </style>
 <!-- ===== 网站统计 =====
      使用方法：把下面 GA4_ID 的值改成你的 GA4 衡量ID（形如 G-ABCD123XYZ），保存推送即可生效。
@@ -182,6 +189,32 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
     }
   ],
   "numberOfEmployees": "201-500"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.tianyimachine.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.tianyimachine.com/blog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "5 Common Belt Conveyor Problems and How to Fix Them",
+      "item": "https://www.tianyimachine.com/blog/belt-conveyor-troubleshooting.html"
+    }
+  ]
 }
 </script>
 </head>
@@ -310,6 +343,29 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
     <tr><td>Frayed belt edges</td><td>Mistracking, wrong grade</td><td>Re-align, upgrade belt compound</td></tr>
   </table>
 
+  <section class="faq-section" id="faq">
+  <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>Why does my conveyor belt drift to one side?</h3>
+      <div class="faq-a"><p>Usually from misaligned or worn idlers, an unlevel pulley, or off-center loading. Re-square the idlers, level the pulleys, and center the feed point to correct it.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>How do I stop belt slippage at the drive pulley?</h3>
+      <div class="faq-a"><p>Increase belt tension via the take-up, clean oil or dust off the pulley lagging, and check that the drive is not overloaded. Worn lagging should be re-sheeted.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>What causes material spillage on a conveyor?</h3>
+      <div class="faq-a"><p>Spillage is typically from overloaded belts, mistracking, or badly sealed transfer points. Reduce load rate, fix tracking, and add skirting seals and scrapers at the loading zone.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>When should conveyor idlers be replaced?</h3>
+      <div class="faq-a"><p>Replace idlers when they seize, develop excessive noise, or show shell wear beyond the limit. A failed idler quickly damages the belt, so schedule replacement during planned downtime.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>How can I extend belt conveyor service life?</h3>
+      <div class="faq-a"><p>Keep idlers aligned, maintain proper tension, clean the return side, and protect the belt from impact at loading points with lined chutes and impact beds.</p></div>
+    </div>
+</section>
   <div class="cta-box">
     <h2>Conveyor Running Rough?</h2>
     <p>Send us a short description of the symptom, your belt width, and material &mdash; our engineers will suggest the likely cause and the right spare parts within one business day.</p>
@@ -344,5 +400,53 @@ document.querySelectorAll('.nav>li>a').forEach(function(link) {
 });
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why does my conveyor belt drift to one side?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Usually from misaligned or worn idlers, an unlevel pulley, or off-center loading. Re-square the idlers, level the pulleys, and center the feed point to correct it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I stop belt slippage at the drive pulley?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Increase belt tension via the take-up, clean oil or dust off the pulley lagging, and check that the drive is not overloaded. Worn lagging should be re-sheeted."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What causes material spillage on a conveyor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Spillage is typically from overloaded belts, mistracking, or badly sealed transfer points. Reduce load rate, fix tracking, and add skirting seals and scrapers at the loading zone."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should conveyor idlers be replaced?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Replace idlers when they seize, develop excessive noise, or show shell wear beyond the limit. A failed idler quickly damages the belt, so schedule replacement during planned downtime."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I extend belt conveyor service life?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Keep idlers aligned, maintain proper tension, clean the return side, and protect the belt from impact at loading points with lined chutes and impact beds."
+      }
+    }
+  ]
+}
+</script>
 </body>
 </html>

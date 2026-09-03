@@ -137,6 +137,13 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
   .nav>li.open-sub .dropdown-menu { display:block; }
   .nav-toggle { display:block; }
 }
+
+.faq-section { margin:36px 0; }
+.faq-section h2 { font-size:24px; margin-bottom:18px; color:var(--primary); }
+.faq-item { border:1px solid var(--border); border-radius:var(--radius); margin-bottom:12px; background:var(--bg-alt); }
+.faq-item h3 { font-size:16px; margin:0; padding:14px 18px; color:var(--primary); line-height:1.4; }
+.faq-item .faq-a { padding:0 18px 16px; color:var(--text-muted); line-height:1.8; }
+.faq-item .faq-a p { margin:0; }
 </style>
 <!-- ===== 网站统计 =====
      使用方法：把下面 GA4_ID 的值改成你的 GA4 衡量ID（形如 G-ABCD123XYZ），保存推送即可生效。
@@ -182,6 +189,32 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
     }
   ],
   "numberOfEmployees": "201-500"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Главная",
+      "item": "https://www.tianyimachine.com/ru/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Блог",
+      "item": "https://www.tianyimachine.com/ru/blog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Как выбрать подходящий промышленный клапан для транспортировки сыпучих",
+      "item": "https://www.tianyimachine.com/ru/blog/industrial-valve-selection-guide.html"
+    }
+  ]
 }
 </script>
 </head>
@@ -330,6 +363,29 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
     <li><strong>Забытое соответствие запчастей.</strong> Стандартизированные семейства клапанов (как у Тяньи) упрощают долгосрочное обслуживание.</li>
   </ol>
 
+  <section class="faq-section" id="faq">
+  <h2>Часто задаваемые вопросы</h2>
+    <div class="faq-item">
+      <h3>Как выбрать промышленный клапан для сыпучих?</h3>
+      <div class="faq-a"><p>Начните с материала — гранулометрия, абразивность, температура и расход, — затем подберите тип, размер (DN), привод и уплотнение под эту задачу.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>Какие типы клапанов применяются в транспортировке сыпучих?</h3>
+      <div class="faq-a"><p>Роторные клапаны (шлюзовые и питатели), обратные заслонки, шиберные задвижки и распределительные клапаны для маршрутизации между бункерами и линиями.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>Как подобрать размер роторного или распределительного клапана?</h3>
+      <div class="faq-a"><p>Согласуйте проход с расходом и скоростью потока, задайте класс давления выше рабочего диапазона и выберите привод по частоте циклов.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>Пневмо- или электропривод для клапанов?</h3>
+      <div class="faq-a"><p>Пневмопривод предпочтителен для частых циклов и взрывоопасных зон; электропривод — для медленного точного позиционирования. Выбор зависит от задачи и доступных ресурсов.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>Какое уплотнение нужно для клапанов при высокой температуре?</h3>
+      <div class="faq-a"><p>Металл по металлу или закалённые уплотнения, подобранные под среду, с материалами, рассчитанными на рабочую температуру и абразив.</p></div>
+    </div>
+</section>
   <div class="cta-box">
     <h2>Нужна помощь с подбором клапанов?</h2>
     <p>Сообщите нам свойства материала, расход, давление и требования к приводу. Мы вернём индивидуальную спецификацию клапана &mdash; включая подбор диаметра и взрывозащиту &mdash; в течение 24 часов.</p>
@@ -364,5 +420,53 @@ document.querySelectorAll('.nav>li>a').forEach(function(link) {
 });
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Как выбрать промышленный клапан для сыпучих?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Начните с материала — гранулометрия, абразивность, температура и расход, — затем подберите тип, размер (DN), привод и уплотнение под эту задачу."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Какие типы клапанов применяются в транспортировке сыпучих?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Роторные клапаны (шлюзовые и питатели), обратные заслонки, шиберные задвижки и распределительные клапаны для маршрутизации между бункерами и линиями."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Как подобрать размер роторного или распределительного клапана?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Согласуйте проход с расходом и скоростью потока, задайте класс давления выше рабочего диапазона и выберите привод по частоте циклов."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Пневмо- или электропривод для клапанов?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Пневмопривод предпочтителен для частых циклов и взрывоопасных зон; электропривод — для медленного точного позиционирования. Выбор зависит от задачи и доступных ресурсов."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Какое уплотнение нужно для клапанов при высокой температуре?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Металл по металлу или закалённые уплотнения, подобранные под среду, с материалами, рассчитанными на рабочую температуру и абразив."
+      }
+    }
+  ]
+}
+</script>
 </body>
 </html>

@@ -137,6 +137,13 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
   .nav>li.open-sub .dropdown-menu { display:block; }
   .nav-toggle { display:block; }
 }
+
+.faq-section { margin:36px 0; }
+.faq-section h2 { font-size:24px; margin-bottom:18px; color:var(--primary); }
+.faq-item { border:1px solid var(--border); border-radius:var(--radius); margin-bottom:12px; background:var(--bg-alt); }
+.faq-item h3 { font-size:16px; margin:0; padding:14px 18px; color:var(--primary); line-height:1.4; }
+.faq-item .faq-a { padding:0 18px 16px; color:var(--text-muted); line-height:1.8; }
+.faq-item .faq-a p { margin:0; }
 </style>
 <!-- ===== 网站统计 =====
      使用方法：把下面 GA4_ID 的值改成你的 GA4 衡量ID（形如 G-ABCD123XYZ），保存推送即可生效。
@@ -182,6 +189,32 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
     }
   ],
   "numberOfEmployees": "201-500"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.tianyimachine.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.tianyimachine.com/blog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Bulk Material Conveying System for the Chlor-Alkali Chemical Industry",
+      "item": "https://www.tianyimachine.com/blog/chlor-alkali-conveying-system.html"
+    }
+  ]
 }
 </script>
 </head>
@@ -315,6 +348,29 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
   <h2 id="outcome">4. Outcomes</h2>
   <p>The renovated line achieved stable, continuous handling of boiler slag and by-products with minimized manual intervention and a clean, compliant transfer environment. Because the package was engineered as one system, commissioning was faster and spare-part management simpler &mdash; critical spares (idlers, scraper blades, valve seals, bearings) were standardized and stocked locally.</p>
 
+  <section class="faq-section" id="faq">
+  <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>What equipment is used in a chlor-alkali conveying system?</h3>
+      <div class="faq-a"><p>Typically a crusher and feeder for sized feed, belt conveyors for horizontal runs, a bucket elevator for vertical lift, industrial valves for diversion, and a dust collector at transfer points.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>How do you handle hot, corrosive material in conveying?</h3>
+      <div class="faq-a"><p>We specify heat-resistant belts and refractory-lined impact zones for high temperature, and stainless or rubber-lined contact surfaces plus galvanized structure for corrosivity.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>Can Tianyi engineer a complete chemical-plant conveying line?</h3>
+      <div class="faq-a"><p>Yes. We supply an integrated package: receiving, crushing, conveying, lifting, diversion, and dedusting engineered as one system, not isolated machines.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>What safety features are needed for chemical-duty conveyors?</h3>
+      <div class="faq-a"><p>Misalignment and speed switches, bearing-temperature sensors, dust-explosion venting where applicable, and automatic trip logic wired into the plant control system.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>How does Tianyi control dust in chemical plants?</h3>
+      <div class="faq-a"><p>Point-of-source extraction at each transfer point plus a central dust collection system keeps the building clean and within environmental limits.</p></div>
+    </div>
+</section>
   <div class="cta-box">
     <h2>Designing a Chemical-Plant Conveying Line?</h2>
     <p>Send us your material properties (temperature, corrosivity, abrasiveness, particle size) and process flow. We'll engineer a system matched to your duty &mdash; not a generic catalog build.</p>
@@ -349,5 +405,53 @@ document.querySelectorAll('.nav>li>a').forEach(function(link) {
 });
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What equipment is used in a chlor-alkali conveying system?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Typically a crusher and feeder for sized feed, belt conveyors for horizontal runs, a bucket elevator for vertical lift, industrial valves for diversion, and a dust collector at transfer points."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you handle hot, corrosive material in conveying?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We specify heat-resistant belts and refractory-lined impact zones for high temperature, and stainless or rubber-lined contact surfaces plus galvanized structure for corrosivity."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can Tianyi engineer a complete chemical-plant conveying line?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We supply an integrated package: receiving, crushing, conveying, lifting, diversion, and dedusting engineered as one system, not isolated machines."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What safety features are needed for chemical-duty conveyors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Misalignment and speed switches, bearing-temperature sensors, dust-explosion venting where applicable, and automatic trip logic wired into the plant control system."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does Tianyi control dust in chemical plants?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Point-of-source extraction at each transfer point plus a central dust collection system keeps the building clean and within environmental limits."
+      }
+    }
+  ]
+}
+</script>
 </body>
 </html>

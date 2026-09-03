@@ -113,6 +113,13 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
   .nav-toggle { display:block; }
   .lang-switch { display:none; }
 }
+
+.faq-section { margin:36px 0; }
+.faq-section h2 { font-size:24px; margin-bottom:18px; color:var(--primary); }
+.faq-item { border:1px solid var(--border); border-radius:var(--radius); margin-bottom:12px; background:var(--bg-alt); }
+.faq-item h3 { font-size:16px; margin:0; padding:14px 18px; color:var(--primary); line-height:1.4; }
+.faq-item .faq-a { padding:0 18px 16px; color:var(--text-muted); line-height:1.8; }
+.faq-item .faq-a p { margin:0; }
 </style>
 <!-- ===== 网站统计 =====
      使用方法：把下面 GA4_ID 的值改成你的 GA4 衡量ID（形如 G-ABCD123XYZ），保存推送即可生效。
@@ -158,6 +165,26 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
     }
   ],
   "numberOfEmployees": "201-500"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Главная",
+      "item": "https://www.tianyimachine.com/ru/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Сертификаты",
+      "item": "https://www.tianyimachine.com/ru/certifications.html"
+    }
+  ]
 }
 </script>
 </head>
@@ -279,6 +306,29 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
     <img src="../images/logo-160.png" alt="Тяньи Машинери" class="footer-logo">
     <p>&copy; 2026 Hubei Tianyi Machinery Co., Ltd. | Акции: 832654 | <a href="mailto:kim@tianyi-machinery.com">kim@tianyi-machinery.com</a></p>
   </div>
+<section class="faq-section" id="faq">
+  <h2>Часто задаваемые вопросы</h2>
+    <div class="faq-item">
+      <h3>Является ли Tianyi сертифицированным производителем по ISO?</h3>
+      <div class="faq-a"><p>Да. Tianyi имеет сертификаты ISO 9001 (качество), ISO 14001 (экология) и ISO 45001 (охрана труда и здоровья) в области проектирования, производства и обслуживания.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>Что такое звание национального предприятия «Малый гигант»?</h3>
+      <div class="faq-a"><p>Это признание китайского министерства MIIT для специализированных, передовых и инновационных малых и средних предприятий, лидирующих в своей нише — здесь это оборудование для сыпучих.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>Есть ли у Tianyi сертификация CE?</h3>
+      <div class="faq-a"><p>Да. Наши ленточные конвейеры имеют маркировку CE в соответствии с директивами ЕС по машинам, что поддерживает поставки на европейский рынок.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>Сколько патентов у Tianyi?</h3>
+      <div class="faq-a"><p>Tianyi владеет более чем 100 национальными патентами и участвовала в разработке 3 национальных и 5 отраслевых стандартов по транспортировке сыпучих.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>Котируется ли Tianyi на бирже?</h3>
+      <div class="faq-a"><p>Да. Tianyi включена в китайскую биржу NEEQ (национальная внебиржевая торговая система) под кодом акций 832654.</p></div>
+    </div>
+</section>
 </footer>
 
 <script>
@@ -290,6 +340,54 @@ document.querySelectorAll('.nav>li>a').forEach(function(link) {
     }
   });
 });
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Является ли Tianyi сертифицированным производителем по ISO?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Да. Tianyi имеет сертификаты ISO 9001 (качество), ISO 14001 (экология) и ISO 45001 (охрана труда и здоровья) в области проектирования, производства и обслуживания."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Что такое звание национального предприятия «Малый гигант»?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Это признание китайского министерства MIIT для специализированных, передовых и инновационных малых и средних предприятий, лидирующих в своей нише — здесь это оборудование для сыпучих."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Есть ли у Tianyi сертификация CE?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Да. Наши ленточные конвейеры имеют маркировку CE в соответствии с директивами ЕС по машинам, что поддерживает поставки на европейский рынок."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Сколько патентов у Tianyi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tianyi владеет более чем 100 национальными патентами и участвовала в разработке 3 национальных и 5 отраслевых стандартов по транспортировке сыпучих."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Котируется ли Tianyi на бирже?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Да. Tianyi включена в китайскую биржу NEEQ (национальная внебиржевая торговая система) под кодом акций 832654."
+      }
+    }
+  ]
+}
 </script>
 </body>
 </html>

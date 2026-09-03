@@ -133,6 +133,13 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
   .nav>li.open-sub .dropdown-menu { display:block; }
   .nav-toggle { display:block; }
 }
+
+.faq-section { margin:36px 0; }
+.faq-section h2 { font-size:24px; margin-bottom:18px; color:var(--primary); }
+.faq-item { border:1px solid var(--border); border-radius:var(--radius); margin-bottom:12px; background:var(--bg-alt); }
+.faq-item h3 { font-size:16px; margin:0; padding:14px 18px; color:var(--primary); line-height:1.4; }
+.faq-item .faq-a { padding:0 18px 16px; color:var(--text-muted); line-height:1.8; }
+.faq-item .faq-a p { margin:0; }
 </style>
 <!-- ===== 网站统计 =====
      使用方法：把下面 GA4_ID 的值改成你的 GA4 衡量ID（形如 G-ABCD123XYZ），保存推送即可生效。
@@ -178,6 +185,32 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
     }
   ],
   "numberOfEmployees": "201-500"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.tianyimachine.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.tianyimachine.com/blog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "How to Choose the Right Industrial Valve for Bulk Material Handling",
+      "item": "https://www.tianyimachine.com/blog/industrial-valve-selection-guide.html"
+    }
+  ]
 }
 </script>
 </head>
@@ -324,6 +357,29 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
     <li><strong>Forgetting spare-parts compatibility.</strong> Standardized valve families (as offered by Tianyi) simplify long-term maintenance.</li>
   </ol>
 
+  <section class="faq-section" id="faq">
+  <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>How do I choose an industrial valve for bulk material?</h3>
+      <div class="faq-a"><p>Start from the material: particle size, abrasiveness, temperature, and flow rate, then match the valve type, size (DN), actuation, and sealing to that duty.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>What valve types are used in bulk handling?</h3>
+      <div class="faq-a"><p>Rotary valves for airlock and feed, flap dampers, slide gates, and diverter valves for routing material between bins and process lines.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>How do I size a rotary or diverter valve?</h3>
+      <div class="faq-a"><p>Match the bore to line velocity and required throughput, set pressure class above the operating envelope, and choose actuation for the expected cycling frequency.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>Pneumatic or electric actuation for valves?</h3>
+      <div class="faq-a"><p>Pneumatic is preferred for fast, frequent cycling and hazardous areas; electric suits slower, precise positioning. Choice follows duty and plant utility availability.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>What sealing is needed for high-temperature valves?</h3>
+      <div class="faq-a"><p>Metal-to-metal or hardened seals matched to the media, with materials rated for the operating temperature and any abrasive content.</p></div>
+    </div>
+</section>
   <div class="cta-box">
     <h2>Need Help Specifying Your Valves?</h2>
     <p>Tell us your material, flow rate, pressure, and actuation needs. We return a tailored valve specification &mdash; including sizing and explosion-proof options &mdash; within 24 hours.</p>
@@ -358,5 +414,53 @@ document.querySelectorAll('.nav>li>a').forEach(function(link) {
 });
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I choose an industrial valve for bulk material?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Start from the material: particle size, abrasiveness, temperature, and flow rate, then match the valve type, size (DN), actuation, and sealing to that duty."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What valve types are used in bulk handling?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Rotary valves for airlock and feed, flap dampers, slide gates, and diverter valves for routing material between bins and process lines."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I size a rotary or diverter valve?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Match the bore to line velocity and required throughput, set pressure class above the operating envelope, and choose actuation for the expected cycling frequency."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Pneumatic or electric actuation for valves?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pneumatic is preferred for fast, frequent cycling and hazardous areas; electric suits slower, precise positioning. Choice follows duty and plant utility availability."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What sealing is needed for high-temperature valves?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Metal-to-metal or hardened seals matched to the media, with materials rated for the operating temperature and any abrasive content."
+      }
+    }
+  ]
+}
+</script>
 </body>
 </html>

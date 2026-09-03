@@ -137,6 +137,13 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
   .nav>li.open-sub .dropdown-menu { display:block; }
   .nav-toggle { display:block; }
 }
+
+.faq-section { margin:36px 0; }
+.faq-section h2 { font-size:24px; margin-bottom:18px; color:var(--primary); }
+.faq-item { border:1px solid var(--border); border-radius:var(--radius); margin-bottom:12px; background:var(--bg-alt); }
+.faq-item h3 { font-size:16px; margin:0; padding:14px 18px; color:var(--primary); line-height:1.4; }
+.faq-item .faq-a { padding:0 18px 16px; color:var(--text-muted); line-height:1.8; }
+.faq-item .faq-a p { margin:0; }
 </style>
 <!-- ===== 网站统计 =====
      使用方法：把下面 GA4_ID 的值改成你的 GA4 衡量ID（形如 G-ABCD123XYZ），保存推送即可生效。
@@ -182,6 +189,32 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
     }
   ],
   "numberOfEmployees": "201-500"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.tianyimachine.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.tianyimachine.com/blog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Gas-Tight En Masse Chain Scraper Conveyor for New-Energy Nitrogen Inerting",
+      "item": "https://www.tianyimachine.com/blog/gas-tight-en-masse-conveyor-nitrogen-inerting.html"
+    }
+  ]
 }
 </script>
 </head>
@@ -343,6 +376,29 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
     <li><strong>Flexibility:</strong> Can be arranged horizontally, inclined, or vertically to fit plant layout.</li>
   </ul>
 
+  <section class="faq-section" id="faq">
+  <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>Why use nitrogen inerting for powder conveying?</h3>
+      <div class="faq-a"><p>Oxygen-sensitive powders such as battery and new-energy materials can oxidize or even self-ignite in air. Replacing the conveyor atmosphere with nitrogen prevents reaction and improves safety.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>What is a gas-tight en masse conveyor?</h3>
+      <div class="faq-a"><p>It is a fully sealed chain-scraper conveyor with a gastight casing, sealed shaft entries, and positive sealing so the internal atmosphere is isolated from the plant.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>Which new-energy powders need oxygen-free conveying?</h3>
+      <div class="faq-a"><p>Silicon-based anodes, lithium compounds, nickel-cobalt-manganese materials, and other pyrophoric or oxidation-prone fine powders commonly require inerted conveying.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>How does Tianyi seal the conveyor against gas leakage?</h3>
+      <div class="faq-a"><p>Gas-tight casing joints, double mechanical shaft seals with nitrogen purge, and sealed inspection doors keep the internal atmosphere isolated and monitored.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>Can the gas-tight conveyor be monitored for safety?</h3>
+      <div class="faq-a"><p>Yes. We add gas-composition, temperature, and speed monitoring with automatic trip logic so abnormal trends are caught before they become incidents.</p></div>
+    </div>
+</section>
   <div class="cta-box">
     <h2>Need a Gas-Tight Conveyor for Oxygen-Sensitive Powders?</h2>
     <p>Send us your material data, oxygen-limit requirements, and layout. We will size a sealed en masse chain scraper conveyor with nitrogen inerting engineered for your new-energy process.</p>
@@ -377,5 +433,53 @@ document.querySelectorAll('.nav>li>a').forEach(function(link) {
 });
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why use nitrogen inerting for powder conveying?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oxygen-sensitive powders such as battery and new-energy materials can oxidize or even self-ignite in air. Replacing the conveyor atmosphere with nitrogen prevents reaction and improves safety."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a gas-tight en masse conveyor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is a fully sealed chain-scraper conveyor with a gastight casing, sealed shaft entries, and positive sealing so the internal atmosphere is isolated from the plant."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which new-energy powders need oxygen-free conveying?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Silicon-based anodes, lithium compounds, nickel-cobalt-manganese materials, and other pyrophoric or oxidation-prone fine powders commonly require inerted conveying."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does Tianyi seal the conveyor against gas leakage?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Gas-tight casing joints, double mechanical shaft seals with nitrogen purge, and sealed inspection doors keep the internal atmosphere isolated and monitored."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can the gas-tight conveyor be monitored for safety?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We add gas-composition, temperature, and speed monitoring with automatic trip logic so abnormal trends are caught before they become incidents."
+      }
+    }
+  ]
+}
+</script>
 </body>
 </html>

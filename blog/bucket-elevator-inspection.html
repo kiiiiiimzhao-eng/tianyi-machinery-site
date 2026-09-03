@@ -137,6 +137,13 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
   .nav>li.open-sub .dropdown-menu { display:block; }
   .nav-toggle { display:block; }
 }
+
+.faq-section { margin:36px 0; }
+.faq-section h2 { font-size:24px; margin-bottom:18px; color:var(--primary); }
+.faq-item { border:1px solid var(--border); border-radius:var(--radius); margin-bottom:12px; background:var(--bg-alt); }
+.faq-item h3 { font-size:16px; margin:0; padding:14px 18px; color:var(--primary); line-height:1.4; }
+.faq-item .faq-a { padding:0 18px 16px; color:var(--text-muted); line-height:1.8; }
+.faq-item .faq-a p { margin:0; }
 </style>
 <!-- ===== 网站统计 =====
      使用方法：把下面 GA4_ID 的值改成你的 GA4 衡量ID（形如 G-ABCD123XYZ），保存推送即可生效。
@@ -182,6 +189,32 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
     }
   ],
   "numberOfEmployees": "201-500"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.tianyimachine.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.tianyimachine.com/blog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Bucket Elevator Inspection Checklist: Daily, Weekly & Monthly",
+      "item": "https://www.tianyimachine.com/blog/bucket-elevator-inspection.html"
+    }
+  ]
 }
 </script>
 </head>
@@ -317,6 +350,29 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
     <figcaption>Figure 1. A Tianyi bucket elevator in a cement raw-meal handling line.</figcaption>
   </div>
 
+  <section class="faq-section" id="faq">
+  <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>How often should a bucket elevator be inspected?</h3>
+      <div class="faq-a"><p>Daily walk-around checks by the operator, weekly checks by maintenance, and a detailed monthly inspection by a supervisor or engineer. Frequency rises with duty severity.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>What are the daily bucket elevator checks?</h3>
+      <div class="faq-a"><p>Listen for abnormal chain or belt noise, confirm belt or chain tension, check for material buildup, and verify that level and speed sensors read correctly at start of shift.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>What causes bucket elevator belt stretch?</h3>
+      <div class="faq-a"><p>Normal break-in, overload, or high-temperature duty stretches the belt. Monitor take-up travel and re-tension before slack causes mistracking or discharge loss.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>How do I reduce dust-explosion risk in a bucket elevator?</h3>
+      <div class="faq-a"><p>Use explosion venting where required, keep the casing dust-tight, install temperature and speed monitoring with automatic trip, and avoid ignition sources in the head section.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>What does a monthly elevator inspection cover?</h3>
+      <div class="faq-a"><p>Belt or chain condition, bucket bolts and wear, bearing temperature, drive alignment, braking, and a full check of safety interlocks and explosion-protection devices.</p></div>
+    </div>
+</section>
   <div class="cta-box">
     <h2>Need an Elevator Health Check?</h2>
     <p>Tell us your model, material, and duty &mdash; we'll help you build a maintenance schedule and supply the right spare buckets, belts, and bearings.</p>
@@ -351,5 +407,53 @@ document.querySelectorAll('.nav>li>a').forEach(function(link) {
 });
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How often should a bucket elevator be inspected?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Daily walk-around checks by the operator, weekly checks by maintenance, and a detailed monthly inspection by a supervisor or engineer. Frequency rises with duty severity."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the daily bucket elevator checks?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Listen for abnormal chain or belt noise, confirm belt or chain tension, check for material buildup, and verify that level and speed sensors read correctly at start of shift."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What causes bucket elevator belt stretch?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Normal break-in, overload, or high-temperature duty stretches the belt. Monitor take-up travel and re-tension before slack causes mistracking or discharge loss."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I reduce dust-explosion risk in a bucket elevator?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use explosion venting where required, keep the casing dust-tight, install temperature and speed monitoring with automatic trip, and avoid ignition sources in the head section."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does a monthly elevator inspection cover?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Belt or chain condition, bucket bolts and wear, bearing temperature, drive alignment, braking, and a full check of safety interlocks and explosion-protection devices."
+      }
+    }
+  ]
+}
+</script>
 </body>
 </html>

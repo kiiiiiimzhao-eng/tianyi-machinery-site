@@ -1,0 +1,11 @@
+blog/belt-conveyor-installation-guide.html: OK | ru/blog/belt-conveyor-installation-guide.html: OK
+blog/belt-conveyor-troubleshooting.html: OK | ru/blog/belt-conveyor-troubleshooting.html: OK
+blog/bucket-elevator-inspection.html: OK | ru/blog/bucket-elevator-inspection.html: OK
+blog/chlor-alkali-conveying-system.html: OK | ru/blog/chlor-alkali-conveying-system.html: OK
+blog/gas-tight-en-masse-conveyor-nitrogen-inerting.html: OK | ru/blog/gas-tight-en-masse-conveyor-nitrogen-inerting.html: OK
+blog/industrial-valve-selection-guide.html: OK | ru/blog/industrial-valve-selection-guide.html: OK
+blog/manufacturing-champion-award.html: OK | ru/blog/manufacturing-champion-award.html: OK
+blog/mineral-processing-plant-solutions.html: OK | ru/blog/mineral-processing-plant-solutions.html: OK
+blog/tdg-gas-tight-explosion-proof-bucket-elevator.html: OK | ru/blog/tdg-gas-tight-explosion-proof-bucket-elevator.html: OK
+blog/uruguay-customer-visit.html: OK | ru/blog/uruguay-customer-visit.html: OK
+blog/zinc-indium-smelting-conveying-system.html: OK | ru/blog/zinc-indium-smelting-conveying-system.html: OK

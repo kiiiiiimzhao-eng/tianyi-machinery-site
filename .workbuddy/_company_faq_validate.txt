@@ -1,0 +1,4 @@
+factory.html [5 faq]: OK
+ru/factory.html [5 faq]: OK
+certifications.html [5 faq]: OK
+ru/certifications.html [5 faq]: OK

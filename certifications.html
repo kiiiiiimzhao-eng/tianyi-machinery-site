@@ -109,6 +109,13 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
   .nav>li.open-sub .dropdown-menu { display:block; }
   .nav-toggle { display:block; }
 }
+
+.faq-section { margin:36px 0; }
+.faq-section h2 { font-size:24px; margin-bottom:18px; color:var(--primary); }
+.faq-item { border:1px solid var(--border); border-radius:var(--radius); margin-bottom:12px; background:var(--bg-alt); }
+.faq-item h3 { font-size:16px; margin:0; padding:14px 18px; color:var(--primary); line-height:1.4; }
+.faq-item .faq-a { padding:0 18px 16px; color:var(--text-muted); line-height:1.8; }
+.faq-item .faq-a p { margin:0; }
 </style>
 <!-- ===== 网站统计 =====
      使用方法：把下面 GA4_ID 的值改成你的 GA4 衡量ID（形如 G-ABCD123XYZ），保存推送即可生效。
@@ -154,6 +161,26 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
     }
   ],
   "numberOfEmployees": "201-500"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.tianyimachine.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Certifications",
+      "item": "https://www.tianyimachine.com/certifications.html"
+    }
+  ]
 }
 </script>
 </head>
@@ -278,6 +305,29 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
     <img src="images/logo-160.png" alt="Tianyi Machinery" class="footer-logo">
     <p>&copy; 2026 Hubei Tianyi Machinery Co., Ltd. | Stock: 832654 | <a href="mailto:kim@tianyi-machinery.com">kim@tianyi-machinery.com</a></p>
   </div>
+<section class="faq-section" id="faq">
+  <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>Is Tianyi an ISO certified manufacturer?</h3>
+      <div class="faq-a"><p>Yes. Tianyi holds ISO 9001 (quality), ISO 14001 (environment), and ISO 45001 (occupational health and safety) certifications across its design, manufacturing, and service.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>What is the National Little Giant enterprise title?</h3>
+      <div class="faq-a"><p>It is a Chinese MIIT recognition for specialized, sophisticated, distinctive, and innovative SMEs that lead in their niche, here bulk material handling equipment.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>Does Tianyi have CE certification?</h3>
+      <div class="faq-a"><p>Yes. Our belt conveyor systems carry CE marking compliant with EU machinery directives, supporting sales into the European market.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>How many patents does Tianyi hold?</h3>
+      <div class="faq-a"><p>Tianyi holds 100+ national patents and has contributed to drafting 3 national and 5 industry standards in bulk material handling.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>Is Tianyi listed on a stock exchange?</h3>
+      <div class="faq-a"><p>Yes. Tianyi is listed on China NEEQ (National Equities Exchange and Quotations) under stock code 832654.</p></div>
+    </div>
+</section>
 </footer>
 
 <script>
@@ -289,6 +339,54 @@ document.querySelectorAll('.nav>li>a').forEach(function(link) {
     }
   });
 });
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is Tianyi an ISO certified manufacturer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Tianyi holds ISO 9001 (quality), ISO 14001 (environment), and ISO 45001 (occupational health and safety) certifications across its design, manufacturing, and service."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the National Little Giant enterprise title?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is a Chinese MIIT recognition for specialized, sophisticated, distinctive, and innovative SMEs that lead in their niche, here bulk material handling equipment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Tianyi have CE certification?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Our belt conveyor systems carry CE marking compliant with EU machinery directives, supporting sales into the European market."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many patents does Tianyi hold?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tianyi holds 100+ national patents and has contributed to drafting 3 national and 5 industry standards in bulk material handling."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Tianyi listed on a stock exchange?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Tianyi is listed on China NEEQ (National Equities Exchange and Quotations) under stock code 832654."
+      }
+    }
+  ]
+}
 </script>
 </body>
 </html>

@@ -137,6 +137,13 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
   .nav>li.open-sub .dropdown-menu { display:block; }
   .nav-toggle { display:block; }
 }
+
+.faq-section { margin:36px 0; }
+.faq-section h2 { font-size:24px; margin-bottom:18px; color:var(--primary); }
+.faq-item { border:1px solid var(--border); border-radius:var(--radius); margin-bottom:12px; background:var(--bg-alt); }
+.faq-item h3 { font-size:16px; margin:0; padding:14px 18px; color:var(--primary); line-height:1.4; }
+.faq-item .faq-a { padding:0 18px 16px; color:var(--text-muted); line-height:1.8; }
+.faq-item .faq-a p { margin:0; }
 </style>
 <!-- ===== 网站统计 =====
      使用方法：把下面 GA4_ID 的值改成你的 GA4 衡量ID（形如 G-ABCD123XYZ），保存推送即可生效。
@@ -182,6 +189,32 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
     }
   ],
   "numberOfEmployees": "201-500"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Главная",
+      "item": "https://www.tianyimachine.com/ru/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Блог",
+      "item": "https://www.tianyimachine.com/ru/blog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Транспортировка сыпучих для обогатительных фабрик: инжиниринг и производство Тяньи",
+      "item": "https://www.tianyimachine.com/ru/blog/mineral-processing-plant-solutions.html"
+    }
+  ]
 }
 </script>
 </head>
@@ -347,6 +380,29 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
     <strong>Совет по доступности:</strong> для абразивных или высокотемпературных режимов стандартизируйтесь на семействах оборудования со сменными футеровками и проверенным уплотнением. Это самый большой фактор долгосрочной доступности обогатительной фабрики.
   </div>
 
+  <section class="faq-section" id="faq">
+  <h2>Часто задаваемые вопросы</h2>
+    <div class="faq-item">
+      <h3>Какое транспортное оборудование нужно обогатительной фабрике?</h3>
+      <div class="faq-a"><p>Дробление и питание на приёме, ленточные и скребковые конвейеры для транспорта, ковшовые элеваторы для подъёма, грохочение, пылеулавливание и клапаны для маршрутизации.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>Может ли Tianyi поставить полную систему для обогащения?</h3>
+      <div class="faq-a"><p>Да. Мы проектируем весь объём транспортировки — от приёма руды до грохочения и отгрузки — как единую интегрированную систему с пусконаладкой.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>Как Tianyi работает с абразивной рудой и пульпой?</h3>
+      <div class="faq-a"><p>Применяем износостойкие футеровки, закалённые цепи и скребки, герметичные корпуса, подбирая материалы под абразивность и влажность руды.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>Какие отрасли, кроме горной, обслуживает Tianyi?</h3>
+      <div class="faq-a"><p>Цемент, химия, энергетика, металлургия и новая энергетика, помимо обогащения и плавки металлов.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>Какую производительность обеспечивают системы Tianyi?</h3>
+      <div class="faq-a"><p>Масштаб системы рассчитывается под проект; типовые линии обрабатывают от сотен до тысяч тонн в час по дроблению, транспорту и грохочению.</p></div>
+    </div>
+</section>
   <div class="cta-box">
     <h2>Нужна система транспортировки для вашей обогатительной фабрики?</h2>
     <p>Пришлите нам материал, требуемую производительность и планировку завода. Мы вернём индивидуальный проект системы и смету &mdash; включая дробилки, конвейеры, грохоты, элеваторы, пылеуловители и клапаны.</p>
@@ -381,5 +437,53 @@ document.querySelectorAll('.nav>li>a').forEach(function(link) {
 });
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Какое транспортное оборудование нужно обогатительной фабрике?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Дробление и питание на приёме, ленточные и скребковые конвейеры для транспорта, ковшовые элеваторы для подъёма, грохочение, пылеулавливание и клапаны для маршрутизации."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Может ли Tianyi поставить полную систему для обогащения?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Да. Мы проектируем весь объём транспортировки — от приёма руды до грохочения и отгрузки — как единую интегрированную систему с пусконаладкой."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Как Tianyi работает с абразивной рудой и пульпой?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Применяем износостойкие футеровки, закалённые цепи и скребки, герметичные корпуса, подбирая материалы под абразивность и влажность руды."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Какие отрасли, кроме горной, обслуживает Tianyi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Цемент, химия, энергетика, металлургия и новая энергетика, помимо обогащения и плавки металлов."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Какую производительность обеспечивают системы Tianyi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Масштаб системы рассчитывается под проект; типовые линии обрабатывают от сотен до тысяч тонн в час по дроблению, транспорту и грохочению."
+      }
+    }
+  ]
+}
+</script>
 </body>
 </html>

@@ -130,6 +130,13 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
   .nav>li.open-sub .dropdown-menu { display:block; }
   .nav-toggle { display:block; }
 }
+
+.faq-section { margin:36px 0; }
+.faq-section h2 { font-size:24px; margin-bottom:18px; color:var(--primary); }
+.faq-item { border:1px solid var(--border); border-radius:var(--radius); margin-bottom:12px; background:var(--bg-alt); }
+.faq-item h3 { font-size:16px; margin:0; padding:14px 18px; color:var(--primary); line-height:1.4; }
+.faq-item .faq-a { padding:0 18px 16px; color:var(--text-muted); line-height:1.8; }
+.faq-item .faq-a p { margin:0; }
 </style>
 <!-- ===== 网站统计 =====
      使用方法：把下面 GA4_ID 的值改成你的 GA4 衡量ID（形如 G-ABCD123XYZ），保存推送即可生效。
@@ -175,6 +182,32 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
     }
   ],
   "numberOfEmployees": "201-500"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Главная",
+      "item": "https://www.tianyimachine.com/ru/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Блог",
+      "item": "https://www.tianyimachine.com/ru/blog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Заказчик из Уругвая посетил Тяньи Машинери для обсуждения сотрудничества",
+      "item": "https://www.tianyimachine.com/ru/blog/uruguay-customer-visit.html"
+    }
+  ]
 }
 </script>
 </head>
@@ -277,6 +310,29 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
   <p>Визит завершился взаимным обязательством продвигаться по поэтапному плану сотрудничества, начав с пилотного заказа на линию переработки цементной сырьевой муки. Тяньи предоставит чертёж общего расположения, шеф-монтаж и индивидуальный комплект запчастей для поддержки местной ремонтной бригады заказчика.</p>
   <div class="callout"><strong>Наше обязательство:</strong> каждый экспортный проект подкреплён документацией на китайском и английском языках, дистанционной поддержкой при пусконаладке и рекомендациями по критическим запчастям, чтобы ваш завод продолжал работу.</div>
 
+  <section class="faq-section" id="faq">
+  <h2>Часто задаваемые вопросы</h2>
+    <div class="faq-item">
+      <h3>Работает ли Tianyi с заказчиками в Латинской Америке?</h3>
+      <div class="faq-a"><p>Да. Tianyi экспортирует в более чем 50 стран и регулярно принимает латиноамериканских заказчиков для технических обсуждений и планирования проектов.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>Можно ли посетить завод Tianyi до заказа?</h3>
+      <div class="faq-a"><p>Конечно. Мы приветствуем визиты заказчиков для оценки производственных возможностей, контроля качества и обсуждения проекта на площадке.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>Что включает визит на завод Tianyi?</h3>
+      <div class="faq-a"><p>Экскурсия по цехам, осмотр сварки, механообработки и сборки, обсуждение контроля качества и технические сессии по вашему проекту транспортировки.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>Экспортирует ли Tianyi в Уругвай и Южную Америку?</h3>
+      <div class="faq-a"><p>Да, Tianyi поставляет оборудование на рынки Южной Америки и поддерживает проекты в регионе технической документацией на английском и китайском.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>Как начать проект с Tianyi?</h3>
+      <div class="faq-a"><p>Пришлите свойства материала и технологическую схему — наша инженерная команда вернёт адаптированное предложение и смету.</p></div>
+    </div>
+</section>
   <div class="cta-box">
     <h2>Планируете проект в Латинской Америке?</h2>
     <p>Мы поставляли системы транспортировки сыпучих по всему миру в цементной, горной и портовой отраслях. Пришлите данные материала и план площадки — мы вернём предложение.</p>
@@ -311,5 +367,53 @@ document.querySelectorAll('.nav>li>a').forEach(function(link) {
 });
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Работает ли Tianyi с заказчиками в Латинской Америке?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Да. Tianyi экспортирует в более чем 50 стран и регулярно принимает латиноамериканских заказчиков для технических обсуждений и планирования проектов."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Можно ли посетить завод Tianyi до заказа?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Конечно. Мы приветствуем визиты заказчиков для оценки производственных возможностей, контроля качества и обсуждения проекта на площадке."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Что включает визит на завод Tianyi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Экскурсия по цехам, осмотр сварки, механообработки и сборки, обсуждение контроля качества и технические сессии по вашему проекту транспортировки."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Экспортирует ли Tianyi в Уругвай и Южную Америку?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Да, Tianyi поставляет оборудование на рынки Южной Америки и поддерживает проекты в регионе технической документацией на английском и китайском."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Как начать проект с Tianyi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Пришлите свойства материала и технологическую схему — наша инженерная команда вернёт адаптированное предложение и смету."
+      }
+    }
+  ]
+}
+</script>
 </body>
 </html>

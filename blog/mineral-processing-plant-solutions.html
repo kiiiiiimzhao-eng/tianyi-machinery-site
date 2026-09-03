@@ -133,6 +133,13 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
   .nav>li.open-sub .dropdown-menu { display:block; }
   .nav-toggle { display:block; }
 }
+
+.faq-section { margin:36px 0; }
+.faq-section h2 { font-size:24px; margin-bottom:18px; color:var(--primary); }
+.faq-item { border:1px solid var(--border); border-radius:var(--radius); margin-bottom:12px; background:var(--bg-alt); }
+.faq-item h3 { font-size:16px; margin:0; padding:14px 18px; color:var(--primary); line-height:1.4; }
+.faq-item .faq-a { padding:0 18px 16px; color:var(--text-muted); line-height:1.8; }
+.faq-item .faq-a p { margin:0; }
 </style>
 <!-- ===== 网站统计 =====
      使用方法：把下面 GA4_ID 的值改成你的 GA4 衡量ID（形如 G-ABCD123XYZ），保存推送即可生效。
@@ -178,6 +185,32 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
     }
   ],
   "numberOfEmployees": "201-500"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.tianyimachine.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.tianyimachine.com/blog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Bulk Material Handling for Mineral Processing Plants: Tianyi's Engineering & Production Capability",
+      "item": "https://www.tianyimachine.com/blog/mineral-processing-plant-solutions.html"
+    }
+  ]
 }
 </script>
 </head>
@@ -341,6 +374,29 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
     <strong>Uptime tip:</strong> For abrasive or high-temperature duty, standardize on equipment families with <em>replaceable wear liners</em> and proven sealing. It is the single biggest factor in long-term uptime for a mineral processing plant.
   </div>
 
+  <section class="faq-section" id="faq">
+  <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>What conveying equipment does a mineral processing plant need?</h3>
+      <div class="faq-a"><p>Crushing and feeding at receive, belt and en-masse conveyors for transport, bucket elevators for lift, screening, dust collection, and valves for routing.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>Can Tianyi deliver a complete mineral-processing handling system?</h3>
+      <div class="faq-a"><p>Yes. We engineer the full material-handling scope from run-of-mine receiving to product screening and load-out as an integrated, commissioned system.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>How does Tianyi handle abrasive ore and slurry?</h3>
+      <div class="faq-a"><p>We use wear-resistant liners, hardened chain and flights, and sealed casings, with material selection matched to the ore&#x27;s abrasiveness and moisture.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>Which industries does Tianyi serve beyond mining?</h3>
+      <div class="faq-a"><p>Cement, chemical, power, metallurgy, and new-energy, in addition to mineral processing and metal smelting.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>What capacity can Tianyi systems handle?</h3>
+      <div class="faq-a"><p>System scale is engineered per project; typical lines handle hundreds to thousands of tons per hour across crushing, conveying, and screening.</p></div>
+    </div>
+</section>
   <div class="cta-box">
     <h2>Need a Bulk-Handling System for Your Mineral Processing Plant?</h2>
     <p>Send us your material, required capacity, and plant layout. We return a tailored system design and quotation &mdash; including crushers, conveyors, screens, elevators, dust collectors, and valves.</p>
@@ -375,5 +431,53 @@ document.querySelectorAll('.nav>li>a').forEach(function(link) {
 });
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What conveying equipment does a mineral processing plant need?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Crushing and feeding at receive, belt and en-masse conveyors for transport, bucket elevators for lift, screening, dust collection, and valves for routing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can Tianyi deliver a complete mineral-processing handling system?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We engineer the full material-handling scope from run-of-mine receiving to product screening and load-out as an integrated, commissioned system."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does Tianyi handle abrasive ore and slurry?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We use wear-resistant liners, hardened chain and flights, and sealed casings, with material selection matched to the ore's abrasiveness and moisture."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which industries does Tianyi serve beyond mining?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cement, chemical, power, metallurgy, and new-energy, in addition to mineral processing and metal smelting."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What capacity can Tianyi systems handle?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "System scale is engineered per project; typical lines handle hundreds to thousands of tons per hour across crushing, conveying, and screening."
+      }
+    }
+  ]
+}
+</script>
 </body>
 </html>

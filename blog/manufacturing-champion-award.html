@@ -130,6 +130,13 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
   .nav>li.open-sub .dropdown-menu { display:block; }
   .nav-toggle { display:block; }
 }
+
+.faq-section { margin:36px 0; }
+.faq-section h2 { font-size:24px; margin-bottom:18px; color:var(--primary); }
+.faq-item { border:1px solid var(--border); border-radius:var(--radius); margin-bottom:12px; background:var(--bg-alt); }
+.faq-item h3 { font-size:16px; margin:0; padding:14px 18px; color:var(--primary); line-height:1.4; }
+.faq-item .faq-a { padding:0 18px 16px; color:var(--text-muted); line-height:1.8; }
+.faq-item .faq-a p { margin:0; }
 </style>
 <!-- ===== 网站统计 =====
      使用方法：把下面 GA4_ID 的值改成你的 GA4 衡量ID（形如 G-ABCD123XYZ），保存推送即可生效。
@@ -175,6 +182,32 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
     }
   ],
   "numberOfEmployees": "201-500"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.tianyimachine.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.tianyimachine.com/blog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Tianyi Machinery Awarded \"Hubei Province Manufacturing Champion\"",
+      "item": "https://www.tianyimachine.com/blog/manufacturing-champion-award.html"
+    }
+  ]
 }
 </script>
 </head>
@@ -268,6 +301,29 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
   <p>For our customers &mdash; whether a cement plant in Southeast Asia, a mine in Africa, or a port in South America &mdash; the practical meaning is straightforward: you are working with a manufacturer with proven scale, certified quality, and the engineering depth to tailor a system to your material and site, not just ship a catalog item.</p>
   <div class="callout"><strong>Our promise:</strong> Every system we deliver is designed against your real material data, documented in Chinese and English, and backed by spare-part recommendations and commissioning support.</div>
 
+  <section class="faq-section" id="faq">
+  <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>What is the Hubei Manufacturing Champion award?</h3>
+      <div class="faq-a"><p>It is a provincial recognition for manufacturers that lead in a specific product category by market position, technical capability, and product quality.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>Why did Tianyi win the Manufacturing Champion award?</h3>
+      <div class="faq-a"><p>For its leadership in bulk material handling equipment: conveyors, bucket elevators, and auxiliary machines, backed by engineering depth and a broad export record.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>What does the award mean for Tianyi customers?</h3>
+      <div class="faq-a"><p>It signals a verified, established manufacturer rather than a trading reseller, giving buyers more confidence in quality, delivery, and long-term support.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>Is Tianyi a certified bulk-handling manufacturer?</h3>
+      <div class="faq-a"><p>Yes. Tianyi holds ISO 9001 and national high-tech enterprise status, and is listed on the Chinese NEEQ (stock 832654).</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>When did Tianyi receive this recognition?</h3>
+      <div class="faq-a"><p>The company was awarded the Hubei Province Manufacturing Champion title as part of its recognition as a leading bulk-handling equipment maker.</p></div>
+    </div>
+</section>
   <div class="cta-box">
     <h2>Partner With a Proven Manufacturer</h2>
     <p>Whether you need a single conveyor or a complete bulk-handling line, Tianyi brings championship-grade engineering to your project.</p>
@@ -302,5 +358,53 @@ document.querySelectorAll('.nav>li>a').forEach(function(link) {
 });
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the Hubei Manufacturing Champion award?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is a provincial recognition for manufacturers that lead in a specific product category by market position, technical capability, and product quality."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why did Tianyi win the Manufacturing Champion award?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For its leadership in bulk material handling equipment: conveyors, bucket elevators, and auxiliary machines, backed by engineering depth and a broad export record."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does the award mean for Tianyi customers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It signals a verified, established manufacturer rather than a trading reseller, giving buyers more confidence in quality, delivery, and long-term support."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Tianyi a certified bulk-handling manufacturer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Tianyi holds ISO 9001 and national high-tech enterprise status, and is listed on the Chinese NEEQ (stock 832654)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When did Tianyi receive this recognition?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The company was awarded the Hubei Province Manufacturing Champion title as part of its recognition as a leading bulk-handling equipment maker."
+      }
+    }
+  ]
+}
+</script>
 </body>
 </html>

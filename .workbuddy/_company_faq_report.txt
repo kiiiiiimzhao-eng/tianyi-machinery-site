@@ -1,0 +1,2 @@
+factory.html: OK | ru/factory.html: OK
+certifications.html: OK | ru/certifications.html: OK

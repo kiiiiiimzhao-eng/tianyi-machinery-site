@@ -137,6 +137,13 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
   .nav>li.open-sub .dropdown-menu { display:block; }
   .nav-toggle { display:block; }
 }
+
+.faq-section { margin:36px 0; }
+.faq-section h2 { font-size:24px; margin-bottom:18px; color:var(--primary); }
+.faq-item { border:1px solid var(--border); border-radius:var(--radius); margin-bottom:12px; background:var(--bg-alt); }
+.faq-item h3 { font-size:16px; margin:0; padding:14px 18px; color:var(--primary); line-height:1.4; }
+.faq-item .faq-a { padding:0 18px 16px; color:var(--text-muted); line-height:1.8; }
+.faq-item .faq-a p { margin:0; }
 </style>
 <!-- ===== 网站统计 =====
      使用方法：把下面 GA4_ID 的值改成你的 GA4 衡量ID（形如 G-ABCD123XYZ），保存推送即可生效。
@@ -182,6 +189,32 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
     }
   ],
   "numberOfEmployees": "201-500"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Главная",
+      "item": "https://www.tianyimachine.com/ru/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Блог",
+      "item": "https://www.tianyimachine.com/ru/blog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Чек-лист осмотра ковшового элеватора: ежедневно, еженедельно и ежемесячно",
+      "item": "https://www.tianyimachine.com/ru/blog/bucket-elevator-inspection.html"
+    }
+  ]
 }
 </script>
 </head>
@@ -319,6 +352,29 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
     <figcaption>Рисунок 1. Ковшовый элеватор Тяньи в линии переработки цементной сырьевой муки.</figcaption>
   </div>
 
+  <section class="faq-section" id="faq">
+  <h2>Часто задаваемые вопросы</h2>
+    <div class="faq-item">
+      <h3>Как часто нужно осматривать ковшовый элеватор?</h3>
+      <div class="faq-a"><p>Ежедневный обход оператором, еженедельная проверка механиком и детальный ежемесячный осмотр начальником или инженером. Частота растёт при тяжёлом режиме.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>Что входит в ежедневный осмотр элеватора?</h3>
+      <div class="faq-a"><p>Прослушайте посторонний шум цепи или ленты, проверьте натяжение, отсутствие налипаний и корректность показаний датчиков уровня и скорости в начале смены.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>Из-за чего растягивается лента ковшового элеватора?</h3>
+      <div class="faq-a"><p>Нормальная обкатка, перегрузка или работа при высокой температуре растягивают ленту. Контролируйте ход натяжного устройства и подтягивайте до появления провисания.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>Как снизить риск взрыва пыли в элеваторе?</h3>
+      <div class="faq-a"><p>Применяйте взрыворазрядители где требуется, держите корпус пылезащищённым, устанавливайте контроль температуры и скорости с автоматическим отключением и исключайте источники воспламенения в головной части.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>Что входит в ежемесячный осмотр элеватора?</h3>
+      <div class="faq-a"><p>Состояние ленты или цепи, болтов и износа ковшей, температура подшипников, соосность привода, торможение и полная проверка блокировок и взрывозащиты.</p></div>
+    </div>
+</section>
   <div class="cta-box">
     <h2>Нужна проверка состояния элеватора?</h2>
     <p>Сообщите модель, материал и режим работы — мы поможем составить график обслуживания и поставим нужные запасные ковши, ленты и подшипники.</p>
@@ -353,5 +409,53 @@ document.querySelectorAll('.nav>li>a').forEach(function(link) {
 });
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Как часто нужно осматривать ковшовый элеватор?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ежедневный обход оператором, еженедельная проверка механиком и детальный ежемесячный осмотр начальником или инженером. Частота растёт при тяжёлом режиме."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Что входит в ежедневный осмотр элеватора?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Прослушайте посторонний шум цепи или ленты, проверьте натяжение, отсутствие налипаний и корректность показаний датчиков уровня и скорости в начале смены."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Из-за чего растягивается лента ковшового элеватора?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Нормальная обкатка, перегрузка или работа при высокой температуре растягивают ленту. Контролируйте ход натяжного устройства и подтягивайте до появления провисания."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Как снизить риск взрыва пыли в элеваторе?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Применяйте взрыворазрядители где требуется, держите корпус пылезащищённым, устанавливайте контроль температуры и скорости с автоматическим отключением и исключайте источники воспламенения в головной части."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Что входит в ежемесячный осмотр элеватора?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Состояние ленты или цепи, болтов и износа ковшей, температура подшипников, соосность привода, торможение и полная проверка блокировок и взрывозащиты."
+      }
+    }
+  ]
+}
+</script>
 </body>
 </html>

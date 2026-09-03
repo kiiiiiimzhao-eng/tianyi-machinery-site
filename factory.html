@@ -108,6 +108,13 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
   .nav>li.open-sub .dropdown-menu { display:block; }
   .nav-toggle { display:block; }
 }
+
+.faq-section { margin:36px 0; }
+.faq-section h2 { font-size:24px; margin-bottom:18px; color:var(--primary); }
+.faq-item { border:1px solid var(--border); border-radius:var(--radius); margin-bottom:12px; background:var(--bg-alt); }
+.faq-item h3 { font-size:16px; margin:0; padding:14px 18px; color:var(--primary); line-height:1.4; }
+.faq-item .faq-a { padding:0 18px 16px; color:var(--text-muted); line-height:1.8; }
+.faq-item .faq-a p { margin:0; }
 </style>
 <!-- ===== 网站统计 =====
      使用方法：把下面 GA4_ID 的值改成你的 GA4 衡量ID（形如 G-ABCD123XYZ），保存推送即可生效。
@@ -153,6 +160,26 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
     }
   ],
   "numberOfEmployees": "201-500"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.tianyimachine.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Factory Tour",
+      "item": "https://www.tianyimachine.com/factory.html"
+    }
+  ]
 }
 </script>
 </head>
@@ -315,6 +342,29 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
     <img src="images/logo-160.png" alt="Tianyi Machinery" class="footer-logo">
     <p>&copy; 2026 Hubei Tianyi Machinery Co., Ltd. | Stock: 832654 | <a href="mailto:kim@tianyi-machinery.com">kim@tianyi-machinery.com</a></p>
   </div>
+<section class="faq-section" id="faq">
+  <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>Can I visit Tianyi factory before placing an order?</h3>
+      <div class="faq-a"><p>Yes. We welcome customer visits to review our production workshops, quality control, and assembly lines, and to discuss your project on site. Contact us to schedule a tour.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>What is the size of Tianyi manufacturing facility?</h3>
+      <div class="faq-a"><p>The facility covers about 70,000 square meters in Yidu City, Hubei Province, with 200+ professionals and 50+ production equipment sets.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>What quality certifications does Tianyi hold?</h3>
+      <div class="faq-a"><p>Tianyi is certified to ISO 9001, ISO 14001, and ISO 45001, holds CE marking for belt conveyors, and has National High-Tech and Little Giant enterprise status.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>Does Tianyi have in-house R&amp;D and testing?</h3>
+      <div class="faq-a"><p>Yes. We operate a provincial-level technology center with 100+ national patents, participate in drafting national and industry standards, and run a dedicated testing and QA center.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>What is Tianyi production capacity for conveying equipment?</h3>
+      <div class="faq-a"><p>We engineer complete systems per project and ship to 50+ countries; typical lines handle hundreds to thousands of tons per hour across crushing, conveying, and screening.</p></div>
+    </div>
+</section>
 </footer>
 
 <script>
@@ -326,6 +376,54 @@ document.querySelectorAll('.nav>li>a').forEach(function(link) {
     }
   });
 });
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can I visit Tianyi factory before placing an order?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We welcome customer visits to review our production workshops, quality control, and assembly lines, and to discuss your project on site. Contact us to schedule a tour."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the size of Tianyi manufacturing facility?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The facility covers about 70,000 square meters in Yidu City, Hubei Province, with 200+ professionals and 50+ production equipment sets."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What quality certifications does Tianyi hold?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tianyi is certified to ISO 9001, ISO 14001, and ISO 45001, holds CE marking for belt conveyors, and has National High-Tech and Little Giant enterprise status."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Tianyi have in-house R&D and testing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We operate a provincial-level technology center with 100+ national patents, participate in drafting national and industry standards, and run a dedicated testing and QA center."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is Tianyi production capacity for conveying equipment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We engineer complete systems per project and ship to 50+ countries; typical lines handle hundreds to thousands of tons per hour across crushing, conveying, and screening."
+      }
+    }
+  ]
+}
 </script>
 </body>
 </html>

@@ -113,6 +113,13 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
   .nav-toggle { display:block; }
   .lang-switch { display:none; }
 }
+
+.faq-section { margin:36px 0; }
+.faq-section h2 { font-size:24px; margin-bottom:18px; color:var(--primary); }
+.faq-item { border:1px solid var(--border); border-radius:var(--radius); margin-bottom:12px; background:var(--bg-alt); }
+.faq-item h3 { font-size:16px; margin:0; padding:14px 18px; color:var(--primary); line-height:1.4; }
+.faq-item .faq-a { padding:0 18px 16px; color:var(--text-muted); line-height:1.8; }
+.faq-item .faq-a p { margin:0; }
 </style>
 <!-- ===== 网站统计 =====
      使用方法：把下面 GA4_ID 的值改成你的 GA4 衡量ID（形如 G-ABCD123XYZ），保存推送即可生效。
@@ -158,6 +165,26 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
     }
   ],
   "numberOfEmployees": "201-500"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Главная",
+      "item": "https://www.tianyimachine.com/ru/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Завод",
+      "item": "https://www.tianyimachine.com/ru/factory.html"
+    }
+  ]
 }
 </script>
 </head>
@@ -320,6 +347,29 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
     <img src="../images/logo-160.png" alt="Тяньи Машинери" class="footer-logo">
     <p>&copy; 2026 Hubei Tianyi Machinery Co., Ltd. | Акции: 832654 | <a href="mailto:kim@tianyi-machinery.com">kim@tianyi-machinery.com</a></p>
   </div>
+<section class="faq-section" id="faq">
+  <h2>Часто задаваемые вопросы</h2>
+    <div class="faq-item">
+      <h3>Можно ли посетить завод Tianyi до заказа?</h3>
+      <div class="faq-a"><p>Да. Мы приветствуем визиты заказчиков для осмотра цехов, контроля качества и линий сборки, а также обсуждения проекта на площадке. Свяжитесь с нами для планирования визита.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>Каков размер производственной площадки Tianyi?</h3>
+      <div class="faq-a"><p>Площадка занимает около 70 000 кв. м в городе Иду провинции Хубэй, на ней работают более 200 специалистов и установлено более 50 единиц оборудования.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>Какими сертификатами качества обладает Tianyi?</h3>
+      <div class="faq-a"><p>Tianyi сертифицирована по ISO 9001, ISO 14001 и ISO 45001, имеет маркировку CE для ленточных конвейеров, а также статус национального высокотехнологичного предприятия и предприятия «Малый гигант».</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>Есть ли у Tianyi собственные НИОКР и испытания?</h3>
+      <div class="faq-a"><p>Да. Мы располагаем областным технологическим центром с более чем 100 национальными патентами, участвуем в разработке национальных и отраслевых стандартов и ведём собственный центр испытаний и ОТК.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>Какова производственная мощность Tianyi по транспортному оборудованию?</h3>
+      <div class="faq-a"><p>Мы проектируем комплексные системы под проект и поставляем в более чем 50 стран; типовые линии обрабатывают от сотен до тысяч тонн в час по дроблению, транспорту и грохочению.</p></div>
+    </div>
+</section>
 </footer>
 
 <script>
@@ -331,6 +381,54 @@ document.querySelectorAll('.nav>li>a').forEach(function(link) {
     }
   });
 });
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Можно ли посетить завод Tianyi до заказа?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Да. Мы приветствуем визиты заказчиков для осмотра цехов, контроля качества и линий сборки, а также обсуждения проекта на площадке. Свяжитесь с нами для планирования визита."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Каков размер производственной площадки Tianyi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Площадка занимает около 70 000 кв. м в городе Иду провинции Хубэй, на ней работают более 200 специалистов и установлено более 50 единиц оборудования."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Какими сертификатами качества обладает Tianyi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tianyi сертифицирована по ISO 9001, ISO 14001 и ISO 45001, имеет маркировку CE для ленточных конвейеров, а также статус национального высокотехнологичного предприятия и предприятия «Малый гигант»."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Есть ли у Tianyi собственные НИОКР и испытания?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Да. Мы располагаем областным технологическим центром с более чем 100 национальными патентами, участвуем в разработке национальных и отраслевых стандартов и ведём собственный центр испытаний и ОТК."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Какова производственная мощность Tianyi по транспортному оборудованию?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Мы проектируем комплексные системы под проект и поставляем в более чем 50 стран; типовые линии обрабатывают от сотен до тысяч тонн в час по дроблению, транспорту и грохочению."
+      }
+    }
+  ]
+}
 </script>
 </body>
 </html>

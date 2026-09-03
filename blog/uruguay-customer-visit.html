@@ -130,6 +130,13 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
   .nav>li.open-sub .dropdown-menu { display:block; }
   .nav-toggle { display:block; }
 }
+
+.faq-section { margin:36px 0; }
+.faq-section h2 { font-size:24px; margin-bottom:18px; color:var(--primary); }
+.faq-item { border:1px solid var(--border); border-radius:var(--radius); margin-bottom:12px; background:var(--bg-alt); }
+.faq-item h3 { font-size:16px; margin:0; padding:14px 18px; color:var(--primary); line-height:1.4; }
+.faq-item .faq-a { padding:0 18px 16px; color:var(--text-muted); line-height:1.8; }
+.faq-item .faq-a p { margin:0; }
 </style>
 <!-- ===== 网站统计 =====
      使用方法：把下面 GA4_ID 的值改成你的 GA4 衡量ID（形如 G-ABCD123XYZ），保存推送即可生效。
@@ -175,6 +182,32 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
     }
   ],
   "numberOfEmployees": "201-500"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.tianyimachine.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.tianyimachine.com/blog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Uruguay Customer Visits Tianyi Machinery to Discuss Future Cooperation",
+      "item": "https://www.tianyimachine.com/blog/uruguay-customer-visit.html"
+    }
+  ]
 }
 </script>
 </head>
@@ -275,6 +308,29 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
   <p>The visit concluded with a shared commitment to move forward on a phased cooperation plan, starting with a pilot order for a cement raw-meal handling line. Tianyi will provide the general arrangement drawings, installation supervision, and a tailored spare-parts kit to support the customer's local maintenance team.</p>
   <div class="callout"><strong>Our commitment:</strong> Every export project is backed by Chinese-and-English documentation, remote commissioning support, and a critical-spare recommendation so your plant stays running.</div>
 
+  <section class="faq-section" id="faq">
+  <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>Does Tianyi work with customers in Latin America?</h3>
+      <div class="faq-a"><p>Yes. Tianyi exports to 50 plus countries and regularly hosts Latin-American customers for technical discussions and project planning.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>Can I visit Tianyi factory before ordering?</h3>
+      <div class="faq-a"><p>Absolutely. We welcome customer visits to review manufacturing capability, quality control, and discuss project requirements on site.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>What does a Tianyi factory visit include?</h3>
+      <div class="faq-a"><p>A workshop tour, review of welding, machining, and assembly, quality-control discussion, and technical sessions on your conveying project.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>Does Tianyi export to Uruguay and South America?</h3>
+      <div class="faq-a"><p>Yes, Tianyi supplies equipment to South American markets and supports projects across the region with English and Chinese technical documentation.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>How do I start a project with Tianyi?</h3>
+      <div class="faq-a"><p>Send your material properties and process flow; our engineering team returns a tailored system proposal and quotation.</p></div>
+    </div>
+</section>
   <div class="cta-box">
     <h2>Planning a Project in Latin America?</h2>
     <p>We have supplied bulk material handling systems across cement, mining, and port applications worldwide. Send us your material data and site layout &mdash; we'll return a proposal.</p>
@@ -309,5 +365,53 @@ document.querySelectorAll('.nav>li>a').forEach(function(link) {
 });
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does Tianyi work with customers in Latin America?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Tianyi exports to 50 plus countries and regularly hosts Latin-American customers for technical discussions and project planning."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I visit Tianyi factory before ordering?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely. We welcome customer visits to review manufacturing capability, quality control, and discuss project requirements on site."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does a Tianyi factory visit include?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A workshop tour, review of welding, machining, and assembly, quality-control discussion, and technical sessions on your conveying project."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Tianyi export to Uruguay and South America?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Tianyi supplies equipment to South American markets and supports projects across the region with English and Chinese technical documentation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I start a project with Tianyi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Send your material properties and process flow; our engineering team returns a tailored system proposal and quotation."
+      }
+    }
+  ]
+}
+</script>
 </body>
 </html>

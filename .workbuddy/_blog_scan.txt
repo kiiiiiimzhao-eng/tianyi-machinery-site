@@ -1,0 +1,310 @@
+
+##### blog/belt-conveyor-installation-guide.html [EN] #####
+  style=True cta=True article=True faq=False n_scripts=2
+  cta_anchor: NONE
+  H1: Belt Conveyor Installation &amp; Commissioning: A Practical Checklist
+    H2: 1. Pre-Installation Preparation
+    H2: 2. Step-by-Step Installation
+    H2: 3. Commissioning &amp; Startup
+    H2: 4. Safety Verification
+    H2: 5. First-Month Maintenance
+    H2: Planning a New Conveyor Line?
+      H3: 2.1 Support structure &amp; pulleys
+      H3: 2.2 Idler installation
+      H3: 2.3 Belt placement &amp; splicing
+      H3: 2.4 Drive &amp; take-up
+      H3: Related Reading
+
+##### blog/belt-conveyor-troubleshooting.html [EN] #####
+  style=True cta=True article=True faq=False n_scripts=2
+  cta_anchor: NONE
+  H1: 5 Common Belt Conveyor Problems and How to Fix Them
+    H2: 1. Belt Misalignment (Mistracking)
+    H2: 2. Belt Slippage at the Drive Pulley
+    H2: 3. Material Spillage
+    H2: 4. Idler / Roller Failure
+    H2: 5. Premature Belt Wear &amp; Edge Damage
+    H2: Conveyor Running Rough?
+      H3: Related Reading
+
+##### blog/bucket-elevator-inspection.html [EN] #####
+  style=True cta=True article=True faq=False n_scripts=2
+  cta_anchor: NONE
+  H1: Bucket Elevator Inspection Checklist: Daily, Weekly &amp; Monthly
+    H2: Why a Routine Matters
+    H2: Daily Inspection (operator, start of shift)
+    H2: Weekly Inspection (maintenance tech)
+    H2: Monthly Inspection (supervisor / engineer)
+    H2: Safety &amp; Explosion Protection
+    H2: Need an Elevator Health Check?
+      H3: Related Reading
+
+##### blog/chlor-alkali-conveying-system.html [EN] #####
+  style=True cta=True article=True faq=False n_scripts=2
+  cta_anchor: NONE
+  H1: Bulk Material Conveying System for the Chlor-Alkali Chemical Industry
+    H2: 1. The Engineering Challenge
+    H2: 2. System Scope
+    H2: 3. Key Design Decisions
+    H2: 4. Outcomes
+    H2: Designing a Chemical-Plant Conveying Line?
+      H3: 3.1 Material compatibility
+      H3: 3.2 Heat management
+      H3: 3.3 Valves built for the duty
+      H3: 3.4 Safety &amp; monitoring
+      H3: Related Reading
+
+##### blog/gas-tight-en-masse-conveyor-nitrogen-inerting.html [EN] #####
+  style=True cta=True article=True faq=False n_scripts=2
+  cta_anchor: NONE
+  H1: Gas-Tight En Masse Chain Scraper Conveyor for New-Energy Nitrogen Iner
+    H2: 1. Why New-Energy Powders Need Oxygen-Free Conveying
+    H2: 2. How Nitrogen Inerting Works in a Sealed Conveyor
+    H2: 3. Key Design Features of a Gas-Tight En Masse Conveyor
+    H2: 4. Typical New-Energy Applications
+    H2: 5. Field Case: Installed Unit
+    H2: 6. Specification Guidelines
+    H2: 7. Operational Benefits
+    H2: Need a Gas-Tight Conveyor for Oxygen-Sensitive Powders?
+      H3: 3.1 Casing construction
+      H3: 3.2 Shaft seals
+      H3: 3.3 Chain and flights
+      H3: 3.4 Inspection and maintenance
+      H3: Related Reading
+
+##### blog/industrial-valve-selection-guide.html [EN] #####
+  style=True cta=True article=True faq=False n_scripts=2
+  cta_anchor: NONE
+  H1: How to Choose the Right Industrial Valve for Bulk Material Handling
+    H2: 1. Start With the Material, Not the Valve
+    H2: 2. Match the Valve Type to the Job
+    H2: 3. Size It Correctly (DN)
+    H2: 4. Choose Actuation &amp; Control
+    H2: 5. Sealing, Pressure &amp; Temperature
+    H2: 6. Common Specification Mistakes
+    H2: Need Help Specifying Your Valves?
+      H3: Related Reading
+
+##### blog/manufacturing-champion-award.html [EN] #####
+  style=True cta=True article=True faq=False n_scripts=2
+  cta_anchor: NONE
+  H1: Tianyi Machinery Awarded "Hubei Province Manufacturing Champion"
+    H2: What the Award Recognizes
+    H2: Built on Substance, Not Slogans
+    H2: What It Means for Customers
+    H2: Partner With a Proven Manufacturer
+      H3: Related Reading
+
+##### blog/mineral-processing-plant-solutions.html [EN] #####
+  style=True cta=True article=True faq=False n_scripts=2
+  cta_anchor: NONE
+  H1: Bulk Material Handling for Mineral Processing Plants: Tianyi's Enginee
+    H2: 1. What a Mineral Processing Plant Demands From Material Handling
+    H2: 2. Tianyi's Technical Capability
+    H2: 3. Equipment Lineup for a Mineral Processing Plant
+    H2: 4. Production Capacity That Delivers Complete Systems
+    H2: 5. A Representative System Configuration
+    H2: 6. Why Plant Builders Choose Tianyi
+    H2: Need a Bulk-Handling System for Your Mineral Processing Plant?
+      H3: Related Reading
+
+##### blog/tdg-gas-tight-explosion-proof-bucket-elevator.html [EN] #####
+  style=True cta=True article=True faq=False n_scripts=2
+  cta_anchor: NONE
+  H1: TDG Gas-Tight Explosion-Proof Steel Cord Belt Bucket Elevator
+    H2: 1. Why Gas-Tight and Explosion-Proof Matter
+    H2: 2. Key Design Features of the TDG Series
+    H2: 3. Gas-Tight and Dust-Proof Details
+    H2: 4. Explosion-Proof Protection
+    H2: 5. Typical Applications
+    H2: 6. Field Installation Photo
+    H2: 7. Specification Guidelines
+    H2: 8. Operational Benefits
+    H2: Need a TDG Gas-Tight Explosion-Proof Bucket Elevator?
+      H3: 3.1 Casing joints
+      H3: 3.2 Head and boot sections
+      H3: 3.3 Inspection and cleaning doors
+      H3: 3.4 Belt and bucket interface
+      H3: Related Reading
+
+##### blog/uruguay-customer-visit.html [EN] #####
+  style=True cta=True article=True faq=False n_scripts=2
+  cta_anchor: NONE
+  H1: Uruguay Customer Visits Tianyi Machinery to Discuss Future Cooperation
+    H2: A Closer Look at the Workshop
+    H2: Technical Discussions
+    H2: Looking Ahead
+    H2: Planning a Project in Latin America?
+      H3: Related Reading
+
+##### blog/zinc-indium-smelting-conveying-system.html [EN] #####
+  style=True cta=True article=True faq=False n_scripts=2
+  cta_anchor: NONE
+  H1: Zinc-Indium Smelting Bulk Conveying System: Tianyi Project Case
+    H2: 1. Project Background and Process Flow
+    H2: 2. Material Characteristics in Zinc-Indium Smelting
+    H2: 3. Equipment Scope
+    H2: 4. Engineering Design Highlights
+    H2: 5. Site Installation
+    H2: 6. Commissioning Results
+    H2: Need a Conveying System for Your Smelter?
+      H3: 4.1 Abrasion and corrosion protection
+      H3: 4.2 Dust-tight casing
+      H3: 4.3 Thermal expansion and support
+      H3: 4.4 Redundancy and clean-out
+      H3: Related Reading
+
+##### ru/blog/belt-conveyor-installation-guide.html [RU] #####
+  style=True cta=True article=True faq=False n_scripts=2
+  cta_anchor: NONE
+  H1: Монтаж и пусконаладка ленточного конвейера: практический чек-лист
+    H2: 1. Подготовка к монтажу
+    H2: 2. Монтаж по шагам
+    H2: 3. Пусконаладка и запуск
+    H2: 4. Проверка безопасности
+    H2: 5. Обслуживание в первый месяц
+    H2: Планируете новую конвейерную линию?
+      H3: 2.1 Несущая конструкция и барабаны
+      H3: 2.2 Установка роликов
+      H3: 2.3 Укладка и стыковка ленты
+      H3: 2.4 Привод и натяжное устройство
+      H3: Читайте также
+
+##### ru/blog/belt-conveyor-troubleshooting.html [RU] #####
+  style=True cta=True article=True faq=False n_scripts=2
+  cta_anchor: NONE
+  H1: 5 распространённых проблем ленточного конвейера и способы их устранени
+    H2: 1. Увод ленты в сторону
+    H2: 2. Проскальзывание на приводном барабане
+    H2: 3. Просыпание материала
+    H2: 4. Отказ роликов
+    H2: 5. Преждевременный износ ленты и повреждение краёв
+    H2: Конвейер работает нестабильно?
+      H3: Читайте также
+
+##### ru/blog/bucket-elevator-inspection.html [RU] #####
+  style=True cta=True article=True faq=False n_scripts=2
+  cta_anchor: NONE
+  H1: Чек-лист осмотра ковшового элеватора: ежедневно, еженедельно и ежемеся
+    H2: Зачем нужен регламент
+    H2: Ежедневный осмотр (оператор, начало смены)
+    H2: Еженедельный осмотр (механик)
+    H2: Ежемесячный осмотр (начальник / инженер)
+    H2: Безопасность и защита от взрыва
+    H2: Нужна проверка состояния элеватора?
+      H3: Читайте также
+
+##### ru/blog/chlor-alkali-conveying-system.html [RU] #####
+  style=True cta=True article=True faq=False n_scripts=2
+  cta_anchor: NONE
+  H1: Система транспортировки сыпучих для хлорщелочной промышленности
+    H2: 1. Инженерная задача
+    H2: 2. Объём системы
+    H2: 3. Ключевые проектные решения
+    H2: 4. Результаты
+    H2: Проектируете линию для химзавода?
+      H3: 3.1 Совместимость с материалом
+      H3: 3.2 Управление теплом
+      H3: 3.3 Клапаны под режим
+      H3: 3.4 Безопасность и мониторинг
+      H3: Читайте также
+
+##### ru/blog/gas-tight-en-masse-conveyor-nitrogen-inerting.html [RU] #####
+  style=True cta=True article=True faq=False n_scripts=2
+  cta_anchor: NONE
+  H1: Герметичный цепной скребковый конвейер с азотным инертированием для но
+    H2: 1. Почему Порошки Новой Энергетики Требуют Транспортировки Без Кислоро
+    H2: 2. Как Работает Азотное Инертирование в Герметичном Конвейере
+    H2: 3. Основные Конструктивные Решения
+    H2: 4. Типичные Применения
+    H2: 5. Пример Внедрения
+    H2: 6. Рекомендации по Выбору
+    H2: 7. Эксплуатационные Преимущества
+    H2: Нужен герметичный конвейер для чувствительных к кислороду порошков?
+      H3: 3.1 Корпус
+      H3: 3.2 Уплотнения валов
+      H3: 3.3 Цепь и скребки
+      H3: 3.4 Обслуживание и инспекция
+      H3: Читайте также
+
+##### ru/blog/industrial-valve-selection-guide.html [RU] #####
+  style=True cta=True article=True faq=False n_scripts=2
+  cta_anchor: NONE
+  H1: Как выбрать подходящий промышленный клапан для транспортировки сыпучих
+    H2: 1. Начните с материала, а не с клапана
+    H2: 2. Подберите тип клапана под задачу
+    H2: 3. Правильно выберите диаметр (DN)
+    H2: 4. Выберите привод и управление
+    H2: 5. Уплотнение, давление и температура
+    H2: 6. Распространённые ошибки подбора
+    H2: Нужна помощь с подбором клапанов?
+      H3: Читайте также
+
+##### ru/blog/manufacturing-champion-award.html [RU] #####
+  style=True cta=True article=True faq=False n_scripts=2
+  cta_anchor: NONE
+  H1: Тяньи Машинери присвоено звание «Чемпион производства провинции Хубэй»
+    H2: Что отмечает награда
+    H2: На деле, а не на лозунгах
+    H2: Что это значит для заказчиков
+    H2: Сотрудничайте с проверенным производителем
+      H3: Читайте также
+
+##### ru/blog/mineral-processing-plant-solutions.html [RU] #####
+  style=True cta=True article=True faq=False n_scripts=2
+  cta_anchor: NONE
+  H1: Транспортировка сыпучих для обогатительных фабрик: инжиниринг и произв
+    H2: 1. Что обогатительная фабрика требует от транспортировки
+    H2: 2. Технические возможности Тяньи
+    H2: 3. Линейка оборудования для обогатительной фабрики
+    H2: 4. Производственная мощность для полных систем
+    H2: 5. Типовая конфигурация системы
+    H2: 6. Почему строители заводов выбирают Тяньи
+    H2: Нужна система транспортировки для вашей обогатительной фабрики?
+      H3: Читайте также
+
+##### ru/blog/tdg-gas-tight-explosion-proof-bucket-elevator.html [RU] #####
+  style=True cta=True article=True faq=False n_scripts=2
+  cta_anchor: NONE
+  H1: Нория серии TDG с герметичным и взрывозащищённым стальным канатным рем
+    H2: 1. Зачем Нужна Герметичность и Взрывозащита
+    H2: 2. Основные Конструктивные Особенности Серии TDG
+    H2: 3. Герметичность и Пылезащита
+    H2: 4. Взрывозащитные Решения
+    H2: 5. Типичные Применения
+    H2: 6. Фото Объекта Внедрения
+    H2: 7. Рекомендации по Выбору
+    H2: 8. Эксплуатационные Преимущества
+    H2: Нужна нория серии TDG с герметичным и взрывозащищённым исполнением?
+      H3: 3.1 Стыки корпуса
+      H3: 3.2 Головная и натяжная секции
+      H3: 3.3 Люки для осмотра и очистки
+      H3: 3.4 Ремень и ковши
+      H3: Читайте также
+
+##### ru/blog/uruguay-customer-visit.html [RU] #####
+  style=True cta=True article=True faq=False n_scripts=2
+  cta_anchor: NONE
+  H1: Заказчик из Уругвая посетил Тяньи Машинери для обсуждения сотрудничест
+    H2: Ближе к цехам
+    H2: Технические обсуждения
+    H2: Взгляд вперёд
+    H2: Планируете проект в Латинской Америке?
+      H3: Читайте также
+
+##### ru/blog/zinc-indium-smelting-conveying-system.html [RU] #####
+  style=True cta=True article=True faq=False n_scripts=2
+  cta_anchor: NONE
+  H1: Система транспортировки сыпучих для цинково-индиевого металлургическог
+    H2: 1. Предыстория проекта и технологическая схема
+    H2: 2. Особенности материалов при цинково-индиевой металлургии
+    H2: 3. Поставляемое оборудование
+    H2: 4. Инженерные решения
+    H2: 5. Монтаж на площадке
+    H2: 6. Результаты пусконаладки
+    H2: Нужна система транспортировки для вашего металлургического завода?
+      H3: 4.1 Защита от абразивного износа и коррозии
+      H3: 4.2 Пылегерметичный короб
+      H3: 4.3 Термическое расширение и опоры
+      H3: 4.4 Резервирование и очистка
+      H3: Читайте также

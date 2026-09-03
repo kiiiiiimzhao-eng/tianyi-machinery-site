@@ -137,6 +137,13 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
   .nav>li.open-sub .dropdown-menu { display:block; }
   .nav-toggle { display:block; }
 }
+
+.faq-section { margin:36px 0; }
+.faq-section h2 { font-size:24px; margin-bottom:18px; color:var(--primary); }
+.faq-item { border:1px solid var(--border); border-radius:var(--radius); margin-bottom:12px; background:var(--bg-alt); }
+.faq-item h3 { font-size:16px; margin:0; padding:14px 18px; color:var(--primary); line-height:1.4; }
+.faq-item .faq-a { padding:0 18px 16px; color:var(--text-muted); line-height:1.8; }
+.faq-item .faq-a p { margin:0; }
 </style>
 <!-- ===== 网站统计 =====
      使用方法：把下面 GA4_ID 的值改成你的 GA4 衡量ID（形如 G-ABCD123XYZ），保存推送即可生效。
@@ -182,6 +189,32 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
     }
   ],
   "numberOfEmployees": "201-500"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Главная",
+      "item": "https://www.tianyimachine.com/ru/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Блог",
+      "item": "https://www.tianyimachine.com/ru/blog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Система транспортировки сыпучих для цинково-индиевого металлургического завода: проект Тяньи",
+      "item": "https://www.tianyimachine.com/ru/blog/zinc-indium-smelting-conveying-system.html"
+    }
+  ]
 }
 </script>
 </head>
@@ -324,6 +357,29 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
   </ul>
   <div class="callout"><strong>Главный вывод проекта:</strong> цветные металлургические заводы нуждаются в транспортировочном оборудовании, одновременно выдерживающем высокие температуры, абразивный износ, коррозию и удержание пыли. Сочетание цепных скребковых конвейеров, ковшовых элеваторов и подобранных клапанов дало заказчику компактную и надёжную линию от приёма сырья до подачи в технологию.</div>
 
+  <section class="faq-section" id="faq">
+  <h2>Часто задаваемые вопросы</h2>
+    <div class="faq-item">
+      <h3>Какое оборудование Tianyi поставила для проекта цинково-индиевой плавки?</h3>
+      <div class="faq-a"><p>Скребковый конвейер (en-masse), ковшовые элеваторы и клапаны — основные и вспомогательные машины линии транспортировки сыпучих плавильного цеха.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>Как Tianyi справляется с абразивным и агрессивным материалом плавки?</h3>
+      <div class="faq-a"><p>Износо- и коррозионностойкие футеровки, герметичные корпуса и материалы, подобранные под горячий агрессивный режим плавильного цеха.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>В чём инженерные особенности системы транспортировки плавильного цеха?</h3>
+      <div class="faq-a"><p>Пылезащищённый корпус, компенсация теплового расширения в опорах, резервирование критических линий и удобные точки очистки для обслуживания.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>Может ли Tianyi строить системы для цветной металлургии?</h3>
+      <div class="faq-a"><p>Да. Помимо цинково-индиевой, мы проектируем системы транспортировки для различных цветных и чёрных плавильных производств.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>Каковы результаты пусконаладки?</h3>
+      <div class="faq-a"><p>Система обеспечила устойчивую непрерывную транспортировку при минимуме ручного вмешательства и чистой, соответствующей нормам среде перегрузки.</p></div>
+    </div>
+</section>
   <div class="cta-box">
     <h2>Нужна система транспортировки для вашего металлургического завода?</h2>
     <p>Расскажите нам о вашем материале, производительности, температуре и компоновке. Тяньи Машинери проектирует комплексные системы транспортировки для цветной металлургии: цепные конвейеры, ковшовые элеваторы, клапаны и вспомогательное оборудование.</p>
@@ -358,5 +414,53 @@ document.querySelectorAll('.nav>li>a').forEach(function(link) {
 });
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Какое оборудование Tianyi поставила для проекта цинково-индиевой плавки?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Скребковый конвейер (en-masse), ковшовые элеваторы и клапаны — основные и вспомогательные машины линии транспортировки сыпучих плавильного цеха."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Как Tianyi справляется с абразивным и агрессивным материалом плавки?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Износо- и коррозионностойкие футеровки, герметичные корпуса и материалы, подобранные под горячий агрессивный режим плавильного цеха."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "В чём инженерные особенности системы транспортировки плавильного цеха?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Пылезащищённый корпус, компенсация теплового расширения в опорах, резервирование критических линий и удобные точки очистки для обслуживания."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Может ли Tianyi строить системы для цветной металлургии?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Да. Помимо цинково-индиевой, мы проектируем системы транспортировки для различных цветных и чёрных плавильных производств."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Каковы результаты пусконаладки?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Система обеспечила устойчивую непрерывную транспортировку при минимуме ручного вмешательства и чистой, соответствующей нормам среде перегрузки."
+      }
+    }
+  ]
+}
+</script>
 </body>
 </html>

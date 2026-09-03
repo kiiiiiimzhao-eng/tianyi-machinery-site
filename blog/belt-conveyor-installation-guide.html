@@ -136,6 +136,13 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
   .nav>li.open-sub .dropdown-menu { display:block; }
   .nav-toggle { display:block; }
 }
+
+.faq-section { margin:36px 0; }
+.faq-section h2 { font-size:24px; margin-bottom:18px; color:var(--primary); }
+.faq-item { border:1px solid var(--border); border-radius:var(--radius); margin-bottom:12px; background:var(--bg-alt); }
+.faq-item h3 { font-size:16px; margin:0; padding:14px 18px; color:var(--primary); line-height:1.4; }
+.faq-item .faq-a { padding:0 18px 16px; color:var(--text-muted); line-height:1.8; }
+.faq-item .faq-a p { margin:0; }
 </style>
 <!-- ===== 网站统计 =====
      使用方法：把下面 GA4_ID 的值改成你的 GA4 衡量ID（形如 G-ABCD123XYZ），保存推送即可生效。
@@ -181,6 +188,32 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
     }
   ],
   "numberOfEmployees": "201-500"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.tianyimachine.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.tianyimachine.com/blog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Belt Conveyor Installation & Commissioning: A Practical Checklist",
+      "item": "https://www.tianyimachine.com/blog/belt-conveyor-installation-guide.html"
+    }
+  ]
 }
 </script>
 </head>
@@ -331,6 +364,29 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
   </ul>
   <p>Because Tianyi conveyors use standardized idlers, pulleys, and drives, spare sourcing is straightforward. Keep a small critical-spare kit (2&ndash;3 idlers per size, one scraper blade, one set of bearings) on site to avoid unplanned downtime.</p>
 
+  <section class="faq-section" id="faq">
+  <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>How long does it take to install a belt conveyor?</h3>
+      <div class="faq-a"><p>Installation time depends on length and complexity. A standard 30 to 60 m straight line typically takes 3 to 7 working days including support structure, idler fitting, belt laying, and splicing. Inclined or curved sections and electrical integration add time.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>What is the most common belt conveyor installation mistake?</h3>
+      <div class="faq-a"><p>Misaligned idlers and incorrect belt tensioning are the top causes of mistracking and premature wear. We recommend laser-aligned idler frames and controlled take-up tension during commissioning.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>Do I need specialists to install a belt conveyor?</h3>
+      <div class="faq-a"><p>For short, simple lines you can use local contractors following our drawings. For long, inclined, or automated lines, Tianyi provides supervised installation or on-site commissioning support.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>What safety checks are required before start-up?</h3>
+      <div class="faq-a"><p>Verify emergency stops, belt alignment switches, guard covers, and zero-speed or overspeed monitors are functional, and confirm the take-up and drive are correctly set before the first run.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>How do I keep a belt conveyor from drifting sideways?</h3>
+      <div class="faq-a"><p>Align all idlers square to the belt centerline, center the load on the belt, and check that pulleys are level. Persistent drift usually points to a single misaligned or worn idler.</p></div>
+    </div>
+</section>
   <div class="cta-box">
     <h2>Planning a New Conveyor Line?</h2>
     <p>Send us your material type, capacity, conveying distance, and site layout. Our engineering team returns a tailored proposal &mdash; including GA drawing and installation supervision &mdash; within 24 hours.</p>
@@ -365,5 +421,53 @@ document.querySelectorAll('.nav>li>a').forEach(function(link) {
 });
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How long does it take to install a belt conveyor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Installation time depends on length and complexity. A standard 30 to 60 m straight line typically takes 3 to 7 working days including support structure, idler fitting, belt laying, and splicing. Inclined or curved sections and electrical integration add time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the most common belt conveyor installation mistake?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Misaligned idlers and incorrect belt tensioning are the top causes of mistracking and premature wear. We recommend laser-aligned idler frames and controlled take-up tension during commissioning."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need specialists to install a belt conveyor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For short, simple lines you can use local contractors following our drawings. For long, inclined, or automated lines, Tianyi provides supervised installation or on-site commissioning support."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What safety checks are required before start-up?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Verify emergency stops, belt alignment switches, guard covers, and zero-speed or overspeed monitors are functional, and confirm the take-up and drive are correctly set before the first run."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I keep a belt conveyor from drifting sideways?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Align all idlers square to the belt centerline, center the load on the belt, and check that pulleys are level. Persistent drift usually points to a single misaligned or worn idler."
+      }
+    }
+  ]
+}
+</script>
 </body>
 </html>

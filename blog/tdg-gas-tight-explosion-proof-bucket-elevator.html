@@ -137,6 +137,13 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
   .nav>li.open-sub .dropdown-menu { display:block; }
   .nav-toggle { display:block; }
 }
+
+.faq-section { margin:36px 0; }
+.faq-section h2 { font-size:24px; margin-bottom:18px; color:var(--primary); }
+.faq-item { border:1px solid var(--border); border-radius:var(--radius); margin-bottom:12px; background:var(--bg-alt); }
+.faq-item h3 { font-size:16px; margin:0; padding:14px 18px; color:var(--primary); line-height:1.4; }
+.faq-item .faq-a { padding:0 18px 16px; color:var(--text-muted); line-height:1.8; }
+.faq-item .faq-a p { margin:0; }
 </style>
 <!-- ===== 网站统计 =====
      使用方法：把下面 GA4_ID 的值改成你的 GA4 衡量ID（形如 G-ABCD123XYZ），保存推送即可生效。
@@ -182,6 +189,32 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
     }
   ],
   "numberOfEmployees": "201-500"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.tianyimachine.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.tianyimachine.com/blog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "TDG Gas-Tight Explosion-Proof Steel Cord Belt Bucket Elevator",
+      "item": "https://www.tianyimachine.com/blog/tdg-gas-tight-explosion-proof-bucket-elevator.html"
+    }
+  ]
 }
 </script>
 </head>
@@ -357,6 +390,29 @@ p { color:var(--text-muted); margin-bottom:16px; line-height:1.8; }
     <li><strong>Long service life:</strong> abrasion-resistant liners and high-quality belts extend replacement intervals.</li>
   </ul>
 
+  <section class="faq-section" id="faq">
+  <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>What makes the TDG bucket elevator explosion-proof?</h3>
+      <div class="faq-a"><p>A dust-tight, static-dissipating casing with explosion venting where required, plus speed, belt-alignment, and temperature monitoring with automatic trip.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>What is the maximum lift height of a TDG steel-cord elevator?</h3>
+      <div class="faq-a"><p>The steel-cord belt version reaches up to about 80 m depending on material and configuration; plate-chain (NE) and ring-chain (TH) designs serve other heights.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>How is the TDG elevator made gas-tight?</h3>
+      <div class="faq-a"><p>Casing joints use sealed flanges, the head and boot are tightly fitted, and inspection and cleaning doors have gaskets so the interior stays isolated.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>Where is the TDG gas-tight elevator used?</h3>
+      <div class="faq-a"><p>In chemical, smelting, and new-energy plants where materials are flammable, explosive, or must be kept from air and moisture.</p></div>
+    </div>
+    <div class="faq-item">
+      <h3>What belt does the TDG elevator use?</h3>
+      <div class="faq-a"><p>A steel-cord belt with anti-static properties for high lift and explosion-prone duty, paired with deep buckets for stable discharge.</p></div>
+    </div>
+</section>
   <div class="cta-box">
     <h2>Need a TDG Gas-Tight Explosion-Proof Bucket Elevator?</h2>
     <p>Send us your material properties, lift height, capacity, and plant layout. Our engineering team will size a TDG series steel cord belt bucket elevator with the right sealing, venting, and explosion-proof configuration for your process.</p>
@@ -391,5 +447,53 @@ document.querySelectorAll('.nav>li>a').forEach(function(link) {
 });
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What makes the TDG bucket elevator explosion-proof?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A dust-tight, static-dissipating casing with explosion venting where required, plus speed, belt-alignment, and temperature monitoring with automatic trip."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the maximum lift height of a TDG steel-cord elevator?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The steel-cord belt version reaches up to about 80 m depending on material and configuration; plate-chain (NE) and ring-chain (TH) designs serve other heights."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is the TDG elevator made gas-tight?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Casing joints use sealed flanges, the head and boot are tightly fitted, and inspection and cleaning doors have gaskets so the interior stays isolated."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where is the TDG gas-tight elevator used?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In chemical, smelting, and new-energy plants where materials are flammable, explosive, or must be kept from air and moisture."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What belt does the TDG elevator use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A steel-cord belt with anti-static properties for high lift and explosion-prone duty, paired with deep buckets for stable discharge."
+      }
+    }
+  ]
+}
+</script>
 </body>
 </html>
