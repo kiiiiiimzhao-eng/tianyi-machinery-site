@@ -2,7 +2,7 @@
 
 ## 项目背景
 - 站点：Tianyi Machinery 独立站（散料输送设备 B2B 出口），部署于 Cloudflare Pages，GitHub Desktop 推送。
-- 主域：www.tianyimachine.com（apex 已做 A 记录指向 Cloudflare，_redirects 将 apex→www）。
+- 主域：www.tianyimachine.com；apex（tianyimachine.com）DNS 已指向 Cloudflare（A/AAAA 解析到 Cloudflare anycast IP），但 **apex 尚未作为自定义域绑定到 Cloudflare Pages 项目**。因此直接访问裸域会报 Cloudflare 522（Cloudflare 收到请求但不知道交给哪个 Pages 项目/源站响应），`_redirects` 中的 apex→www 301 规则尚未生效。修复方法：在 Cloudflare Pages 项目后台把 `tianyimachine.com` 也加为 Custom Domain，随后 Cloudflare 会自动配好 DNS，裸域即可进入 Pages 并由 `_redirects` 跳转到 www。
 - 已接入：GA4（G-Z39HGKTTPV）、Google Search Console、Bing Webmaster、Yandex Webmaster（meta 验证 25835e1a228a8afb）。
 - 站点为手写的静态多页 HTML（index / products/* / projects / blog / blog/* / factory 等，约 25-30 页）。
 
