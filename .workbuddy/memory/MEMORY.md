@@ -4,7 +4,7 @@
 - 站点：Tianyi Machinery 独立站（散料输送设备 B2B 出口），部署于 Cloudflare Pages，GitHub Desktop 推送。
 - 主域：www.tianyimachine.com；apex（tianyimachine.com）DNS 已指向 Cloudflare（A/AAAA 解析到 Cloudflare anycast IP），但 **apex 尚未作为自定义域绑定到 Cloudflare Pages 项目**。因此直接访问裸域会报 Cloudflare 522（Cloudflare 收到请求但不知道交给哪个 Pages 项目/源站响应），`_redirects` 中的 apex→www 301 规则尚未生效。修复方法：在 Cloudflare Pages 项目后台把 `tianyimachine.com` 也加为 Custom Domain，随后 Cloudflare 会自动配好 DNS，裸域即可进入 Pages 并由 `_redirects` 跳转到 www。
 - 已接入：GA4（G-Z39HGKTTPV）、Google Search Console、Bing Webmaster、Yandex Webmaster（meta 验证 25835e1a228a8afb）。
-- 站点为手写的静态多页 HTML（index / products/* / projects / blog / blog/* / factory 等，约 25-30 页）。
+- 站点为手写的静态多页 HTML（index / products/* / projects / blog / blog/* / factory 等），EN 根站 + /ru/ 镜像，全站 HTML 约 95–100 页。
 
 ## 用户目标 / 方向
 - **俄语版本站点（/ru/ 子目录）**：让俄语客户在 Yandex 用俄语搜到网站。用户提出后已完成 pilot 实施。
@@ -28,6 +28,14 @@
 - GEO 第 2、3 项已完成（2026-09-02）：① 选型指南长文 `blog/bulk-material-handling-equipment-selection-guide.html`（EN+RU），含 Article+FAQPage schema、TOC、内链、hero 图（ImageGen 生成），已加 blog.html/ru/blog.html 卡片与两个 sitemap；② 全站 58 个 HTML 页注入 Organization schema（各 1 个，index.html 原本已有，其余 56 页脚本注入于 `</head>` 前）；③ 根目录 `llms.txt`（AI 版 robots.txt，列产品/案例/博客/公司链接 + /ru/ 镜像说明）。
 - 复用脚本/技能已扩充：`.workbuddy/skills/tianyi-geo-product-template/`（apply_geo_template.py + inject_org_schema.py + SKILL.md 已记录完整 GEO 流程）。
 - RU 全站链接对称性已修复（2026-09-01）：曾发现 RU 页面顶部下拉/页脚/正文里 dust-collector/feeding/crushing/screening/valves/parts + projects/blog 仍指向英文 `/products/*.html`、`/projects.html`、`/blog.html`、`/blog/...`，已全部改为 `/ru/...`；校验后 RU 站 0 处残留英文内部链接。
+
+## 行业长文博客矩阵（EN + RU 双语）
+- 除通用选型指南外，已建成"行业 / 项目案例"系列长文，每篇均为 EN + RU 双语、4 个 JSON-LD（Article / Organization / BreadcrumbList / FAQPage）、5 条 FAQ 且与 schema 逐字一致、TOC、内链、CTA、related-posts：
+  - `blog/coal-fired-power-plant-conveying-equipment-selection.html` — 火电厂（燃煤）输送设备选型（2026-09-09）
+  - `blog/alumina-conveying-system-indonesia.html` — 印尼氧化铝项目输送系统：氧化铝储运 + 石灰乳制备 + 燃气站输煤（2026-09-21）
+- **新增长文标准流程**（复用此顺序）：① 处理配图（Pillow，max 1400px，JPG q85 / WebP q82，ASCII 文件名，落到 `images/blog/<slug>/main.jpg`+`main.webp`）→ ② 写 EN 页（根级相对路径 `../images/`、`../products/`、CTA 指 `../index.html#contact`）→ ③ 写 RU 镜像（RU 页在 `ru/blog/`，图片须 `../../images/`、产品链接 `../products/`、CTA 指 `/ru/contact.html`）→ ④ 加 `blog.html` / `ru/blog.html` 卡片 → ⑤ 更新 `sitemap.xml`（+lastmod）与 `sitemap-ru.xml`（+xhtml:link）→ ⑥ 更新 `llms.txt` → ⑦ 跑校验脚本（JSON-LD 合法性、FAQ 逐字匹配、内链与图片可达、双语链接对称性、sitemap 可解析）。
+- 校验脚本要点：正则 `<div class="faq-item">\s*<h4>(.*?)</h4>\s*<p>(.*?)</p>\s*</div>` 提取可见 FAQ 并与 FAQPage schema 逐条比对；链接解析需处理以 `/` 开头的站内绝对路径（映射回仓库根）与目录型 URL（补 `index.html`）。
+- PowerShell 在本机通过本工具调用时**不回显 stdout**，需让 Python 脚本把结果写入 UTF-8 日志文件，再用 Read 工具读取。
 
 ## 双语链接对称性约定（强制）
 - RU 页（nav/页脚/正文/related-card/面包屑等）所有内部链接必须指向 `/ru/...`；仅语言切换按钮 `class="lang-switch"` 指向 `/`（英文首页）。
