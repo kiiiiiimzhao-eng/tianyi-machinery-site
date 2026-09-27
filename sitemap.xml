@@ -14,7 +14,7 @@
   </url>
   <url>
     <loc>https://www.tianyimachine.com/blog.html</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -189,6 +189,12 @@
   <url>
     <loc>https://www.tianyimachine.com/blog/alumina-conveying-system-indonesia.html</loc>
     <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.tianyimachine.com/blog/eurochem-kazakhstan-fertilizer-conveying-system.html</loc>
+    <lastmod>2026-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

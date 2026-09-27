@@ -48,13 +48,15 @@ Use this skill when the user asks to:
 - Collect the photos or diagrams the user provides. Source images often live on the Desktop with Chinese names/spaces — copy them into an ASCII-named temp path before processing.
 - Pick a kebab-case ASCII slug, e.g. `alumina-conveying-system-indonesia`. Use it for both pages.
 
-### 2. Process the Image
+### 2. Process the Image(s)
 
 - Create `images/blog/<slug>/`.
 - Resize so the longest side is at most 1400 px, then export:
   - `main.jpg` — JPEG quality 85, optimized, progressive.
   - `main.webp` — WebP quality 82.
-- Use `scripts/process_blog_image.py <source_image> <output_dir>`.
+- Use `scripts/process_blog_image.py <source_image> <output_dir> [base_name]`. `base_name` defaults to `main`.
+- **Multi-image posts:** the user frequently supplies several photos. Export the hero as `main`, and the extra figures under descriptive ASCII names (`gallery`, `plant`, `transfer-point`, …), each as `<name>.jpg` + `<name>.webp`. Reference each with its own `<figure><picture>` in the body — one hero right after the lead or the system-architecture section, plus one supporting figure per relevant section — and give every one a descriptive `alt` and a caption.
+- Source photos are often on a Chinese-named path (e.g. `E:\赵雯\图片\按分类\...`). Copy them into an ASCII-named temp dir (`.workbuddy/tmp_<slug>/`) first, then process; MSYS bash segfaults on Chinese paths, so drive PowerShell for the copy and the run.
 - Verify the outputs exist and read their dimensions/sizes back before moving on.
 
 ```bash

@@ -3,12 +3,17 @@
 Resize a blog/case-study image and export optimized JPG + WebP versions.
 
 Usage:
-    python process_blog_image.py <source_image> <output_dir>
+    python process_blog_image.py <source_image> <output_dir> [base_name]
+
+`base_name` defaults to `main` and names the exported pair `<base_name>.jpg` /
+`<base_name>.webp`. Use `main` for the hero image and other names (e.g. `gallery`,
+`plant`) for the extra figures of a multi-image post.
 
 Example:
     python process_blog_image.py \
         "C:\\Users\\...\\clipboard-image.jpg" \
-        "E:\\...\\tianyi-site\\images\\blog\\gas-tight-en-masse-conveyor"
+        "E:\\...\\tianyi-site\\images\\blog\\gas-tight-en-masse-conveyor" \
+        main
 """
 
 import sys
@@ -16,7 +21,7 @@ import os
 from PIL import Image, ImageOps
 
 
-def process_image(src_path: str, out_dir: str, max_size: int = 1400) -> None:
+def process_image(src_path: str, out_dir: str, base: str = "main", max_size: int = 1400) -> None:
     os.makedirs(out_dir, exist_ok=True)
 
     im = Image.open(src_path)
@@ -33,8 +38,8 @@ def process_image(src_path: str, out_dir: str, max_size: int = 1400) -> None:
         ratio = max_size / max(w, h)
         im = im.resize((int(w * ratio), int(h * ratio)), Image.LANCZOS)
 
-    jpg_path = os.path.join(out_dir, "main.jpg")
-    webp_path = os.path.join(out_dir, "main.webp")
+    jpg_path = os.path.join(out_dir, base + ".jpg")
+    webp_path = os.path.join(out_dir, base + ".webp")
 
     im.save(jpg_path, "JPEG", quality=85, optimize=True)
     im.save(webp_path, "WEBP", quality=82, method=6)
@@ -44,7 +49,8 @@ def process_image(src_path: str, out_dir: str, max_size: int = 1400) -> None:
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 3:
+    if len(sys.argv) < 3:
         print(__doc__)
         sys.exit(1)
-    process_image(sys.argv[1], sys.argv[2])
+    base = sys.argv[3] if len(sys.argv) > 3 else "main"
+    process_image(sys.argv[1], sys.argv[2], base)

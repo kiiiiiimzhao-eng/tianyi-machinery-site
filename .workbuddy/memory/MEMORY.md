@@ -33,7 +33,8 @@
 - 除通用选型指南外，已建成"行业 / 项目案例"系列长文，每篇均为 EN + RU 双语、4 个 JSON-LD（Article / Organization / BreadcrumbList / FAQPage）、5 条 FAQ 且与 schema 逐字一致、TOC、内链、CTA、related-posts：
   - `blog/coal-fired-power-plant-conveying-equipment-selection.html` — 火电厂（燃煤）输送设备选型（2026-09-09）
   - `blog/alumina-conveying-system-indonesia.html` — 印尼氧化铝项目输送系统：氧化铝储运 + 石灰乳制备 + 燃气站输煤（2026-09-21）
-- **新增长文标准流程**（复用此顺序）：① 处理配图（Pillow，max 1400px，JPG q85 / WebP q82，ASCII 文件名，落到 `images/blog/<slug>/main.jpg`+`main.webp`）→ ② 写 EN 页（根级相对路径 `../images/`、`../products/`、CTA 指 `../index.html#contact`）→ ③ 写 RU 镜像（RU 页在 `ru/blog/`，图片须 `../../images/`、产品链接 `../products/`、CTA 指 `/ru/contact.html`）→ ④ 加 `blog.html` / `ru/blog.html` 卡片 → ⑤ 更新 `sitemap.xml`（+lastmod）与 `sitemap-ru.xml`（+xhtml:link）→ ⑥ 更新 `llms.txt` → ⑦ 跑校验脚本（JSON-LD 合法性、FAQ 逐字匹配、内链与图片可达、双语链接对称性、sitemap 可解析）。
+  - `blog/eurochem-kazakhstan-fertilizer-conveying-system.html` — EuroChem 哈萨克斯坦（Zhambyl 州 Sarysu 区 Karatau 磷矿）化肥综合体输送系统：倾斜封闭皮带廊 + 转运塔 + 除尘 + 寒冷大陆性气候设计（2026-09-27）
+- **新增长文标准流程**（复用此顺序）：① 处理配图（Pillow，max 1400px，JPG q85 / WebP q82，ASCII 文件名，落到 `images/blog/<slug>/main.jpg`+`main.webp`；多图文章用 `process_blog_image.py` 的 `base_name` 参数再生成 `gallery`/`plant` 等）→ ② 写 EN 页（根级相对路径 `../images/`、`../products/`、CTA 指 `../index.html#contact`）→ ③ 写 RU 镜像（RU 页在 `ru/blog/`，图片须 `../../images/`、产品链接 `../products/`、CTA 指 `/ru/contact.html`）→ ④ 加 `blog.html` / `ru/blog.html` 卡片 → ⑤ 更新 `sitemap.xml`（+lastmod）与 `sitemap-ru.xml`（+xhtml:link）→ ⑥ 更新 `llms.txt` → ⑦ 跑校验脚本（JSON-LD 合法性、FAQ 逐字匹配、内链与图片可达、双语链接对称性、sitemap 可解析）。
 - 校验脚本要点：正则 `<div class="faq-item">\s*<h4>(.*?)</h4>\s*<p>(.*?)</p>\s*</div>` 提取可见 FAQ 并与 FAQPage schema 逐条比对；链接解析需处理以 `/` 开头的站内绝对路径（映射回仓库根）与目录型 URL（补 `index.html`）。
 - PowerShell 在本机通过本工具调用时**不回显 stdout**，需让 Python 脚本把结果写入 UTF-8 日志文件，再用 Read 工具读取。
 
