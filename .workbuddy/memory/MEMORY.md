@@ -34,6 +34,8 @@
   - `blog/coal-fired-power-plant-conveying-equipment-selection.html` — 火电厂（燃煤）输送设备选型（2026-09-09）
   - `blog/alumina-conveying-system-indonesia.html` — 印尼氧化铝项目输送系统：氧化铝储运 + 石灰乳制备 + 燃气站输煤（2026-09-21）
   - `blog/eurochem-kazakhstan-fertilizer-conveying-system.html` — EuroChem 哈萨克斯坦（Zhambyl 州 Sarysu 区 Karatau 磷矿）化肥综合体输送系统：倾斜封闭皮带廊 + 转运塔 + 除尘 + 寒冷大陆性气候设计（2026-09-27）
+  - `blog/wet-pulp-storage-conveying-system.html` — 某大型制浆造纸企业提质升级项目湿浆库输送系统：高湿黏性纤维浆 — 倾斜人字齿皮带 + 犁式/刮板卸料器 + 移动卸料车 + 多路分料溜槽 + 陡峭低摩擦衬里溜槽 + 皮带清扫 + 排水防腐 + 带料运行调试（2026-10-13）。**客户名已按用户要求隐去**（正文统一称 "a large pulp and paper enterprise in China" / "某大型制浆造纸企业"，slug/标题/FAQ/图片均不含客户公司名）。
+- **案例博客隐去客户名（用户明确要求）**：用户曾要求「文章中不要出现公司名」。做法——以 "a large pulp and paper enterprise in China" / "某大型制浆造纸企业" / "large pulp and paper mill" 泛称；slug、标题、FAQ、图片文件名均不出现客户实名；交付前用 Grep 确认 `岳阳林纸|Yueyang Forest Paper|岳阳` 等实名 0 命中。后续同类案例博客默认沿用此约定，除非用户另说。
 - **新增长文标准流程**（复用此顺序）：① 处理配图（Pillow，max 1400px，JPG q85 / WebP q82，ASCII 文件名，落到 `images/blog/<slug>/main.jpg`+`main.webp`；多图文章用 `process_blog_image.py` 的 `base_name` 参数再生成 `gallery`/`plant` 等）→ ② 写 EN 页（根级相对路径 `../images/`、`../products/`、CTA 指 `../index.html#contact`）→ ③ 写 RU 镜像（RU 页在 `ru/blog/`，图片须 `../../images/`、产品链接 `../products/`、CTA 指 `/ru/contact.html`）→ ④ 加 `blog.html` / `ru/blog.html` 卡片 → ⑤ 更新 `sitemap.xml`（+lastmod）与 `sitemap-ru.xml`（+xhtml:link）→ ⑥ 更新 `llms.txt` → ⑦ 跑校验脚本（JSON-LD 合法性、FAQ 逐字匹配、内链与图片可达、双语链接对称性、sitemap 可解析）。
 - 校验脚本要点：正则 `<div class="faq-item">\s*<h4>(.*?)</h4>\s*<p>(.*?)</p>\s*</div>` 提取可见 FAQ 并与 FAQPage schema 逐条比对；链接解析需处理以 `/` 开头的站内绝对路径（映射回仓库根）与目录型 URL（补 `index.html`）。
 - PowerShell 在本机通过本工具调用时**不回显 stdout**，需让 Python 脚本把结果写入 UTF-8 日志文件，再用 Read 工具读取。
